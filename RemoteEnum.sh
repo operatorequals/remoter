@@ -46,6 +46,18 @@ echo "		Doesn't spawn firefox with the scan results."
 echo "	Instead prints the result location in terminal"
 }
 
+abort(){
+
+nc_pid=$1
+page=$2
+echo;
+echo "Aborted by user!";
+kill -9 $nc_pid 2>/dev/null 1>&2
+rm -f $page
+exit;
+
+}
+
 
 #####################################################	ARGUMENT HANDLING
 
@@ -94,10 +106,9 @@ done
 ################################################################################################
 
 
-
 #rm scan_files/*.html 2>/dev/null
 comm=""
-if ["$page" = "" ]; then
+if [ "$page" = "" ]; then
 	page="Scan-`date +"%d%m%y%H%M"`.xml"
 	echo "HTML page filename is set to: \"$page\""
 fi
@@ -111,10 +122,11 @@ init="scanner.init"
 
 scanner_array="comm_groups=("
 for i in $scanners; do
-scanner_array="$scanner_array\"$(echo $i | cut -d. -f2)\" "
+	scanner_array="$scanner_array\"$(echo $i | cut -d. -f2)\" "
 done
-echo $len
+#echo $len
 scanner_array="$scanner_array)"
+#echo $scanner_array
 
 IFS_DE=$IFS
 IFS="^"
@@ -126,7 +138,6 @@ cat $scanner_file >> $temp_scanner
 scanner_file=$temp_scanner
 IFS=$IFS_DE
 
-#exit
 
 if [ $bind -eq 1 ];	then
 	echo "RemoteEnum will bind to port $port via netcat"
@@ -139,7 +150,7 @@ fi
 
 if [ $connect -eq 1 ];	then
 	echo "RemoteEnum will connect to IP $ip and port $port via netcat"
-	echo "a shell must be waiting there..."
+	echo "a 'bash' shell must be waiting there..."
 	echo
 	comm="netcat $ip $port < $scanner_file > $page"
 	echo "The command is:"
@@ -147,7 +158,7 @@ if [ $connect -eq 1 ];	then
 fi
 
 if [ $self -eq 1 ];	then
-	echo "RemoteEnum will run a scanner with /bin/bash"
+	echo "RemoteEnum will run a local scanner with /bin/bash"
 	comm="bash $scanner_file > $page "
 fi
 
@@ -155,7 +166,7 @@ echo
 echo
 
 
-eval "$comm &"
+eval " $comm &"
 nc_pid=$!
 
 #echo "Nc = $nc_pid"
@@ -163,14 +174,18 @@ nc_pid=$!
 
 while [ "`cat $page | tail -1`" != "</scan>" ]; do
 	sleep 1
+	test $? -gt 128 && abort $nc_pid $page
+
 done
 echo "---------------------		Done!!!		---------------------"
 echo
 echo
 
 rm $temp_scanner
+
 ################################################	XML FORMATTING
 
+#	Isolate XML in output using python split()
 DEL="<?xml"
 python -c 'import sys; text = open(sys.argv[2],"r").read(); \
  delim = sys.argv[1]; \
@@ -178,17 +193,19 @@ python -c 'import sys; text = open(sys.argv[2],"r").read(); \
  file(sys.argv[2],"w").write(delim+" "+text)'  $DEL $page
 
 
-if [ "`cat $page|tail`" = "" ]; then
+if [ "$(cat $page)" = "" ]; then
 	echo "Scanfile empty. Exiting..."
+
 elif [ $quiet -eq 0 ]; then
 	echo
 #	rm scan_files/*.xml.html 2>/dev/null
 	echo "Creating HTML Document..."
 	xsltproc template.xsl $page -o $page.html 2>/dev/null
-#	ln $page.html /var/www/html/$page.html
+#	ln -f "/var/www/html/$page.html" "$page.html"
 #	service apache2 start
 
-	firefox `pwd`/$page.html 2>/dev/null 1>/dev/null &
+	firefox $(pwd)/$page.html 2>/dev/null 1>/dev/null &
+#	firefox localhost/$page.html 2>/dev/null 1>/dev/null &
 
 elif [ $quiet -eq 1 ]; then
 	echo "The HTML is located at $(pwd)/$page.html"

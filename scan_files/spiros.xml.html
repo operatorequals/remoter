@@ -1,8 +1,8 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
 <body bgcolor="#E61616">
-<h2>Scan of "<u>Linux kali 4.0.0-kali1-amd64 #1 SMP Debian 4.0.4-1+kali2 (2015-06-03) x86_64 GNU/Linux</u>"</h2>Mon Nov 23 01:22:52 EET 2015<p>Scanned as User: <i><b>root</b></i></p>
-<br><br><a href="#Kernel,%20Operating%20System%20and%20Device%20Information">Kernel, Operating System and Device Information</a><br><a href="#Users%20and%20Groups">Users and Groups</a><br><a href="#User%20and%20Privilege%20Information">User and Privilege Information</a><br><a href="#Environmental%20Information">Environmental Information</a><br><a href="#Interesting%20Files">Interesting Files</a><br><a href="#Service%20Information">Service Information</a><br><a href="#Jobs/Tasks">Jobs/Tasks</a><br><a href="#Networking,%20Routing%20and%20Communications">Networking, Routing and Communications</a><br><a name="Kernel,%20Operating%20System%20and%20Device%20Information"></a><h4>Kernel, Operating System and Device Information</h4>
+<h2>Scan of "<u>Linux kali 4.0.0-kali1-amd64 #1 SMP Debian 4.0.4-1+kali2 (2015-06-03) x86_64 GNU/Linux</u>"</h2>Wed Feb 3 18:04:11 EET 2016<p>Scanned as User: <i><b>root</b></i></p>
+<br><br><a href="#Kernel,%20Operating%20System%20and%20Device%20Information">Kernel, Operating System and Device Information</a><br><a href="#Users%20and%20Groups">Users and Groups</a><br><a href="#User%20and%20Privilege%20Information">User and Privilege Information</a><br><a href="#Environmental%20Information">Environmental Information</a><br><a href="#Interesting%20Files">Interesting Files</a><br><a href="#Service%20Information">Service Information</a><br><a href="#Jobs/Tasks">Jobs/Tasks</a><br><a href="#Networking,%20Routing%20and%20Communications">Networking, Routing and Communications</a><br><a href="#Programs%20Installed">Programs Installed</a><br><a href="#Buffer%20Overflow">Buffer Overflow</a><br><a name="Kernel,%20Operating%20System%20and%20Device%20Information"></a><h4>Kernel, Operating System and Device Information</h4>
 <table border="1" style="width:100%">
 <tr bgcolor="#FF3333">
 <th>Command</th>
@@ -126,14 +126,14 @@ File system Information
 Filesystem     1K-blocks     Used Available Use% Mounted on
 sysfs                  0        0         0    - /sys
 proc                   0        0         0    - /proc
-udev               10240        4     10236   1% /dev
+udev               10240        0     10240   0% /dev
 devpts                 0        0         0    - /dev/pts
-tmpfs             769048     9316    759732   2% /run
-/dev/sda2       20938620 12717444   7134508  65% /
+tmpfs            1611944     9356   1602588   1% /run
+/dev/sda9      115571164 14464940  95212492  14% /
 securityfs             0        0         0    - /sys/kernel/security
-tmpfs            1922616      212   1922404   1% /dev/shm
+tmpfs            4029856      256   4029600   1% /dev/shm
 tmpfs               5120        0      5120   0% /run/lock
-tmpfs            1922616        0   1922616   0% /sys/fs/cgroup
+tmpfs            4029856        0   4029856   0% /sys/fs/cgroup
 cgroup                 0        0         0    - /sys/fs/cgroup/systemd
 pstore                 0        0         0    - /sys/fs/pstore
 cgroup                 0        0         0    - /sys/fs/cgroup/cpuset
@@ -143,16 +143,15 @@ cgroup                 0        0         0    - /sys/fs/cgroup/devices
 cgroup                 0        0         0    - /sys/fs/cgroup/freezer
 cgroup                 0        0         0    - /sys/fs/cgroup/net_cls,net_prio
 cgroup                 0        0         0    - /sys/fs/cgroup/perf_event
-tmpfs             769048     9316    759732   2% /etc/machine-id
+tmpfs            1611944     9356   1602588   1% /etc/machine-id
 systemd-1              -        -         -    - /proc/sys/fs/binfmt_misc
-mqueue                 0        0         0    - /dev/mqueue
-fusectl                0        0         0    - /sys/fs/fuse/connections
 hugetlbfs              0        0         0    - /dev/hugepages
 debugfs                0        0         0    - /sys/kernel/debug
-/dev/sda4       10790832  3632848   6586800  36% /media/root/shared_storage
+mqueue                 0        0         0    - /dev/mqueue
+fusectl                0        0         0    - /sys/fs/fuse/connections
 binfmt_misc            0        0         0    - /proc/sys/fs/binfmt_misc
-tmpfs             384524        8    384516   1% /run/user/132
-tmpfs             384524       24    384500   1% /run/user/0
+tmpfs             805972        8    805964   1% /run/user/132
+tmpfs             805972       24    805948   1% /run/user/0
 gvfsd-fuse             0        0         0    - /run/user/0/gvfs
 
 </pre></td>
@@ -227,7 +226,7 @@ saned:x:129:139::/var/lib/saned:/bin/false
 usbmux:x:130:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
 beef-xss:x:131:140::/var/lib/beef-xss:/bin/false
 Debian-gdm:x:132:142:Gnome Display Manager:/var/lib/gdm3:/bin/false
-fileman:x:1000:1001::/home/fileman:/bin/sh
+spbaz:x:1000:1001::/home/spbaz:/bin/sh
 
 </pre></td>
 </tr>
@@ -324,14 +323,14 @@ saned:x:139:
 beef-xss:x:140:
 lpadmin:x:141:
 Debian-gdm:x:142:
-fileman:x:1001:
+spbaz:x:1001:
 
 </pre></td>
 </tr>
 <tr bgcolor="#f8fff8">
 <td style="width:25% text-align:left">
 
-for i in root daemon bin sys sync games man lp mail news uucp proxy www-data backup list irc gnats nobody systemd-timesync systemd-network systemd-resolve systemd-bus-proxy mysql messagebus avahi miredo ntp stunnel4 uuidd Debian-exim statd arpwatch colord dnsmasq dradis geoclue pulse speech-dispatcher sshd snmp postgres iodine redis redsocks rwhod sslh rtkit saned usbmux beef-xss Debian-gdm fileman;do id $i; done 2&gt;/dev/null
+for i in root daemon bin sys sync games man lp mail news uucp proxy www-data backup list irc gnats nobody systemd-timesync systemd-network systemd-resolve systemd-bus-proxy mysql messagebus avahi miredo ntp stunnel4 uuidd Debian-exim statd arpwatch colord dnsmasq dradis geoclue pulse speech-dispatcher sshd snmp postgres iodine redis redsocks rwhod sslh rtkit saned usbmux beef-xss Debian-gdm spbaz;do id $i; done 2&gt;/dev/null
 
 </td>
 <td style="width:15% text-align:right">
@@ -390,7 +389,7 @@ uid=129(saned) gid=139(saned) groups=139(saned),113(scanner)
 uid=130(usbmux) gid=46(plugdev) groups=46(plugdev)
 uid=131(beef-xss) gid=140(beef-xss) groups=140(beef-xss)
 uid=132(Debian-gdm) gid=142(Debian-gdm) groups=142(Debian-gdm)
-uid=1000(fileman) gid=1001(fileman) groups=1001(fileman)
+uid=1000(spbaz) gid=1001(spbaz) groups=1001(spbaz)
 
 </pre></td>
 </tr>
@@ -405,7 +404,7 @@ Show user hashes - Privileged command
 </td>
 <td style="width:60% text-align:right"><pre>
 
-root:$6$WjOwfn7w$nys37I7EUOWd7RAGjyIzw7OWAY3W8ls2ESAM8XP3zOd72JFZAt/3iFOAYz78uam5E1WvyfWiDo8HneP2F/TCX.:16669:0:99999:7:::
+root:$6$zPQYLSmR$aaCrpQ1aXCwZA7PhnZXgyVoAXZUY/VPaF0NjiubnirYsZMsa1OnrB5MYptBja/QBhWw.spFUBSe.BQbz956uM/:16773:0:99999:7:::
 daemon:*:16658:0:99999:7:::
 bin:*:16658:0:99999:7:::
 sys:*:16658:0:99999:7:::
@@ -456,7 +455,7 @@ saned:*:16658:0:99999:7:::
 usbmux:*:16658:0:99999:7:::
 beef-xss:*:16658:0:99999:7:::
 Debian-gdm:*:16658:0:99999:7:::
-fileman:!:16757:0:99999:7:::
+spbaz:$6$MautjEp8$Dd.1THrriQNidBxRfxkWF99WmJVqNIlKJjoHTt7sd7XEhniDo0oh8QUaWaF7R5IQ22JS1x7qi5MJLFsRGqufn0:16778:0:99999:7:::
 
 </pre></td>
 </tr>
@@ -486,10 +485,12 @@ Users currently logged in
 </td>
 <td style="width:60% text-align:right"><pre>
 
-           system boot  2015-11-22 22:19
-root     ? :0           2015-11-22 22:22   ?           870 (:0)
-           run-level 5  2015-11-22 22:19
-LOGIN      tty1         2015-11-22 22:19               703 id=tty1
+           system boot  2016-02-03 19:05
+LOGIN      tty1         2016-02-03 17:06               792 id=tty1
+           run-level 5  2016-02-03 17:06
+root     ? :0           2016-02-03 17:06   ?           970 (:0)
+root     + pts/0        2016-02-03 18:01  old         2022 (:0)
+           pts/1        2016-02-03 17:35                 0 id=/1    term=0 exit=0
 
 </pre></td>
 </tr>
@@ -504,9 +505,10 @@ Who is currently logged in and what they are doing
 </td>
 <td style="width:60% text-align:right"><pre>
 
- 01:22:52 up  3:03,  1 user,  load average: 0.29, 0.23, 0.21
+ 18:04:11 up 58 min,  2 users,  load average: 0.02, 0.05, 0.10
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-root     :0       :0               22:22   ?xdm?  15:42   0.05s gdm-session-worker [pam/gdm-password]
+root     :0       :0               17:06   ?xdm?   1:11   0.03s gdm-session-worker [pam/gdm-password]
+root     pts/0    :0               18:01    1.00s  0.06s  0.00s bash
 
 </pre></td>
 </tr>
@@ -522,7 +524,7 @@ Information on when all users last logged in
 <td style="width:60% text-align:right"><pre>
 
 Username         Port     From             Latest
-root             tty1                      Thu Oct 15 00:12:01 +0300 2015
+root                                       **Never logged in**
 daemon                                     **Never logged in**
 bin                                        **Never logged in**
 sys                                        **Never logged in**
@@ -573,7 +575,7 @@ saned                                      **Never logged in**
 usbmux                                     **Never logged in**
 beef-xss                                   **Never logged in**
 Debian-gdm                                 **Never logged in**
-fileman                                    **Never logged in**
+spbaz                                      **Never logged in**
 
 </pre></td>
 </tr>
@@ -589,7 +591,7 @@ Information on when the specified user last logged in
 <td style="width:60% text-align:right"><pre>
 
 Username         Port     From             Latest
-root             tty1                      Thu Oct 15 00:12:01 +0300 2015
+root                                       **Never logged in**
 
 </pre></td>
 </tr>
@@ -605,7 +607,6 @@ Entire list of previously logged on users
 <td style="width:60% text-align:right"><pre>
 
 Username         Port     From             Latest
-root             tty1                      Thu Oct 15 00:12:01 +0300 2015
 
 </pre></td>
 </tr>
@@ -727,39 +728,39 @@ Display environmental variables
 <td style="width:60% text-align:right"><pre>
 
 XDG_VTNR=7
-SSH_AGENT_PID=949
 XDG_SESSION_ID=1
-GIO_LAUNCHED_DESKTOP_FILE_PID=1638
+SSH_AGENT_PID=1042
 GPG_AGENT_INFO=/run/user/0/keyring/gpg:0:1
-TERM=xterm
-SHELL=/bin/bash
+VTE_VERSION=3801
 XDG_MENU_PREFIX=gnome-
+SHELL=/bin/bash
+TERM=xterm
 GJS_DEBUG_OUTPUT=stderr
+WINDOWID=29360139
 GJS_DEBUG_TOPICS=JS ERROR;JS LOG
 USER=root
 SSH_AUTH_SOCK=/run/user/0/keyring/ssh
-SESSION_MANAGER=local/kali:@/tmp/.ICE-unix/882,unix/kali:/tmp/.ICE-unix/882
 USERNAME=root
-GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/guake.desktop
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SESSION_MANAGER=local/kali:@/tmp/.ICE-unix/982,unix/kali:/tmp/.ICE-unix/982
 DESKTOP_SESSION=default
-PWD=/root/scripts/info_gather/sys/remoter
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/root
 LANG=en_US.UTF-8
 GDM_LANG=en_US.UTF-8
 GDMSESSION=default
-SHLVL=3
-XDG_SEAT=seat0
 HOME=/root
+XDG_SEAT=seat0
+SHLVL=2
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-XDG_SESSION_DESKTOP=default
 LOGNAME=root
+XDG_SESSION_DESKTOP=default
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-C7YaEe2vSg,guid=f0405f6465d58a9d1b44a48256b2177d
 XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-VD20FuyJgB,guid=f53ab93fa8e6d6934bba7f1056522404
 WINDOWPATH=7
-XDG_RUNTIME_DIR=/run/user/0
 DISPLAY=:0
+XDG_RUNTIME_DIR=/run/user/0
 XDG_CURRENT_DESKTOP=GNOME
-XAUTHORITY=/var/run/gdm3/auth-for-root-VNguXu/database
+XAUTHORITY=/var/run/gdm3/auth-for-root-j0cMZa/database
 _=/usr/bin/env
 
 </pre></td>
@@ -790,7 +791,7 @@ Print working directory, i.e. 'where am I'
 </td>
 <td style="width:60% text-align:right"><pre>
 
-/root/scripts/info_gather/sys/remoter
+/root
 
 </pre></td>
 </tr>
@@ -885,30 +886,30 @@ Find SUID files
 </td>
 <td style="width:60% text-align:right"><pre>
 
-/bin/su
-/bin/umount
-/bin/ntfs-3g
-/bin/mount
-/bin/fusermount
 /sbin/mount.nfs
+/usr/sbin/exim4
+/usr/sbin/pppd
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/eject/dmcrypt-get-device
 /usr/lib/policykit-1/polkit-agent-helper-1
 /usr/lib/pt_chown
-/usr/lib/eject/dmcrypt-get-device
-/usr/lib/dbus-1.0/dbus-daemon-launch-helper
 /usr/lib/openssh/ssh-keysign
-/usr/bin/sudo
 /usr/bin/X
+/usr/bin/chfn
 /usr/bin/passwd
 /usr/bin/gpasswd
-/usr/bin/at
-/usr/bin/newgrp
-/usr/bin/procmail
-/usr/bin/chfn
 /usr/bin/chsh
 /usr/bin/kismet_capture
 /usr/bin/pkexec
-/usr/sbin/pppd
-/usr/sbin/exim4
+/usr/bin/procmail
+/usr/bin/newgrp
+/usr/bin/at
+/usr/bin/sudo
+/bin/ntfs-3g
+/bin/fusermount
+/bin/mount
+/bin/umount
+/bin/su
 
 </pre></td>
 </tr>
@@ -923,29 +924,29 @@ Find SUID files owned by root
 </td>
 <td style="width:60% text-align:right"><pre>
 
-/bin/su
-/bin/umount
-/bin/ntfs-3g
-/bin/mount
-/bin/fusermount
 /sbin/mount.nfs
+/usr/sbin/exim4
+/usr/sbin/pppd
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/eject/dmcrypt-get-device
 /usr/lib/policykit-1/polkit-agent-helper-1
 /usr/lib/pt_chown
-/usr/lib/eject/dmcrypt-get-device
-/usr/lib/dbus-1.0/dbus-daemon-launch-helper
 /usr/lib/openssh/ssh-keysign
-/usr/bin/sudo
 /usr/bin/X
+/usr/bin/chfn
 /usr/bin/passwd
 /usr/bin/gpasswd
-/usr/bin/newgrp
-/usr/bin/procmail
-/usr/bin/chfn
 /usr/bin/chsh
 /usr/bin/kismet_capture
 /usr/bin/pkexec
-/usr/sbin/pppd
-/usr/sbin/exim4
+/usr/bin/procmail
+/usr/bin/newgrp
+/usr/bin/sudo
+/bin/ntfs-3g
+/bin/fusermount
+/bin/mount
+/bin/umount
+/bin/su
 
 </pre></td>
 </tr>
@@ -961,27 +962,26 @@ Find GUID files
 <td style="width:60% text-align:right"><pre>
 
 /sbin/unix_chkpwd
-/usr/lib/libvte-2.90-9/gnome-pty-helper
 /usr/lib/libvte9/gnome-pty-helper
-/usr/lib/utempter/utempter
-/usr/lib/mc/cons.saver
 /usr/lib/libvte-2.91-0/gnome-pty-helper
+/usr/lib/utempter/utempter
 /usr/lib/evolution/camel-lock-helper-1.2
-/usr/bin/bsd-write
-/usr/bin/X
-/usr/bin/wall
-/usr/bin/mlocate
-/usr/bin/lockfile
-/usr/bin/at
-/usr/bin/slock
-/usr/bin/crontab
-/usr/bin/procmail
-/usr/bin/chage
+/usr/lib/mc/cons.saver
 /usr/bin/mutt_dotlock
-/usr/bin/ssh-agent
-/usr/bin/dotlockfile
-/usr/bin/screen
+/usr/bin/X
+/usr/bin/chage
 /usr/bin/expiry
+/usr/bin/bsd-write
+/usr/bin/wall
+/usr/bin/lockfile
+/usr/bin/slock
+/usr/bin/mlocate
+/usr/bin/procmail
+/usr/bin/screen
+/usr/bin/dotlockfile
+/usr/bin/at
+/usr/bin/ssh-agent
+/usr/bin/crontab
 
 </pre></td>
 </tr>
@@ -1011,23 +1011,22 @@ Find word-writeable directories
 </td>
 <td style="width:60% text-align:right"><pre>
 
+/tmp
+/tmp/systemd-private-8479d315b12e4f14804a09ac4096dcf4-colord.service-TbvIHd/tmp
+/tmp/.Test-unix
+/tmp/.font-unix
+/tmp/systemd-private-8479d315b12e4f14804a09ac4096dcf4-rtkit-daemon.service-vgdaO5/tmp
+/tmp/.X11-unix
+/tmp/.ICE-unix
+/tmp/.XIM-unix
+/run/lock
+/var/tmp
+/var/tmp/systemd-private-8479d315b12e4f14804a09ac4096dcf4-colord.service-PHyrh8/tmp
+/var/tmp/systemd-private-8479d315b12e4f14804a09ac4096dcf4-rtkit-daemon.service-cJ3Tk3/tmp
+/var/spool/samba
+/var/lib/php5/sessions
 /dev/mqueue
 /dev/shm
-/run/lock
-/var/lib/php5/sessions
-/var/spool/samba
-/var/tmp
-/var/tmp/systemd-private-53ade845aea947cb90a0f2d1155efcc0-colord.service-NwavyT/tmp
-/var/tmp/systemd-private-53ade845aea947cb90a0f2d1155efcc0-rtkit-daemon.service-dMXJFi/tmp
-/root/Desktop/tar_lover
-/tmp
-/tmp/.X11-unix
-/tmp/.font-unix
-/tmp/systemd-private-53ade845aea947cb90a0f2d1155efcc0-rtkit-daemon.service-K6a76A/tmp
-/tmp/systemd-private-53ade845aea947cb90a0f2d1155efcc0-colord.service-h7I2cc/tmp
-/tmp/.XIM-unix
-/tmp/.Test-unix
-/tmp/.ICE-unix
 
 </pre></td>
 </tr>
@@ -1087,16 +1086,14 @@ Show the current users' various history files
 </td>
 <td style="width:60% text-align:right"><pre>
 
--rw------- 1 root root 73392 Nov 23 00:15 /root/.bash_history
--rw------- 1 root root    38 Sep 28 21:42 /root/.php_history
--rw------- 1 root root    14 Nov 22 16:42 /root/.sqlite_history
+-rw------- 1 root root 8163 Feb  3 18:02 /root/.bash_history
 
 </pre></td>
 </tr>
 <tr bgcolor="#f8fff8">
 <td style="width:25% text-align:left">
 
-ls -la /root/.bash_history /root/.php_history /root/.sqlite_history
+ls -la /root/.bash_history
 
 </td>
 <td style="width:15% text-align:right">
@@ -1104,9 +1101,7 @@ Can we read root's history files
 </td>
 <td style="width:60% text-align:right"><pre>
 
--rw------- 1 root root 73392 Nov 23 00:15 /root/.bash_history
--rw------- 1 root root    38 Sep 28 21:42 /root/.php_history
--rw------- 1 root root    14 Nov 22 16:42 /root/.sqlite_history
+-rw------- 1 root root 8163 Feb  3 18:02 /root/.bash_history
 
 </pre></td>
 </tr>
@@ -1121,11 +1116,10 @@ Check for interesting ssh files in the current users’ directory
 </td>
 <td style="width:60% text-align:right"><pre>
 
-total 16
-drwx------  2 root root 4096 Oct 22 14:33 .
-drwxr-xr-x 46 root root 4096 Nov 22 22:22 ..
--rw-------  1 root root 3104 Nov 22 15:29 known_hosts
--rw-r--r--  1 root root 1994 Oct 21 01:56 known_hosts.old
+total 12
+drwx------  2 root root 4096 Dec  9 13:33 .
+drwxr-xr-x 18 root root 4096 Feb  3 17:23 ..
+-rw-r--r--  1 root root  222 Dec  9 13:33 known_hosts
 
 </pre></td>
 </tr>
@@ -1140,8 +1134,7 @@ Find SSH keys/host information
 </td>
 <td style="width:60% text-align:right"><pre>
 
--rw-r--r-- 1 root root  222 Oct 20 01:57 /root/Downloads/pentestit/PentestIt/findings/3121_dirb/known_hosts
--rw------- 1 root root 3104 Nov 22 15:29 /root/.ssh/known_hosts
+-rw-r--r-- 1 root root 222 Dec  9 13:33 /root/.ssh/known_hosts
 
 </pre></td>
 </tr>
@@ -1156,7 +1149,7 @@ Check Configuration of inetd services
 </td>
 <td style="width:60% text-align:right"><pre>
 
-lrwxrwxrwx 1 root root 6 Aug 22 17:00 /usr/sbin/in.tftpd -&gt; atftpd
+lrwxrwxrwx 1 root root 6 Dec  4 18:33 /usr/sbin/in.tftpd -&gt; atftpd
 
 </pre></td>
 </tr>
@@ -1187,41 +1180,30 @@ List .log files in specified directory (/var/log)
 </td>
 <td style="width:60% text-align:right"><pre>
 
--rw-r----- 1 root adm 166014 Nov 23 00:54 /var/log/kern.log
--rw------- 1 root root 33442 Aug 22 17:23 /var/log/installer/Xorg.0.log
--rw-r----- 1 postgres adm 0 Oct 27 14:33 /var/log/postgresql/postgresql-9.4-main.log
 -rw-r--r-- 1 root root 0 Aug 11 10:52 /var/log/wvdialconf.log
--rw-r--r-- 1 stunnel4 stunnel4 0 Aug 11 10:52 /var/log/stunnel4/stunnel.log
--rw-r----- 1 mysql adm 0 Nov 22 12:01 /var/log/mysql.log
--rw-r----- 1 root adm 14610 Nov 14 12:30 /var/log/apt/term.log
--rw-r--r-- 1 root root 2793 Nov 14 12:30 /var/log/apt/history.log
--rw-r--r-- 1 root root 252 Nov 22 22:19 /var/log/macchanger.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/blackberry-error.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/blackberry-access.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/apple-access.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/google-access.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/facebook-access.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/apple-error.log
--rw-r----- 1 root adm 0 Nov 15 12:57 /var/log/apache2/access.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/windows-access.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/secureredirect-error.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/google-error.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/windows-error.log
--rw-r----- 1 root adm 461 Nov 22 19:38 /var/log/apache2/error.log
--rw-r--r-- 1 root root 0 Sep 28 21:42 /var/log/apache2/facebook-error.log
--rw-r----- 1 root adm 0 Aug 11 10:52 /var/log/apache2/other_vhosts_access.log
--rw-r----- 1 root adm 790044 Nov 23 01:22 /var/log/user.log
--rw-r----- 1 root adm 14075 Nov 23 01:22 /var/log/auth.log
--rw-r--r-- 1 root root 43936 Nov 14 12:30 /var/log/dpkg.log
--rw-r----- 1 root adm 77164 Nov 23 01:06 /var/log/daemon.log
--rw-r----- 1 mysql adm 0 Nov 22 12:01 /var/log/mysql/error.log
+-rw-r----- 1 root adm 278203 Feb  3 17:08 /var/log/kern.log
+-rw-r--r-- 1 root root 1648 Dec  4 18:44 /var/log/apt/history.log
+-rw-r----- 1 root adm 8310 Dec  4 18:44 /var/log/apt/term.log
 -rw-r--r-- 1 root root 0 Aug 11 10:52 /var/log/bootstrap.log
--rw-r----- 1 root adm 936 Nov 22 22:19 /var/log/openvas/openvasmd.log
--rw-r----- 1 root adm 150 Nov 22 19:38 /var/log/openvas/gsad.log
+-rw-r--r-- 1 root root 33084 Feb  3 17:06 /var/log/Xorg.0.log
+-rw-r--r-- 1 stunnel4 stunnel4 0 Aug 11 10:52 /var/log/stunnel4/stunnel.log
+-rw-r--r-- 1 root root 0 Aug 11 10:52 /var/log/alternatives.log
+-rw------- 1 root root 22761 Dec  4 18:44 /var/log/installer/Xorg.0.log
+-rw-r----- 1 root adm 0 Aug 11 10:52 /var/log/apache2/error.log
+-rw-r----- 1 root adm 0 Aug 11 10:52 /var/log/apache2/access.log
+-rw-r----- 1 root adm 0 Aug 11 10:52 /var/log/apache2/other_vhosts_access.log
+-rw-r--r-- 1 root root 396 Feb  3 17:06 /var/log/macchanger.log
+-rw-r----- 1 root adm 86512 Feb  3 17:58 /var/log/daemon.log
+-rw-r----- 1 root adm 672 Feb  3 17:06 /var/log/openvas/gsad.log
+-rw-r----- 1 root adm 1470 Feb  3 17:06 /var/log/openvas/openvasmd.log
+-rw-r----- 1 postgres adm 0 Aug 11 10:52 /var/log/postgresql/postgresql-9.4-main.log
+-rw-r--r-- 1 root root 13864 Dec  4 18:44 /var/log/dpkg.log
 -rw-r--r-- 1 root root 0 Aug 11 10:52 /var/log/fontconfig.log
--rw-r--r-- 1 root root 2978 Nov 15 23:51 /var/log/alternatives.log
--rw-r--r-- 1 root root 20815 Nov 22 22:19 /var/log/Xorg.0.log
--rw-r--r-- 1 redis redis 6035 Nov 22 22:35 /var/log/redis/redis-server.log
+-rw-r----- 1 root adm 532948 Feb  3 17:46 /var/log/user.log
+-rw-r----- 1 mysql adm 0 Dec 16 11:41 /var/log/mysql/error.log
+-rw-r----- 1 mysql adm 0 Dec 16 11:41 /var/log/mysql.log
+-rw-r----- 1 root adm 11947 Feb  3 18:04 /var/log/auth.log
+-rw-r--r-- 1 redis redis 7491 Feb  3 17:06 /var/log/redis/redis-server.log
 
 </pre></td>
 </tr>
@@ -1236,73 +1218,30 @@ Find .conf files (recursive 4 levels) and output line number where the word 'pas
 </td>
 <td style="width:60% text-align:right"><pre>
 
-/usr/lib/tmpfiles.d/systemd.conf:13:d /run/systemd/ask-password 0755 root root -
-/usr/lib/realmd/realmd-defaults.conf:41:example-password = bureaucracy
-/usr/share/samba/smb.conf:93:# If you are using encrypted passwords, Samba will need to know what
-/usr/share/samba/smb.conf:94:# password database type you are using.  
-/usr/share/samba/smb.conf:100:# password with the SMB password when the encrypted SMB password in the
-/usr/share/samba/smb.conf:102:   unix password sync = yes
-/usr/share/samba/smb.conf:104:# For Unix password sync to work on a Debian GNU/Linux system, the following
-/usr/share/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
-/usr/share/samba/smb.conf:110:# This boolean controls whether PAM will be used for password changes
-/usr/share/samba/smb.conf:113:   pam password change = yes
-/usr/share/samba/smb.conf:150:# password; please adapt to your needs
-/usr/share/samba/smb.conf:151:; add user script = /usr/sbin/adduser --quiet --disabled-password --gecos "" %u
-/usr/share/john/dumb32.conf:23:int maxlength;            // Maximum password length to try
-/usr/share/john/dumb16.conf:18:int maxlength;            // Maximum password length to try
-/usr/share/john/dynamic.conf:108:# SSE (or MMX) is limtited to 54 byte max password, due to 'enhancements'
-/usr/share/john/dynamic.conf:113:# here is the optimized 'script' to perform hash 'like' IPB but salt replaced with password.
-/usr/share/john/dynamic.conf:297:# select id, name, emailid, password from administrator;
-/usr/share/john/dynamic.conf:447:Test=$dynamic_1015$1c4e11fb51835c3bbe9851ec91ec1375$HEX$c31803a2:password:postgres
-/usr/share/john/dynamic.conf:596:Test=$dynamic_1023$5baa61e4c9b93f3f0682250b6cf8331b:password
-/usr/share/john/dynamic.conf:724:Test=$dynamic_1032$6Pl/upEE0epQR5SObftn+s2fW3M=:password
-/usr/share/john/dynamic.conf:744:Test=$dynamic_1033$D7C1gHanUq1xE96HpEQitzAhNB8$FyKXs6zU:password
-/usr/share/john/dynamic.conf:745:Test=$dynamic_1033$sh+Q50Cp4vERzDkJcaaKIv8zubM=$M1RxMCTZ:password2
-/usr/share/john/dynamic.conf:806:#Test=$dynamic_1500$e8f97fba9104d1ea5047948e6dfb67fa:password
-/usr/share/john/dynamic.conf:807:Test=$dynamic_1400$e8f97fba9104d1ea5047948e6dfb67facd9f5b73:password
-/usr/share/john/dynamic.conf:829:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000:password:username
-/usr/share/john/dynamic.conf:830:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000$$Uusername:password
-/usr/share/john/dynamic.conf:832:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000$HEX$2455757365726e616d65:password
-/usr/share/john/dynamic.conf:834:# In Redmine, the hashed password is stored in the following form,
-/usr/share/john/dynamic.conf:835:# SHA1(salt + SHA1(password))
-/usr/share/john/dynamic.conf:858:# In XenForo, the hashed password is stored in the following form(s),
-/usr/share/john/dynamic.conf:859:# sha1(sha1(password).salt)
-/usr/share/john/dynamic.conf:863:# sha256(sha256(password).salt)
-/usr/share/john/dynamic.conf:878:Test=$dynamic_1502$fd74fa6521e515921ad843a8465e34b703960db1$dummysalt:password
-/usr/share/john/dynamic.conf:893:Test=$dynamic_1503$453f2e21fa6c150670d3ecf0e4a0ff3bab8b1903c2e96ad655d960b95f104248$697de9eda4a02563a7ec66d42d4a96995cb2948e29ab76fbcc89e8db71dd10f1:password
-/usr/share/john/dynamic.conf:894:Test=$dynamic_1503$a8a0e9545c1475e8546f8546d87fe2516cf525c12ad79a6a7a8fee2fb0d8afd3$697de9eda4a02563a7ec66d42d4a96995cb2948e29ab76fbcc89e8db71dd10f1:verlongcrappypassword01234567890
-/usr/share/john/dynamic.conf:916:# to make flat (allows much longer passwords and salts)
-/usr/share/john/dynamic.conf:933:# https://www.trustwave.com/Resources/SpiderLabs-Blog/Changes-in-Oracle-Database-12c-password-hashes/
-/usr/share/john/dynamic.conf:948:# Hash is password variable from ./lib/password.properties
-/usr/share/john/dynamic.conf:966:# 'intermixed' SSE for speed, BUT which can not process longer passwords, due to being
-/usr/share/john/dynamic.conf:970:# take full length passwords (110 bytes).
-/usr/share/john/dynamic_flat_sse_formats.conf:1:# NOTE, same format as dynamic_0  It is slower (50% slower, or more).  But it is not limited to 55 byte passwords.
-/usr/share/john/dynamic_flat_sse_formats.conf:2:# this should work for passwords up to 110 bytes long (max length dynamic will currently allow). It should not be
-/usr/share/john/dynamic_flat_sse_formats.conf:3:# used for shorter passwords (under 55 bytes).  Use dyna_0 for those.
-/usr/share/oscanner/default.conf:5:   &lt;string&gt;commonpasswordfile&lt;/string&gt; 
-/usr/share/golismero/golismero.conf:98:# password = my s3cr3t p4ssw0rd
-/usr/share/debconf/debconf.conf:8:Reject-Type: password
-/usr/share/debconf/debconf.conf:11:Name: passwords
-/usr/share/debconf/debconf.conf:16:Accept-Type: password
-/usr/share/debconf/debconf.conf:17:Filename: /var/cache/debconf/passwords.dat
-/usr/share/debconf/debconf.conf:21:Stack: config, passwords
-/usr/share/uniscan/uniscan.conf:48:# password to basic auth
-/etc/snmp/snmpd.conf:27:#     and the passwords changed, before being uncommented in that file *only*.
-/etc/snmp/snmpd.conf:30:#  createUser authOnlyUser  MD5 "remember to change this password"
-/etc/snmp/snmpd.conf:32:#  createUser internalUser  MD5 "this is only ever used internally, but still change the password"
-/etc/samba/smb.conf:93:# If you are using encrypted passwords, Samba will need to know what
-/etc/samba/smb.conf:94:# password database type you are using.  
-/etc/samba/smb.conf:100:# password with the SMB password when the encrypted SMB password in the
-/etc/samba/smb.conf:102:   unix password sync = yes
-/etc/samba/smb.conf:104:# For Unix password sync to work on a Debian GNU/Linux system, the following
-/etc/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
-/etc/samba/smb.conf:110:# This boolean controls whether PAM will be used for password changes
-/etc/samba/smb.conf:113:   pam password change = yes
-/etc/samba/smb.conf:150:# password; please adapt to your needs
-/etc/samba/smb.conf:151:; add user script = /usr/sbin/adduser --quiet --disabled-password --gecos "" %u
-/etc/vpnc/default.conf:6:#Xauth password &lt;password&gt;
+/etc/iscsi/iscsid.conf:55:# To set a CHAP username and password for initiator
+/etc/iscsi/iscsid.conf:58:#node.session.auth.password = password
+/etc/iscsi/iscsid.conf:60:# To set a CHAP username and password for target(s)
+/etc/iscsi/iscsid.conf:63:#node.session.auth.password_in = password_in
+/etc/iscsi/iscsid.conf:69:# To set a discovery session CHAP username and password for the initiator
+/etc/iscsi/iscsid.conf:72:#discovery.sendtargets.auth.password = password
+/etc/iscsi/iscsid.conf:74:# To set a discovery session CHAP username and password for target(s)
+/etc/iscsi/iscsid.conf:77:#discovery.sendtargets.auth.password_in = password_in
+/etc/netsniff-ng/udp.conf:477:586, password-chg
+/etc/reportbug.conf:71:# Username and password for SMTP
+/etc/unicornscan/modules.conf:3:	dbconf:		"user=scan password=scanit! host=localhost dbname=scan";
+/etc/unicornscan/modules.conf:9:	password:	"scanit!";
 /etc/nipper.conf:116:# Dictionary to use with password strength testing. If no
 /etc/nipper.conf:119:# one password per line.
+/etc/debconf.conf:14:# World-readable, and accepts everything but passwords.
+/etc/debconf.conf:18:Reject-Type: password
+/etc/debconf.conf:21:# Not world readable (the default), and accepts only passwords.
+/etc/debconf.conf:22:Name: passwords
+/etc/debconf.conf:27:Accept-Type: password
+/etc/debconf.conf:28:Filename: /var/cache/debconf/passwords.dat
+/etc/debconf.conf:31:# databases, one to hold passwords and one for everything else.
+/etc/debconf.conf:34:Stack: config, passwords
+/etc/debconf.conf:58:# A remote LDAP database. It is also read-only. The password is really
+/etc/nikto.conf:52:#PROXYPASS=proxypassword
 /etc/john/john-mail.conf:13:# weak passwords (but that means sensitive information would be
 /etc/john/john-mail.conf:21:# ***WARNING***: this will be a copy of your password file, that will
 /etc/john/john-mail.conf:24:# that is considered safe for john to put a copy of the password file.
@@ -1364,6 +1303,36 @@ Find .conf files (recursive 4 levels) and output line number where the word 'pas
 /etc/john/john.conf:2955:# Simple password policy matching: require at least one digit.
 /etc/john/john.conf:2969:# The same password policy implemented in a more efficient and more generic
 /etc/john/john.conf:3001:# An efficient and fairly generic password policy matcher.  The policy to match
+/etc/cisco-torch/torch.conf:3:$passfile= "password.txt"; #Password word database
+/etc/apache2/sites-available/default-ssl.conf:78:		#	 Note that no password is obtained from the user. Every entry in the user
+/etc/apache2/sites-available/default-ssl.conf:79:		#	 file needs this password: `xxj31ZMTZzkVA'.
+/etc/vpnc/default.conf:6:#Xauth password &lt;password&gt;
+/etc/openvas/pwpolicy.conf:3:# This is an example for a pattern file used to validate passwords.
+/etc/openvas/pwpolicy.conf:38:# To perform checks on the username/password combination, you should
+/etc/openvas/pwpolicy.conf:43:# Currently this checks whether the password matches or is included in
+/etc/openvas/pwpolicy.conf:44:# the password. It may eventually be extended to further tests.
+/etc/openvas/pwpolicy.conf:50:# Be aware: By default any password is allowed.
+/etc/openvas/pwpolicy.conf:58:## Check that the user name does not match the password.
+/etc/openvas/pwpolicy.conf:83:##+desc: Common test password
+/etc/openvas/pwpolicy.conf:84:#password
+/etc/openvas/pwpolicy.conf:102:#no-password
+/etc/openvas/pwpolicy.conf:103:#no password
+/etc/openvas/pwpolicy.conf:114:## be better to use an offline password auditing tool instead.
+/etc/openvas/gsad_log.conf:4:#          group to include debug may reveal passwords in the logs.
+/etc/openvas/openvasmd_log.conf:4:#          may reveal passwords in the logs.
+/etc/redsocks.conf:55:	// password = "baz";
+/etc/redsocks.conf:69:	password = pazzw0rd;
+/etc/hdparm.conf:86:# --security-set-pass Set security password
+/etc/hdparm.conf:87:# security_pass = password
+/etc/hdparm.conf:90:# --user-master Select password to use
+/etc/cracklib/cracklib.conf:17:#   passwords should not match.  The files may optionally be compressed
+/etc/snmp/snmpd.conf:27:#     and the passwords changed, before being uncommented in that file *only*.
+/etc/snmp/snmpd.conf:30:#  createUser authOnlyUser  MD5 "remember to change this password"
+/etc/snmp/snmpd.conf:32:#  createUser internalUser  MD5 "this is only ever used internally, but still change the password"
+/etc/inetsim/inetsim.conf:612:# to clear text username/password.
+/etc/inetsim/inetsim.conf:810:# to clear text username/password.
+/etc/inetsim/inetsim.conf:974:# to clear text username/password
+/etc/inetsim/inetsim.conf:1176:# to clear text username/password
 /etc/security/pwquality.conf:1:# Configuration for systemwide password quality limits
 /etc/security/pwquality.conf:4:# Number of characters in the new password that must not be present in the
 /etc/security/pwquality.conf:5:# old password.
@@ -1379,72 +1348,85 @@ Find .conf files (recursive 4 levels) and output line number where the word 'pas
 /etc/security/pwquality.conf:33:# password (digits, uppercase, lowercase, others).
 /etc/security/pwquality.conf:36:# The maximum number of allowed consecutive same characters in the new password.
 /etc/security/pwquality.conf:41:# new password.
-/etc/nikto.conf:52:#PROXYPASS=proxypassword
-/etc/netsniff-ng/udp.conf:477:586, password-chg
+/etc/samba/smb.conf:93:# If you are using encrypted passwords, Samba will need to know what
+/etc/samba/smb.conf:94:# password database type you are using.  
+/etc/samba/smb.conf:100:# password with the SMB password when the encrypted SMB password in the
+/etc/samba/smb.conf:102:   unix password sync = yes
+/etc/samba/smb.conf:104:# For Unix password sync to work on a Debian GNU/Linux system, the following
+/etc/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+/etc/samba/smb.conf:110:# This boolean controls whether PAM will be used for password changes
+/etc/samba/smb.conf:113:   pam password change = yes
+/etc/samba/smb.conf:150:# password; please adapt to your needs
+/etc/samba/smb.conf:151:; add user script = /usr/sbin/adduser --quiet --disabled-password --gecos "" %u
 /etc/firebird/2.5/firebird.conf:168:# If you want to disable logons with old passwords
 /etc/firebird/2.5/firebird.conf:790:# this connection one even need not know login/password on external server.
-/etc/apache2/sites-available/default-ssl.conf:78:		#	 Note that no password is obtained from the user. Every entry in the user
-/etc/apache2/sites-available/default-ssl.conf:79:		#	 file needs this password: `xxj31ZMTZzkVA'.
 /etc/sparta.conf:12:store-cleartext-passwords-on-exit=True
 /etc/sparta.conf:14:password-wordlist-path=/usr/share/wordlists/
 /etc/sparta.conf:16:default-password=password
 /etc/sparta.conf:19:no-password-services="oracle-sid,rsh,smtp-enum"
 /etc/sparta.conf:53:polenum=Extract password policy (polenum), polenum [IP], "netbios-ssn,microsoft-ds"
 /etc/sparta.conf:60:smb-enum-policies=Extract password policy (nmap), "nmap -p[PORT] --script=smb-enum-domains [IP] -vvvvv", "netbios-ssn,microsoft-ds"
-/etc/inetsim/inetsim.conf:612:# to clear text username/password.
-/etc/inetsim/inetsim.conf:810:# to clear text username/password.
-/etc/inetsim/inetsim.conf:974:# to clear text username/password
-/etc/inetsim/inetsim.conf:1176:# to clear text username/password
-/etc/hdparm.conf:86:# --security-set-pass Set security password
-/etc/hdparm.conf:87:# security_pass = password
-/etc/hdparm.conf:90:# --user-master Select password to use
-/etc/openvas/pwpolicy.conf:3:# This is an example for a pattern file used to validate passwords.
-/etc/openvas/pwpolicy.conf:38:# To perform checks on the username/password combination, you should
-/etc/openvas/pwpolicy.conf:43:# Currently this checks whether the password matches or is included in
-/etc/openvas/pwpolicy.conf:44:# the password. It may eventually be extended to further tests.
-/etc/openvas/pwpolicy.conf:50:# Be aware: By default any password is allowed.
-/etc/openvas/pwpolicy.conf:58:## Check that the user name does not match the password.
-/etc/openvas/pwpolicy.conf:83:##+desc: Common test password
-/etc/openvas/pwpolicy.conf:84:#password
-/etc/openvas/pwpolicy.conf:102:#no-password
-/etc/openvas/pwpolicy.conf:103:#no password
-/etc/openvas/pwpolicy.conf:114:## be better to use an offline password auditing tool instead.
-/etc/openvas/gsad_log.conf:4:#          group to include debug may reveal passwords in the logs.
-/etc/openvas/openvasmd_log.conf:4:#          may reveal passwords in the logs.
-/etc/iscsi/iscsid.conf:55:# To set a CHAP username and password for initiator
-/etc/iscsi/iscsid.conf:58:#node.session.auth.password = password
-/etc/iscsi/iscsid.conf:60:# To set a CHAP username and password for target(s)
-/etc/iscsi/iscsid.conf:63:#node.session.auth.password_in = password_in
-/etc/iscsi/iscsid.conf:69:# To set a discovery session CHAP username and password for the initiator
-/etc/iscsi/iscsid.conf:72:#discovery.sendtargets.auth.password = password
-/etc/iscsi/iscsid.conf:74:# To set a discovery session CHAP username and password for target(s)
-/etc/iscsi/iscsid.conf:77:#discovery.sendtargets.auth.password_in = password_in
-/etc/reportbug.conf:71:# Username and password for SMTP
-/etc/debconf.conf:14:# World-readable, and accepts everything but passwords.
-/etc/debconf.conf:18:Reject-Type: password
-/etc/debconf.conf:21:# Not world readable (the default), and accepts only passwords.
-/etc/debconf.conf:22:Name: passwords
-/etc/debconf.conf:27:Accept-Type: password
-/etc/debconf.conf:28:Filename: /var/cache/debconf/passwords.dat
-/etc/debconf.conf:31:# databases, one to hold passwords and one for everything else.
-/etc/debconf.conf:34:Stack: config, passwords
-/etc/debconf.conf:58:# A remote LDAP database. It is also read-only. The password is really
-/etc/cracklib/cracklib.conf:17:#   passwords should not match.  The files may optionally be compressed
-/etc/cisco-torch/torch.conf:3:$passfile= "password.txt"; #Password word database
-/etc/redsocks.conf:55:	// password = "baz";
-/etc/redsocks.conf:69:	password = pazzw0rd;
-/etc/redis/redis.conf:207:# If the master is password protected (using the "requirepass" configuration
-/etc/redis/redis.conf:212:# masterauth &lt;master-password&gt;
-/etc/redis/redis.conf:345:# 150k passwords per second against a good box. This means that you should
-/etc/redis/redis.conf:346:# use a very strong password otherwise it will be very easy to break.
 /etc/redis/sentinel.conf:55:# sentinel auth-pass &lt;master-name&gt; &lt;password&gt;
 /etc/redis/sentinel.conf:57:# Set the password to use to authenticate with the master and slaves.
 /etc/redis/sentinel.conf:58:# Useful if there is a password set in the Redis instances to monitor.
 /etc/redis/sentinel.conf:60:# Note that the master password is also used for slaves, so it is not
 /etc/redis/sentinel.conf:61:# possible to set a different password in masters and slaves instances
 /etc/redis/sentinel.conf:66:# password set is the same for all the instances requiring the password) as
-/etc/unicornscan/modules.conf:3:	dbconf:		"user=scan password=scanit! host=localhost dbname=scan";
-/etc/unicornscan/modules.conf:9:	password:	"scanit!";
+/etc/redis/redis.conf:207:# If the master is password protected (using the "requirepass" configuration
+/etc/redis/redis.conf:212:# masterauth &lt;master-password&gt;
+/etc/redis/redis.conf:345:# 150k passwords per second against a good box. This means that you should
+/etc/redis/redis.conf:346:# use a very strong password otherwise it will be very easy to break.
+/usr/share/debconf/debconf.conf:8:Reject-Type: password
+/usr/share/debconf/debconf.conf:11:Name: passwords
+/usr/share/debconf/debconf.conf:16:Accept-Type: password
+/usr/share/debconf/debconf.conf:17:Filename: /var/cache/debconf/passwords.dat
+/usr/share/debconf/debconf.conf:21:Stack: config, passwords
+/usr/share/golismero/golismero.conf:98:# password = my s3cr3t p4ssw0rd
+/usr/share/oscanner/default.conf:5:   &lt;string&gt;commonpasswordfile&lt;/string&gt; 
+/usr/share/john/dynamic_flat_sse_formats.conf:1:# NOTE, same format as dynamic_0  It is slower (50% slower, or more).  But it is not limited to 55 byte passwords.
+/usr/share/john/dynamic_flat_sse_formats.conf:2:# this should work for passwords up to 110 bytes long (max length dynamic will currently allow). It should not be
+/usr/share/john/dynamic_flat_sse_formats.conf:3:# used for shorter passwords (under 55 bytes).  Use dyna_0 for those.
+/usr/share/john/dumb16.conf:18:int maxlength;            // Maximum password length to try
+/usr/share/john/dumb32.conf:23:int maxlength;            // Maximum password length to try
+/usr/share/john/dynamic.conf:108:# SSE (or MMX) is limtited to 54 byte max password, due to 'enhancements'
+/usr/share/john/dynamic.conf:113:# here is the optimized 'script' to perform hash 'like' IPB but salt replaced with password.
+/usr/share/john/dynamic.conf:297:# select id, name, emailid, password from administrator;
+/usr/share/john/dynamic.conf:447:Test=$dynamic_1015$1c4e11fb51835c3bbe9851ec91ec1375$HEX$c31803a2:password:postgres
+/usr/share/john/dynamic.conf:596:Test=$dynamic_1023$5baa61e4c9b93f3f0682250b6cf8331b:password
+/usr/share/john/dynamic.conf:724:Test=$dynamic_1032$6Pl/upEE0epQR5SObftn+s2fW3M=:password
+/usr/share/john/dynamic.conf:744:Test=$dynamic_1033$D7C1gHanUq1xE96HpEQitzAhNB8$FyKXs6zU:password
+/usr/share/john/dynamic.conf:745:Test=$dynamic_1033$sh+Q50Cp4vERzDkJcaaKIv8zubM=$M1RxMCTZ:password2
+/usr/share/john/dynamic.conf:806:#Test=$dynamic_1500$e8f97fba9104d1ea5047948e6dfb67fa:password
+/usr/share/john/dynamic.conf:807:Test=$dynamic_1400$e8f97fba9104d1ea5047948e6dfb67facd9f5b73:password
+/usr/share/john/dynamic.conf:829:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000:password:username
+/usr/share/john/dynamic.conf:830:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000$$Uusername:password
+/usr/share/john/dynamic.conf:832:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000$HEX$2455757365726e616d65:password
+/usr/share/john/dynamic.conf:834:# In Redmine, the hashed password is stored in the following form,
+/usr/share/john/dynamic.conf:835:# SHA1(salt + SHA1(password))
+/usr/share/john/dynamic.conf:858:# In XenForo, the hashed password is stored in the following form(s),
+/usr/share/john/dynamic.conf:859:# sha1(sha1(password).salt)
+/usr/share/john/dynamic.conf:863:# sha256(sha256(password).salt)
+/usr/share/john/dynamic.conf:878:Test=$dynamic_1502$fd74fa6521e515921ad843a8465e34b703960db1$dummysalt:password
+/usr/share/john/dynamic.conf:893:Test=$dynamic_1503$453f2e21fa6c150670d3ecf0e4a0ff3bab8b1903c2e96ad655d960b95f104248$697de9eda4a02563a7ec66d42d4a96995cb2948e29ab76fbcc89e8db71dd10f1:password
+/usr/share/john/dynamic.conf:894:Test=$dynamic_1503$a8a0e9545c1475e8546f8546d87fe2516cf525c12ad79a6a7a8fee2fb0d8afd3$697de9eda4a02563a7ec66d42d4a96995cb2948e29ab76fbcc89e8db71dd10f1:verlongcrappypassword01234567890
+/usr/share/john/dynamic.conf:916:# to make flat (allows much longer passwords and salts)
+/usr/share/john/dynamic.conf:933:# https://www.trustwave.com/Resources/SpiderLabs-Blog/Changes-in-Oracle-Database-12c-password-hashes/
+/usr/share/john/dynamic.conf:948:# Hash is password variable from ./lib/password.properties
+/usr/share/john/dynamic.conf:966:# 'intermixed' SSE for speed, BUT which can not process longer passwords, due to being
+/usr/share/john/dynamic.conf:970:# take full length passwords (110 bytes).
+/usr/share/uniscan/uniscan.conf:48:# password to basic auth
+/usr/share/samba/smb.conf:93:# If you are using encrypted passwords, Samba will need to know what
+/usr/share/samba/smb.conf:94:# password database type you are using.  
+/usr/share/samba/smb.conf:100:# password with the SMB password when the encrypted SMB password in the
+/usr/share/samba/smb.conf:102:   unix password sync = yes
+/usr/share/samba/smb.conf:104:# For Unix password sync to work on a Debian GNU/Linux system, the following
+/usr/share/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+/usr/share/samba/smb.conf:110:# This boolean controls whether PAM will be used for password changes
+/usr/share/samba/smb.conf:113:   pam password change = yes
+/usr/share/samba/smb.conf:150:# password; please adapt to your needs
+/usr/share/samba/smb.conf:151:; add user script = /usr/sbin/adduser --quiet --disabled-password --gecos "" %u
+/usr/lib/tmpfiles.d/systemd.conf:13:d /run/systemd/ask-password 0755 root root -
+/usr/lib/realmd/realmd-defaults.conf:41:example-password = bureaucracy
 
 </pre></td>
 </tr>
@@ -1460,44 +1442,18 @@ List open files (output will depend on account privileges)
 <td style="width:60% text-align:right"><pre>
 
 COMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-inetd      647  root    4u  IPv4  15345      0t0  UDP *:tftp 
-gsad       648  root    4u  IPv4  14294      0t0  TCP 127.0.0.1:9392 (LISTEN)
-openvasmd  690  root    4u  IPv4  16890      0t0  TCP 127.0.0.1:9390 (LISTEN)
-openvassd  725  root    4u  IPv4  11222      0t0  TCP 127.0.0.1:9391 (LISTEN)
-avahi-dae  836 avahi   12u  IPv4  17734      0t0  UDP *:mdns 
-avahi-dae  836 avahi   13u  IPv6  17735      0t0  UDP *:mdns 
-avahi-dae  836 avahi   14u  IPv4  17736      0t0  UDP *:39758 
-avahi-dae  836 avahi   15u  IPv6  17737      0t0  UDP *:53148 
-dropbox   1163  root   22u  IPv4  18402      0t0  TCP 192.168.1.64:37554-&gt;108.160.172.236:https (CLOSE_WAIT)
-dropbox   1163  root   31u  IPv4  18407      0t0  UDP *:17500 
-dropbox   1163  root   34u  IPv4  21752      0t0  TCP 192.168.1.64:45630-&gt;45.58.70.33:https (CLOSE_WAIT)
-dropbox   1163  root   36u  IPv4  20765      0t0  TCP 192.168.1.64:36801-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   37u  IPv4  20767      0t0  TCP 192.168.1.64:36802-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   41u  IPv4  21702      0t0  TCP 192.168.1.64:47897-&gt;108.160.172.193:https (CLOSE_WAIT)
-dropbox   1163  root   42u  IPv4  21700      0t0  TCP 192.168.1.64:36803-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   44u  IPv4  21706      0t0  TCP *:db-lsp (LISTEN)
-dropbox   1163  root   45u  IPv4  20864      0t0  TCP 192.168.1.64:45632-&gt;45.58.70.33:https (CLOSE_WAIT)
-dropbox   1163  root   46u  IPv4  20778      0t0  TCP 127.0.0.1:17600 (LISTEN)
-dropbox   1163  root   50u  IPv4  18426      0t0  TCP 127.0.0.1:843 (LISTEN)
-dropbox   1163  root   51u  IPv4  43249      0t0  TCP 192.168.1.64:48269-&gt;108.160.170.33:https (ESTABLISHED)
-dropbox   1163  root   52u  IPv4  20865      0t0  TCP 192.168.1.64:45633-&gt;45.58.70.33:https (CLOSE_WAIT)
-dropbox   1163  root   53u  IPv4  20163      0t0  TCP 192.168.1.64:45957-&gt;52.22.146.179:https (CLOSE_WAIT)
-dropbox   1163  root   54u  IPv4  20866      0t0  TCP 192.168.1.64:45634-&gt;45.58.70.33:https (CLOSE_WAIT)
-dropbox   1163  root   55u  IPv4  22074      0t0  TCP 192.168.1.64:37508-&gt;54.164.237.144:https (CLOSE_WAIT)
-dropbox   1163  root   56u  IPv4  24621      0t0  TCP 192.168.1.64:49133-&gt;54.88.36.200:https (CLOSE_WAIT)
-dropbox   1163  root   57u  IPv4  37811      0t0  TCP 192.168.1.64:37065-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   58u  IPv4  29663      0t0  TCP 192.168.1.64:51928-&gt;108.160.172.225:https (CLOSE_WAIT)
-dropbox   1163  root   59u  IPv4  32781      0t0  TCP 192.168.1.64:36934-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   60u  IPv4  32854      0t0  TCP 192.168.1.64:37811-&gt;54.172.19.134:https (CLOSE_WAIT)
-dropbox   1163  root   61u  IPv4  40177      0t0  TCP 192.168.1.64:52065-&gt;108.160.172.225:https (CLOSE_WAIT)
-dropbox   1163  root   62u  IPv4  40329      0t0  TCP 192.168.1.64:37072-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   63u  IPv4  41185      0t0  TCP 192.168.1.64:53932-&gt;107.23.52.105:https (CLOSE_WAIT)
-dropbox   1163  root   64u  IPv4 145083      0t0  TCP 192.168.1.64:37126-&gt;54.192.26.8:https (CLOSE_WAIT)
-dropbox   1163  root   65u  IPv4 159367      0t0  TCP 192.168.1.64:52151-&gt;108.160.172.225:https (CLOSE_WAIT)
-dhclient  1288  root    6u  IPv4  20707      0t0  UDP *:bootpc 
-dhclient  1288  root   20u  IPv4  18331      0t0  UDP *:6363 
-dhclient  1288  root   21u  IPv6  18332      0t0  UDP *:19234 
-iceweasel 1379  root   76u  IPv4 145124      0t0  TCP 192.168.1.64:56828-&gt;198.252.206.25:https (ESTABLISHED)
+inetd      731  root    4u  IPv4  13684      0t0  UDP *:tftp 
+avahi-dae  937 avahi   12u  IPv4  17464      0t0  UDP *:mdns 
+avahi-dae  937 avahi   13u  IPv6  17465      0t0  UDP *:mdns 
+avahi-dae  937 avahi   14u  IPv4  17466      0t0  UDP *:51124 
+avahi-dae  937 avahi   15u  IPv6  17467      0t0  UDP *:39133 
+dhclient  1401  root    6u  IPv4  21586      0t0  UDP *:bootpc 
+dhclient  1401  root   20u  IPv4  18942      0t0  UDP *:55334 
+dhclient  1401  root   21u  IPv6  18943      0t0  UDP *:40226 
+bash      2056  root    0u  IPv4  24493      0t0  TCP 192.168.1.205:43141-&gt;192.168.1.114:4444 (ESTABLISHED)
+bash      2056  root    1u  IPv4  24493      0t0  TCP 192.168.1.205:43141-&gt;192.168.1.114:4444 (ESTABLISHED)
+bash      2722  root    0u  IPv4  24493      0t0  TCP 192.168.1.205:43141-&gt;192.168.1.114:4444 (ESTABLISHED)
+lsof      2723  root    0u  IPv4  24493      0t0  TCP 192.168.1.205:43141-&gt;192.168.1.114:4444 (ESTABLISHED)
 
 </pre></td>
 </tr>
@@ -1535,183 +1491,163 @@ View services running as root
 </td>
 <td style="width:60% text-align:right"><pre>
 
-root         1  0.0  0.1 176704  5224 ?        Ss   Nov22   0:01 /sbin/init
-root         2  0.0  0.0      0     0 ?        S    Nov22   0:00 [kthreadd]
-root         3  0.0  0.0      0     0 ?        S    Nov22   0:00 [ksoftirqd/0]
-root         5  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/0:0H]
-root         7  0.2  0.0      0     0 ?        S    Nov22   0:23 [rcu_sched]
-root         8  0.0  0.0      0     0 ?        S    Nov22   0:00 [rcu_bh]
-root         9  0.0  0.0      0     0 ?        S    Nov22   0:00 [migration/0]
-root        10  0.0  0.0      0     0 ?        S    Nov22   0:00 [watchdog/0]
-root        11  0.0  0.0      0     0 ?        S    Nov22   0:00 [watchdog/1]
-root        12  0.0  0.0      0     0 ?        S    Nov22   0:00 [migration/1]
-root        13  0.0  0.0      0     0 ?        S    Nov22   0:00 [ksoftirqd/1]
-root        15  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/1:0H]
-root        16  0.0  0.0      0     0 ?        S    Nov22   0:00 [watchdog/2]
-root        17  0.0  0.0      0     0 ?        S    Nov22   0:00 [migration/2]
-root        18  0.0  0.0      0     0 ?        S    Nov22   0:00 [ksoftirqd/2]
-root        20  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/2:0H]
-root        21  0.0  0.0      0     0 ?        S    Nov22   0:00 [watchdog/3]
-root        22  0.0  0.0      0     0 ?        S    Nov22   0:00 [migration/3]
-root        23  0.0  0.0      0     0 ?        S    Nov22   0:00 [ksoftirqd/3]
-root        25  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/3:0H]
-root        26  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [khelper]
-root        27  0.0  0.0      0     0 ?        S    Nov22   0:00 [kdevtmpfs]
-root        28  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [netns]
-root        29  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [perf]
-root        30  0.0  0.0      0     0 ?        S    Nov22   0:00 [khungtaskd]
-root        31  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [writeback]
-root        33  0.0  0.0      0     0 ?        SN   Nov22   0:00 [ksmd]
-root        34  0.0  0.0      0     0 ?        SN   Nov22   0:00 [khugepaged]
-root        35  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [crypto]
-root        36  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kintegrityd]
-root        37  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [bioset]
-root        38  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kblockd]
-root        39  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [devfreq_wq]
-root        40  0.0  0.0      0     0 ?        S    Nov22   0:00 [kswapd0]
-root        41  0.0  0.0      0     0 ?        S    Nov22   0:00 [fsnotify_mark]
-root        48  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kthrotld]
-root        51  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [ipv6_addrconf]
-root        53  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [deferwq]
-root        97  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [acpi_thermal_pm]
-root        98  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [ata_sff]
-root       132  0.0  0.0      0     0 ?        S    Nov22   0:00 [scsi_eh_0]
-root       133  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [scsi_tmf_0]
-root       134  0.0  0.0      0     0 ?        S    Nov22   0:00 [scsi_eh_1]
-root       135  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [scsi_tmf_1]
-root       136  0.0  0.0      0     0 ?        S    Nov22   0:00 [scsi_eh_2]
-root       137  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [scsi_tmf_2]
-root       138  0.0  0.0      0     0 ?        S    Nov22   0:00 [scsi_eh_3]
-root       139  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [scsi_tmf_3]
-root       140  0.0  0.0      0     0 ?        S    Nov22   0:00 [scsi_eh_4]
-root       141  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [scsi_tmf_4]
-root       142  0.0  0.0      0     0 ?        S    Nov22   0:00 [scsi_eh_5]
-root       143  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [scsi_tmf_5]
-root       153  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/1:1H]
-root       154  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/2:1H]
-root       155  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/3:1H]
-root       156  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/0:1H]
-root       190  0.0  0.0      0     0 ?        S    Nov22   0:00 [jbd2/sda2-8]
-root       191  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [ext4-rsv-conver]
-root       232  0.0  0.0      0     0 ?        S    Nov22   0:00 [kauditd]
-root       243  0.0  0.1  41520  3892 ?        Ss   Nov22   0:00 /lib/systemd/systemd-udevd
-root       254  0.0  0.1  33164  5588 ?        Ss   Nov22   0:01 /lib/systemd/systemd-journald
-root       309  0.0  0.0      0     0 ?        S    Nov22   0:00 [irq/26-mei_me]
-root       318  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [ktpacpid]
-root       323  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [hd-audio0]
-root       329  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [cfg80211]
-root       330  0.0  0.0      0     0 ?        S    Nov22   0:00 [ips-adjust]
-root       331  0.0  0.0      0     0 ?        S    Nov22   0:02 [ips-monitor]
-root       332  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kpsmoused]
-root       338  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kvm-irqfd-clean]
-root       340  0.1  0.0      0     0 ?        S    Nov22   0:16 [irq/28-iwlwifi]
-root       361  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [iwlwifi]
-root       429  0.0  0.0      0     0 ?        S    Nov22   0:00 [jbd2/sda4-8]
-root       430  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [ext4-rsv-conver]
-root       637  0.0  0.2 303560  8196 ?        Ssl  Nov22   0:00 /usr/lib/accountsservice/accounts-daemon
-root       643  0.0  0.1  24440  3856 ?        Ss   Nov22   0:00 /usr/sbin/smartd -n
-root       644  0.0  0.2 336268  7984 ?        Ssl  Nov22   0:00 /usr/sbin/ModemManager
-root       646  0.1  0.3 378444 15320 ?        Ssl  Nov22   0:20 /usr/sbin/NetworkManager --no-daemon
-root       647  0.0  0.0  12688  1760 ?        Ss   Nov22   0:00 /usr/sbin/inetd -i
-root       648  0.0  0.2 121292  9780 ?        SLsl Nov22   0:00 /usr/sbin/gsad --foreground --listen=127.0.0.1 --port=9392 --mlisten=127.0.0.1 --mport=9390
-root       649  0.0  0.0  27428  2768 ?        Ss   Nov22   0:00 /usr/sbin/cron -f
-root       653  0.0  0.0  28364  2828 ?        Ss   Nov22   0:00 /lib/systemd/systemd-logind
-root       685  0.0  0.0  19268  2028 ?        Ss   Nov22   0:00 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
-root       690  0.0  1.7 219204 68488 ?        SL   Nov22   0:03 openvasmd                                                                                  
-root       695  0.0  0.0 258664  3296 ?        Ssl  Nov22   0:00 /usr/sbin/rsyslogd -n
-root       699  0.0  0.2 307760  9592 ?        Ssl  Nov22   0:00 /usr/lib/policykit-1/polkitd --no-debug
-root       703  0.0  0.0  12836  1920 tty1     Ss+  Nov22   0:00 /sbin/agetty --noclear tty1 linux
-root       720  0.0  0.1 439632  7616 ?        Ssl  Nov22   0:00 /usr/sbin/gdm3
-root       725  0.5  0.6 130192 25920 ?        Ss   Nov22   1:04 openvassd: Waiting for incoming connections       
-root       731  1.1  1.1 303420 44980 tty7     Ssl+ Nov22   2:10 /usr/bin/Xorg :0 -novtswitch -background none -noreset -verbose 3 -auth /var/run/gdm3/auth-for-Debian-gdm-PSFNbF/database -seat seat0 -nolisten tcp vt7
-root       789  0.0  0.2 238452  8324 ?        Ssl  Nov22   0:00 /usr/lib/upower/upowerd
-avahi      837  0.0  0.0  32092   248 ?        S    Nov22   0:00 avahi-daemon: chroot helper
-root       846  0.0  0.1  31204  6620 ?        Ss   Nov22   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
-root       847  0.0  0.2 324720 11256 ?        Ssl  Nov22   0:00 /usr/lib/packagekit/packagekitd
-root       870  0.0  0.1 387844  7080 ?        Sl   Nov22   0:00 gdm-session-worker [pam/gdm-password]
-root       874  0.0  0.0  27236  3608 ?        Ss   Nov22   0:00 /lib/systemd/systemd --user
-root       875  0.0  0.0 199560  2192 ?        S    Nov22   0:00 (sd-pam)  
-root       879  0.0  0.2 316004  9128 ?        Sl   Nov22   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-root       882  0.0  0.3 557180 13392 ?        Ssl  Nov22   0:00 x-session-manager
-root       933  0.0  0.0  24364  1908 ?        S    Nov22   0:00 dbus-launch --autolaunch=ddcf3952d4dd47c6ac0fb60e6e40d831 --binary-syntax --close-stderr
-root       934  0.0  0.0  42116  2472 ?        Ss   Nov22   0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
-root       937  0.0  0.1 178432  4684 ?        Sl   Nov22   0:00 /usr/lib/dconf/dconf-service
-root       949  0.0  0.0  10688   340 ?        Ss   Nov22   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session x-session-manager
-root       952  0.0  0.0  15952  1888 ?        S    Nov22   0:00 /usr/bin/dbus-launch --exit-with-session x-session-manager
-root       953  0.0  0.0  42956  3264 ?        Ss   Nov22   0:01 /usr/bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
-root       956  0.0  0.2 372012  8020 ?        Sl   Nov22   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
-root       960  0.0  0.0  42248  3368 ?        S    Nov22   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
-root       963  0.0  0.1 125204  4968 ?        Sl   Nov22   0:02 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
-root       974  0.0  0.8 968812 34412 ?        Sl   Nov22   0:05 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
-root       987  0.0  0.2 367264  9860 ?        S&lt;l  Nov22   0:00 /usr/bin/pulseaudio --start
-root       991  0.0  0.1 209800  6344 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfsd
-root       996  0.0  0.1 364664  6480 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/0/gvfs -f -o big_writes
-root      1008  0.0  0.0   4328   108 ?        S    Nov22   0:00 /bin/sh /usr/bin/start-pulseaudio-x11
-root      1009  0.0  0.1  20392  5460 ?        S    Nov22   0:00 /usr/bin/xprop -root -spy
-root      1011  0.0  0.2 458160  9668 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
-root      1013  0.0  0.2 397360  9184 ?        Ssl  Nov22   0:01 /usr/lib/udisks2/udisksd --no-debug
-root      1024  0.0  0.1 202668  5792 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
-root      1027  0.0  0.6 648464 26472 ?        Sl   Nov22   0:00 /usr/lib/gnome-online-accounts/goa-daemon
-root      1033  0.0  0.3 338440 13032 ?        Sl   Nov22   0:04 /usr/lib/telepathy/mission-control-5
-root      1036  0.0  0.1 215584  5988 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
-root      1043  0.0  0.2 300200  7740 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
-root      1048  0.0  0.1 206504  5500 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
-root      1051  2.4  5.2 1717252 201824 ?      Sl   Nov22   4:20 /usr/bin/gnome-shell
-root      1056  0.0  0.2 392924 10948 ?        Sl   Nov22   0:00 /usr/lib/gnome-settings-daemon/gsd-printer
-root      1068  0.0  0.3 552544 15296 ?        Sl   Nov22   0:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
-root      1074  0.0  0.4 930644 19020 ?        Sl   Nov22   0:00 /usr/lib/evolution/evolution-source-registry
-root      1084  0.0  0.3 520952 13916 ?        SNl  Nov22   0:00 /usr/lib/tracker/tracker-extract
-root      1087  0.0  0.3 313984 12608 ?        SNl  Nov22   0:00 /usr/lib/tracker/tracker-miner-apps
-root      1089  0.1  0.3 501648 14104 ?        Sl   Nov22   0:12 zeitgeist-datahub
-root      1091  0.0  0.4 471940 18112 ?        Sl   Nov22   0:00 /usr/lib/tracker/tracker-store
-root      1093  0.0  1.0 1206184 40208 ?       Sl   Nov22   0:07 nautilus -n
-root      1094  0.0  0.2 313180 11264 ?        SNl  Nov22   0:00 /usr/lib/tracker/tracker-miner-user-guides
-root      1095  0.0  0.3 510872 14728 ?        SNl  Nov22   0:00 /usr/lib/tracker/tracker-miner-fs
-root      1099  0.0  0.2 302428  9320 ?        Sl   Nov22   0:00 /usr/bin/zeitgeist-daemon
-root      1100  0.0  0.5 229104 22448 ?        Sl   Nov22   0:01 /usr/bin/python /usr/share/system-config-printer/applet.py
-root      1101  0.0  0.8 532780 33260 ?        Sl   Nov22   0:04 nm-applet
-root      1123  0.0  0.4 265460 16212 ?        Sl   Nov22   0:01 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
-root      1143  0.0  0.0   5920  1300 ?        S    Nov22   0:00 /bin/cat
-root      1160  0.0  0.1  51836  5076 ?        S    Nov22   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
-root      1163  0.7  5.3 2847956 206032 ?      Ssl  Nov22   1:18 /root/.dropbox-dist/dropbox-lnx.x86_64-3.10.11/dropbox
-root      1171  0.0  0.2 447252  8300 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.9 /org/gtk/gvfs/exec_spaw/0
-root      1185  0.0  0.1 130888  6220 ?        Sl   Nov22   0:00 /usr/lib/gvfs/gvfsd-metadata
-root      1200  0.0  1.4 982936 57396 ?        Sl   Nov22   0:02 /usr/lib/evolution/evolution-calendar-factory
-root      1211  0.0  0.1 178432  4708 ?        Sl   Nov22   0:00 /usr/lib/dconf/dconf-service
-root      1249  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/u9:0]
-root      1250  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [hci0]
-root      1251  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [hci0]
-root      1253  0.0  0.0      0     0 ?        S&lt;   Nov22   0:00 [kworker/u9:1]
-root      1288  0.0  0.2  25388 10072 ?        S    Nov22   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wlan0.pid -lf /var/lib/NetworkManager/dhclient-9361ea76-1469-4060-a202-d802dfd5dfd5-wlan0.lease -cf /var/lib/NetworkManager/dhclient-wlan0.conf wlan0
-root      1379  2.8 12.0 1358032 464896 ?      Sl   Nov22   5:10 iceweasel
-root      1464  0.3  1.3 1089732 53516 ?       Sl   Nov22   0:39 nemo
-root      1551  0.0  0.0      0     0 ?        S    Nov22   0:03 [kworker/0:1]
-root      1638  0.1  1.2 491964 47624 ?        Sl   Nov22   0:11 /usr/bin/python /usr/bin/guake
-root      1639  0.0  0.0  14684  1716 ?        S    Nov22   0:00 gnome-pty-helper
-root      2351  0.0  0.1  24688  6728 pts/2    Ss+  Nov22   0:00 /bin/bash
-root      2406  0.0  0.1  24692  6728 pts/0    Ss   Nov22   0:00 /bin/bash
-root      2586  0.0  0.0      0     0 ?        S    Nov22   0:03 [kworker/2:1]
-root      2719  0.0  0.1  24692  6732 pts/3    Ss+  Nov22   0:00 /bin/bash
-root      3123  0.0  0.0      0     0 ?        S    Nov22   0:00 [kworker/1:2]
-root      4097  0.0  0.0      0     0 ?        S    00:02   0:01 [kworker/1:1]
-root      4516  0.0  0.1  24688  6676 pts/1    Ss+  00:15   0:00 /bin/bash
-root      4522  0.0  0.1  24676  6356 pts/4    Ss+  00:15   0:00 /bin/bash
-root      4601  0.0  0.0      0     0 ?        S    00:16   0:01 [kworker/u8:0]
-root      5399  1.6  1.8 719588 71080 ?        Sl   00:51   0:32 /usr/bin/gedit --gapplication-service
-root      5411  0.0  0.0      0     0 ?        S    00:51   0:00 [kworker/0:0]
-root      5426  0.0  0.0      0     0 ?        S    00:54   0:00 [kworker/2:2]
-root      6293  0.0  0.0      0     0 ?        S    00:57   0:00 [kworker/3:2]
-root      9504  0.0  0.0      0     0 ?        S    01:09   0:00 [kworker/u8:2]
-root     14566  0.0  0.0      0     0 ?        S    01:17   0:00 [kworker/3:1]
-root     14685  0.0  0.0      0     0 ?        S    01:21   0:00 [kworker/0:2]
-root     14799  0.0  0.0      0     0 ?        S    01:22   0:00 [kworker/u8:1]
-root     14800  0.0  0.0      0     0 ?        S    01:22   0:00 [kworker/1:0]
-root     15057  0.1  0.0  13256  3132 pts/0    S    01:22   0:00 /bin/bash ./RemoteEnum.sh -n self -s
-root     15092  0.6  0.0  13524  3328 pts/0    S    01:22   0:00 bash temp.scan
-root     15598  0.0  0.0   5764  1288 pts/0    S+   01:23   0:00 sleep 1
-root     15866  0.0  0.0  13524  2036 pts/0    S    01:23   0:00 bash temp.scan
-root     15867  0.0  0.0  19028  2516 pts/0    R    01:23   0:00 ps -aux
-root     15868  0.0  0.0  12660  1704 pts/0    S    01:23   0:00 grep root
+root         1  0.0  0.0 176964  5500 ?        Ss   17:05   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    17:05   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    17:05   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/0:0H]
+root         7  0.1  0.0      0     0 ?        S    17:05   0:04 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    17:05   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    17:05   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    17:05   0:00 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S    17:05   0:00 [watchdog/1]
+root        12  0.0  0.0      0     0 ?        S    17:05   0:00 [migration/1]
+root        13  0.0  0.0      0     0 ?        S    17:05   0:00 [ksoftirqd/1]
+root        15  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/1:0H]
+root        16  0.0  0.0      0     0 ?        S    17:05   0:00 [watchdog/2]
+root        17  0.0  0.0      0     0 ?        S    17:05   0:00 [migration/2]
+root        18  0.0  0.0      0     0 ?        S    17:05   0:00 [ksoftirqd/2]
+root        20  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/2:0H]
+root        21  0.0  0.0      0     0 ?        S    17:05   0:00 [watchdog/3]
+root        22  0.0  0.0      0     0 ?        S    17:05   0:00 [migration/3]
+root        23  0.0  0.0      0     0 ?        S    17:05   0:00 [ksoftirqd/3]
+root        25  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/3:0H]
+root        26  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [khelper]
+root        27  0.0  0.0      0     0 ?        S    17:05   0:00 [kdevtmpfs]
+root        28  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [netns]
+root        29  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [perf]
+root        30  0.0  0.0      0     0 ?        S    17:05   0:00 [khungtaskd]
+root        31  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [writeback]
+root        33  0.0  0.0      0     0 ?        SN   17:05   0:00 [ksmd]
+root        34  0.0  0.0      0     0 ?        SN   17:05   0:00 [khugepaged]
+root        35  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [crypto]
+root        36  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kintegrityd]
+root        37  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [bioset]
+root        38  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kblockd]
+root        39  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [devfreq_wq]
+root        43  0.0  0.0      0     0 ?        S    17:05   0:00 [kswapd0]
+root        44  0.0  0.0      0     0 ?        S    17:05   0:00 [fsnotify_mark]
+root        51  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kthrotld]
+root        53  0.0  0.0      0     0 ?        S    17:05   0:01 [kworker/2:2]
+root        54  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [ipv6_addrconf]
+root        55  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [deferwq]
+root        98  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [acpi_thermal_pm]
+root        99  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [ata_sff]
+root       133  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [rtsx_pci_sdmmc_]
+root       134  0.0  0.0      0     0 ?        S    17:05   0:00 [scsi_eh_0]
+root       135  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [scsi_tmf_0]
+root       136  0.0  0.0      0     0 ?        S    17:05   0:00 [scsi_eh_1]
+root       137  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [scsi_tmf_1]
+root       138  0.0  0.0      0     0 ?        S    17:05   0:00 [scsi_eh_2]
+root       139  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [scsi_tmf_2]
+root       140  0.0  0.0      0     0 ?        S    17:05   0:00 [scsi_eh_3]
+root       141  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [scsi_tmf_3]
+root       142  0.0  0.0      0     0 ?        S    17:05   0:00 [scsi_eh_4]
+root       143  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [scsi_tmf_4]
+root       144  0.0  0.0      0     0 ?        S    17:05   0:00 [scsi_eh_5]
+root       145  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [scsi_tmf_5]
+root       155  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/1:1H]
+root       158  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/0:1H]
+root       189  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/3:1H]
+root       192  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/2:1H]
+root       193  0.0  0.0      0     0 ?        S    17:05   0:00 [jbd2/sda9-8]
+root       194  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [ext4-rsv-conver]
+root       234  0.0  0.0      0     0 ?        S    17:05   0:00 [kauditd]
+root       253  0.0  0.0  33092  4628 ?        Ss   17:05   0:00 /lib/systemd/systemd-journald
+root       255  0.0  0.0  41592  3812 ?        Ss   17:05   0:00 /lib/systemd/systemd-udevd
+root       300  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [hd-audio0]
+root       303  0.0  0.0      0     0 ?        S    17:05   0:00 [irq/32-mei_me]
+root       305  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kmemstick]
+root       312  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kpsmoused]
+root       333  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [ttm_swap]
+root       352  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/u17:0]
+root       353  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [hci0]
+root       354  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [hci0]
+root       356  0.0  0.0      0     0 ?        S&lt;   17:05   0:00 [kworker/u17:2]
+root       720  0.0  0.1 303564  8144 ?        Ssl  17:06   0:00 /usr/lib/accountsservice/accounts-daemon
+root       721  0.0  0.0  27428  2688 ?        Ss   17:06   0:00 /usr/sbin/cron -f
+root       722  0.0  0.0  24440  3864 ?        Ss   17:06   0:00 /usr/sbin/smartd -n
+root       728  0.0  0.1 336264  8256 ?        Ssl  17:06   0:00 /usr/sbin/ModemManager
+root       729  0.0  0.1 451780 14684 ?        Ssl  17:06   0:02 /usr/sbin/NetworkManager --no-daemon
+root       731  0.0  0.0  12688  1836 ?        Ss   17:06   0:00 /usr/sbin/inetd -i
+root       733  0.0  0.0  28364  2864 ?        Ss   17:06   0:00 /lib/systemd/systemd-logind
+root       758  0.0  0.0  19268  2096 ?        Ss   17:06   0:00 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+root       782  0.0  0.0 258664  3512 ?        Ssl  17:06   0:00 /usr/sbin/rsyslogd -n
+root       788  0.0  0.1 307768  9540 ?        Ssl  17:06   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       792  0.0  0.0  12836  1896 tty1     Ss+  17:06   0:00 /sbin/agetty --noclear tty1 linux
+root       806  0.0  0.0 365900  7436 ?        Ssl  17:06   0:00 /usr/sbin/gdm3
+root       810  0.0  0.0      0     0 ?        S&lt;   17:06   0:00 [cfg80211]
+root       824  0.6  0.3 261876 28568 tty7     Ssl+ 17:06   0:24 /usr/bin/Xorg :0 -novtswitch -background none -noreset -verbose 3 -auth /var/run/gdm3/auth-for-Debian-gdm-hR1QYx/database -seat seat0 -nolisten tcp vt7
+root       876  0.0  0.1 238412  8472 ?        Ssl  17:06   0:00 /usr/lib/upower/upowerd
+avahi      938  0.0  0.0  32092   252 ?        S    17:06   0:00 avahi-daemon: chroot helper
+root       947  0.0  0.0  30880  6240 ?        Ss   17:06   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root       948  0.0  0.1 398720 12548 ?        Ssl  17:06   0:00 /usr/lib/packagekit/packagekitd
+root       970  0.0  0.0 387848  7328 ?        Sl   17:06   0:00 gdm-session-worker [pam/gdm-password]
+root       974  0.0  0.0  27364  3688 ?        Ss   17:06   0:00 /lib/systemd/systemd --user
+root       975  0.0  0.0  52356  2464 ?        S    17:06   0:00 (sd-pam)  
+root       979  0.0  0.1 315968  9056 ?        Sl   17:06   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+root       982  0.0  0.1 548596 12360 ?        Ssl  17:06   0:00 x-session-manager
+root      1027  0.0  0.0  24364  1824 ?        S    17:06   0:00 dbus-launch --autolaunch=bfb877af2ccd430f8a8609f553d82b21 --binary-syntax --close-stderr
+root      1028  0.0  0.0  42116  2352 ?        Ss   17:06   0:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+root      1031  0.0  0.0 178300  4492 ?        Sl   17:06   0:00 /usr/lib/dconf/dconf-service
+root      1042  0.0  0.0  10688   340 ?        Ss   17:06   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session x-session-manager
+root      1045  0.0  0.0  15952  1772 ?        S    17:06   0:00 /usr/bin/dbus-launch --exit-with-session x-session-manager
+root      1046  0.0  0.0  42728  3112 ?        Ss   17:06   0:00 /usr/bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
+root      1049  0.0  0.0 371984  7952 ?        Sl   17:06   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+root      1053  0.0  0.0  42116  3356 ?        S    17:06   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+root      1056  0.0  0.0 125204  4868 ?        Sl   17:06   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+root      1071  0.0  0.4 1175532 35384 ?       Sl   17:06   0:01 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+root      1082  0.0  0.1 367256  9948 ?        S&lt;l  17:06   0:00 /usr/bin/pulseaudio --start
+root      1084  0.0  0.0 209804  6432 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfsd
+root      1092  0.0  0.0 364668  6256 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/0/gvfs -f -o big_writes
+root      1095  0.0  0.0   4328   108 ?        S    17:06   0:00 /bin/sh /usr/bin/start-pulseaudio-x11
+root      1096  0.0  0.0  17620  2872 ?        S    17:06   0:00 /usr/bin/xprop -root -spy
+root      1104  0.0  0.1 310700  9260 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      1106  0.0  0.1 397680  9600 ?        Ssl  17:06   0:00 /usr/lib/udisks2/udisksd --no-debug
+root      1115  0.0  0.0 202660  6292 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+root      1118  0.0  0.3 648468 25036 ?        Sl   17:06   0:00 /usr/lib/gnome-online-accounts/goa-daemon
+root      1124  0.0  0.1 338156 12688 ?        Sl   17:06   0:00 /usr/lib/telepathy/mission-control-5
+root      1127  0.0  0.0 206508  5616 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+root      1131  0.0  0.0 215588  6032 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+root      1138  0.0  0.0 300208  7692 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+root      1142  1.1  2.8 2001420 231700 ?      Sl   17:06   0:39 /usr/bin/gnome-shell
+root      1153  0.0  0.1 392924 10944 ?        Sl   17:06   0:00 /usr/lib/gnome-settings-daemon/gsd-printer
+root      1161  0.0  0.1 552512 15404 ?        Sl   17:06   0:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+root      1173  0.0  0.2 512852 18800 ?        Sl   17:06   0:00 /usr/lib/evolution/evolution-source-registry
+root      1176  0.0  0.4 991936 40108 ?        Sl   17:06   0:03 nautilus -n
+root      1179  0.0  0.1 471852 15996 ?        Sl   17:06   0:01 /usr/lib/tracker/tracker-store
+root      1180  0.0  0.1 387712 12800 ?        SNl  17:06   0:00 /usr/lib/tracker/tracker-miner-apps
+root      1182  0.0  0.1 588420 13668 ?        SNl  17:06   0:00 /usr/lib/tracker/tracker-extract
+root      1183  0.0  0.1 510984 14736 ?        SNl  17:06   0:00 /usr/lib/tracker/tracker-miner-fs
+root      1184  0.0  0.1 313176 11092 ?        SNl  17:06   0:00 /usr/lib/tracker/tracker-miner-user-guides
+root      1185  0.0  0.4 532816 33332 ?        Sl   17:06   0:00 nm-applet
+root      1189  0.0  0.1 566988 13352 ?        Sl   17:06   0:00 zeitgeist-datahub
+root      1197  0.0  0.2 229100 22424 ?        Sl   17:06   0:00 /usr/bin/python /usr/share/system-config-printer/applet.py
+root      1205  0.0  0.0  51836  4904 ?        S    17:06   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+root      1215  0.0  0.1 367940  9472 ?        Sl   17:06   0:00 /usr/bin/zeitgeist-daemon
+root      1221  0.0  0.1 265372 16116 ?        Sl   17:06   0:00 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+root      1245  0.0  0.0   5920  1352 ?        S    17:06   0:00 /bin/cat
+root      1248  0.0  0.1 447104  8144 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.9 /org/gtk/gvfs/exec_spaw/0
+root      1267  0.0  0.7 982904 57544 ?        Sl   17:06   0:00 /usr/lib/evolution/evolution-calendar-factory
+root      1273  0.0  0.0 178300  4616 ?        Sl   17:06   0:00 /usr/lib/dconf/dconf-service
+root      1298  0.0  0.0 130716  6088 ?        Sl   17:06   0:00 /usr/lib/gvfs/gvfsd-metadata
+root      1401  0.0  0.1  25388 10156 ?        S    17:08   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wlan0.pid -lf /var/lib/NetworkManager/dhclient-5db51845-ca8d-4a73-854b-9092b947d913-wlan0.lease -cf /var/lib/NetworkManager/dhclient-wlan0.conf wlan0
+root      1505  0.0  0.0      0     0 ?        S    17:12   0:00 [kworker/3:0]
+root      1722  0.0  0.0      0     0 ?        S    17:20   0:00 [kworker/0:1]
+root      1869  0.0  0.0      0     0 ?        S    17:30   0:01 [kworker/u16:0]
+root      1971  0.0  0.0      0     0 ?        S    17:40   0:00 [kworker/u16:1]
+root      1972  0.0  0.0      0     0 ?        S    17:40   0:00 [kworker/1:2]
+root      1983  0.0  0.0      0     0 ?        S    17:45   0:00 [kworker/3:2]
+root      1984  0.0  0.0      0     0 ?        S    17:45   0:00 [kworker/1:1]
+root      2007  0.0  0.0      0     0 ?        S    17:52   0:00 [kworker/0:2]
+root      2016  0.0  0.0      0     0 ?        S    17:58   0:00 [kworker/2:0]
+root      2022  0.2  0.3 422680 31080 ?        Sl   18:01   0:00 /usr/lib/gnome-terminal/gnome-terminal-server
+root      2025  0.0  0.0  14684  1760 ?        S    18:01   0:00 gnome-pty-helper
+root      2026  0.0  0.0  24484  6340 pts/0    Ss   18:01   0:00 bash
+root      2054  0.1  0.0      0     0 ?        S    18:03   0:00 [kworker/u16:2]
+root      2056  0.0  0.0  13516  3284 pts/0    S+   18:04   0:00 bash
+root      2733  0.0  0.0  13516  2156 pts/0    S+   18:05   0:00 bash
+root      2734  0.0  0.0  19028  2444 pts/0    R+   18:05   0:00 ps -aux
+root      2735  0.0  0.0  12660  1704 pts/0    S+   18:05   0:00 grep root
 
 </pre></td>
 </tr>
@@ -1726,74 +1662,70 @@ Lookup process binary path and permissions
 </td>
 <td style="width:60% text-align:right"><pre>
 
--rwxr-xr-x 1 root root  1029624 Nov 13  2014 /bin/bash
--rwxr-xr-x 1 root root    51912 Mar 14  2015 /bin/cat
-lrwxrwxrwx 1 root root        4 Aug 22 16:56 /bin/sh -&gt; dash
--rwxr-xr-x 1 root root  1309072 May 26 09:07 /lib/systemd/systemd
--rwxr-xr-x 1 root root   231664 May 26 09:07 /lib/systemd/systemd-journald
--rwxr-xr-x 1 root root   506096 May 26 09:07 /lib/systemd/systemd-logind
--rwxr-xr-x 1 root root   301368 May 26 09:07 /lib/systemd/systemd-udevd
--rwxr-xr-x 2 1016 1016 22500422 Nov  5 01:42 /root/.dropbox-dist/dropbox-lnx.x86_64-3.10.11/dropbox
--rwxr-xr-x 1 root root    39728 Mar 30  2015 /sbin/agetty
--rwxr-xr-x 1 root root   499704 Feb 13  2015 /sbin/dhclient
-lrwxrwxrwx 1 root root       20 Aug 22 16:56 /sbin/init -&gt; /lib/systemd/systemd
--rwxr-xr-x 1 root root  2028480 Apr 24  2015 /sbin/wpa_supplicant
--rwxr-xr-x 1 root root   430704 May 28 01:12 /usr/bin/dbus-daemon
--rwxr-xr-x 1 root root    27272 May 28 01:12 /usr/bin/dbus-launch
--rwxr-xr-x 1 root root    10344 Dec  1  2014 /usr/bin/gedit
--rwxr-xr-x 1 root root   956808 Oct 21  2014 /usr/bin/gnome-keyring-daemon
--rwxr-xr-x 1 root root    19328 May 29 12:23 /usr/bin/gnome-shell
--rwxr-xr-x 1 root root    88160 Oct 12  2014 /usr/bin/pulseaudio
-lrwxrwxrwx 1 root root        9 Aug 22 16:57 /usr/bin/python -&gt; python2.7
--rwxr-xr-x 1 root root   729344 Jun  5 19:41 /usr/bin/redis-server
--rwxr-sr-x 1 root ssh    350232 Mar 23  2015 /usr/bin/ssh-agent
--rwxr-xr-x 1 root root  2384776 Jul  1 20:21 /usr/bin/Xorg
--rwxr-xr-x 1 root root    37776 Jul 12  2014 /usr/bin/xprop
--rwxr-xr-x 1 root root   205960 Jun 24  2014 /usr/bin/zeitgeist-daemon
--rwxr-xr-x 1 root root   144192 Oct  1  2014 /usr/lib/accountsservice/accounts-daemon
--rwxr-xr-x 1 root root   108192 Oct  9  2014 /usr/lib/at-spi2-core/at-spi2-registryd
--rwxr-xr-x 1 root root    26696 Oct  9  2014 /usr/lib/at-spi2-core/at-spi-bus-launcher
--rwxr-xr-x 1 root root   256080 Dec  9  2014 /usr/lib/colord/colord
--rwxr-xr-x 1 root root    77760 Sep 22  2014 /usr/lib/dconf/dconf-service
--rwxr-xr-x 1 root root    10432 Mar 25  2015 /usr/lib/evolution/evolution-calendar-factory
--rwxr-xr-x 1 root root   101032 Mar 25  2015 /usr/lib/evolution/evolution-source-registry
--rwxr-xr-x 1 root root   132304 Dec  4  2014 /usr/lib/gnome-online-accounts/goa-daemon
--rwxr-xr-x 1 root root    35952 Mar 14  2015 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
--rwxr-xr-x 1 root root    27272 Mar 14  2015 /usr/lib/gnome-settings-daemon/gsd-printer
--rwxr-xr-x 1 root root    36224 May 29 12:23 /usr/lib/gnome-shell/gnome-shell-calendar-server
--rwxr-xr-x 1 root root    94144 Nov 30  2014 /usr/lib/gvfs/gvfs-afc-volume-monitor
--rwxr-xr-x 1 root root    31792 Nov 30  2014 /usr/lib/gvfs/gvfsd
--rwxr-xr-x 1 root root    36216 Nov 30  2014 /usr/lib/gvfs/gvfsd-fuse
--rwxr-xr-x 1 root root    77656 Nov 30  2014 /usr/lib/gvfs/gvfsd-metadata
--rwxr-xr-x 1 root root    48624 Nov 30  2014 /usr/lib/gvfs/gvfsd-trash
--rwxr-xr-x 1 root root    94368 Nov 30  2014 /usr/lib/gvfs/gvfs-goa-volume-monitor
--rwxr-xr-x 1 root root    90120 Nov 30  2014 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
--rwxr-xr-x 1 root root    90016 Nov 30  2014 /usr/lib/gvfs/gvfs-mtp-volume-monitor
--rwxr-xr-x 1 root root   166272 Nov 30  2014 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
--rwxr-xr-x 1 root root   276688 Dec  8  2014 /usr/lib/packagekit/packagekitd
--rwxr-xr-x 1 root root    14912 Nov 28  2014 /usr/lib/policykit-1/polkitd
--rwxr-xr-x 1 root root    60480 Nov 16  2014 /usr/lib/rtkit/rtkit-daemon
--rwxr-xr-x 1 root root   377376 Sep 16  2014 /usr/lib/telepathy/mission-control-5
--rwxr-xr-x 1 root root    95960 Feb  6  2015 /usr/lib/tracker/tracker-extract
--rwxr-xr-x 1 root root    27896 Feb  6  2015 /usr/lib/tracker/tracker-miner-apps
--rwxr-xr-x 1 root root   108192 Feb  6  2015 /usr/lib/tracker/tracker-miner-fs
--rwxr-xr-x 1 root root    27896 Feb  6  2015 /usr/lib/tracker/tracker-miner-user-guides
--rwxr-xr-x 1 root root   139824 Feb  6  2015 /usr/lib/tracker/tracker-store
--rwxr-xr-x 1 root root   348672 Sep 30  2014 /usr/lib/udisks2/udisksd
--rwxr-xr-x 1 root root   145352 Apr  6  2015 /usr/lib/upower/upowerd
--rwxr-xr-x 1 root root    48352 Aug 26  2014 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
--rwxr-xr-x 1 root root   135648 Jun 24  2014 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
--rwxr-xr-x 1 root root    22408 Sep 30  2014 /usr/sbin/atd
--rwxr-xr-x 1 root root    44400 Oct 26  2014 /usr/sbin/cron
--rwxr-xr-x 1 root root   404024 Apr  4  2015 /usr/sbin/gdm3
--rwxr-xr-x 1 root root   429288 Jul 28 18:55 /usr/sbin/gsad
--rwxr-xr-x 1 root root    43328 Oct 21  2014 /usr/sbin/inetd
--rwxr-xr-x 1 root root    44104 Sep 10  2014 /usr/sbin/irqbalance
--rwxr-xr-x 1 root root  1087912 Sep 17  2014 /usr/sbin/ModemManager
--rwxr-xr-x 1 root root  1113536 Mar 31  2015 /usr/sbin/NetworkManager
--rwxr-xr-x 1 root root   577344 Oct  2  2014 /usr/sbin/rsyslogd
--rwxr-xr-x 1 root root   568296 Dec 20  2014 /usr/sbin/smartd
--rwxr-xr-x 1 root root    31224 Mar 30  2015 /usr/sbin/uuidd
+-rwxr-xr-x 1 root root   51912 Mar 14  2015 /bin/cat
+lrwxrwxrwx 1 root root       4 Dec  4 18:31 /bin/sh -&gt; dash
+-rwxr-xr-x 1 root root 1309072 May 26  2015 /lib/systemd/systemd
+-rwxr-xr-x 1 root root  231664 May 26  2015 /lib/systemd/systemd-journald
+-rwxr-xr-x 1 root root  506096 May 26  2015 /lib/systemd/systemd-logind
+-rwxr-xr-x 1 root root  301368 May 26  2015 /lib/systemd/systemd-udevd
+-rwxr-xr-x 1 root root   39728 Mar 30  2015 /sbin/agetty
+-rwxr-xr-x 1 root root  499704 Feb 13  2015 /sbin/dhclient
+lrwxrwxrwx 1 root root      20 Dec  4 18:31 /sbin/init -&gt; /lib/systemd/systemd
+-rwxr-xr-x 1 root root 2028480 Apr 24  2015 /sbin/wpa_supplicant
+-rwxr-xr-x 1 root root  430704 May 28  2015 /usr/bin/dbus-daemon
+-rwxr-xr-x 1 root root   27272 May 28  2015 /usr/bin/dbus-launch
+-rwxr-xr-x 1 root root  956808 Oct 21  2014 /usr/bin/gnome-keyring-daemon
+-rwxr-xr-x 1 root root   19328 May 29  2015 /usr/bin/gnome-shell
+-rwxr-xr-x 1 root root   88160 Oct 12  2014 /usr/bin/pulseaudio
+lrwxrwxrwx 1 root root       9 Dec  4 18:31 /usr/bin/python -&gt; python2.7
+-rwxr-xr-x 1 root root  729344 Jun  5  2015 /usr/bin/redis-server
+-rwxr-sr-x 1 root ssh   350232 Mar 23  2015 /usr/bin/ssh-agent
+-rwxr-xr-x 1 root root 2384776 Jul  1  2015 /usr/bin/Xorg
+-rwxr-xr-x 1 root root   37776 Jul 12  2014 /usr/bin/xprop
+-rwxr-xr-x 1 root root  205960 Jun 24  2014 /usr/bin/zeitgeist-daemon
+-rwxr-xr-x 1 root root  144192 Oct  1  2014 /usr/lib/accountsservice/accounts-daemon
+-rwxr-xr-x 1 root root  108192 Oct  9  2014 /usr/lib/at-spi2-core/at-spi2-registryd
+-rwxr-xr-x 1 root root   26696 Oct  9  2014 /usr/lib/at-spi2-core/at-spi-bus-launcher
+-rwxr-xr-x 1 root root  256080 Dec  9  2014 /usr/lib/colord/colord
+-rwxr-xr-x 1 root root   77760 Sep 22  2014 /usr/lib/dconf/dconf-service
+-rwxr-xr-x 1 root root   10432 Mar 25  2015 /usr/lib/evolution/evolution-calendar-factory
+-rwxr-xr-x 1 root root  101032 Mar 25  2015 /usr/lib/evolution/evolution-source-registry
+-rwxr-xr-x 1 root root  132304 Dec  4  2014 /usr/lib/gnome-online-accounts/goa-daemon
+-rwxr-xr-x 1 root root   35952 Mar 14  2015 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+-rwxr-xr-x 1 root root   27272 Mar 14  2015 /usr/lib/gnome-settings-daemon/gsd-printer
+-rwxr-xr-x 1 root root   36224 May 29  2015 /usr/lib/gnome-shell/gnome-shell-calendar-server
+-rwxr-xr-x 1 root root  298960 May 21  2015 /usr/lib/gnome-terminal/gnome-terminal-server
+-rwxr-xr-x 1 root root   94144 Nov 30  2014 /usr/lib/gvfs/gvfs-afc-volume-monitor
+-rwxr-xr-x 1 root root   31792 Nov 30  2014 /usr/lib/gvfs/gvfsd
+-rwxr-xr-x 1 root root   36216 Nov 30  2014 /usr/lib/gvfs/gvfsd-fuse
+-rwxr-xr-x 1 root root   77656 Nov 30  2014 /usr/lib/gvfs/gvfsd-metadata
+-rwxr-xr-x 1 root root   48624 Nov 30  2014 /usr/lib/gvfs/gvfsd-trash
+-rwxr-xr-x 1 root root   94368 Nov 30  2014 /usr/lib/gvfs/gvfs-goa-volume-monitor
+-rwxr-xr-x 1 root root   90120 Nov 30  2014 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+-rwxr-xr-x 1 root root   90016 Nov 30  2014 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+-rwxr-xr-x 1 root root  166272 Nov 30  2014 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+-rwxr-xr-x 1 root root  276688 Dec  8  2014 /usr/lib/packagekit/packagekitd
+-rwxr-xr-x 1 root root   14912 Nov 28  2014 /usr/lib/policykit-1/polkitd
+-rwxr-xr-x 1 root root   60480 Nov 16  2014 /usr/lib/rtkit/rtkit-daemon
+-rwxr-xr-x 1 root root  377376 Sep 16  2014 /usr/lib/telepathy/mission-control-5
+-rwxr-xr-x 1 root root   95960 Feb  6  2015 /usr/lib/tracker/tracker-extract
+-rwxr-xr-x 1 root root   27896 Feb  6  2015 /usr/lib/tracker/tracker-miner-apps
+-rwxr-xr-x 1 root root  108192 Feb  6  2015 /usr/lib/tracker/tracker-miner-fs
+-rwxr-xr-x 1 root root   27896 Feb  6  2015 /usr/lib/tracker/tracker-miner-user-guides
+-rwxr-xr-x 1 root root  139824 Feb  6  2015 /usr/lib/tracker/tracker-store
+-rwxr-xr-x 1 root root  348672 Sep 30  2014 /usr/lib/udisks2/udisksd
+-rwxr-xr-x 1 root root  145352 Apr  6  2015 /usr/lib/upower/upowerd
+-rwxr-xr-x 1 root root   48352 Aug 26  2014 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+-rwxr-xr-x 1 root root  135648 Jun 24  2014 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+-rwxr-xr-x 1 root root   22408 Sep 30  2014 /usr/sbin/atd
+-rwxr-xr-x 1 root root   44400 Oct 26  2014 /usr/sbin/cron
+-rwxr-xr-x 1 root root  404024 Apr  4  2015 /usr/sbin/gdm3
+-rwxr-xr-x 1 root root   43328 Oct 21  2014 /usr/sbin/inetd
+-rwxr-xr-x 1 root root   44104 Sep 10  2014 /usr/sbin/irqbalance
+-rwxr-xr-x 1 root root 1087912 Sep 17  2014 /usr/sbin/ModemManager
+-rwxr-xr-x 1 root root 1113536 Mar 31  2015 /usr/sbin/NetworkManager
+-rwxr-xr-x 1 root root  577344 Oct  2  2014 /usr/sbin/rsyslogd
+-rwxr-xr-x 1 root root  568296 Dec 20  2014 /usr/sbin/smartd
 
 </pre></td>
 </tr>
@@ -1936,8 +1868,7 @@ Display scheduled jobs for the specified user - Privileged command
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-
-#1 * * * * ls
+#*/1 * * * * ls&gt;list
 
 </pre></td>
 </tr>
@@ -1956,20 +1887,20 @@ Scheduled jobs overview (hourly, daily, monthly etc)
 
 /etc/cron.d:
 total 32
-drwxr-xr-x   2 root root  4096 Nov  8 18:54 .
-drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
+drwxr-xr-x   2 root root  4096 Dec  4 18:31 .
+drwxr-xr-x 179 root root 12288 Feb  3 17:08 ..
 -rw-r--r--   1 root root   244 Dec 28  2014 anacron
--rw-r--r--   1 root root   607 Jul  3 16:03 john
--rw-r--r--   1 root root   661 Jun  5 14:19 php5
+-rw-r--r--   1 root root   607 Jul  3  2015 john
+-rw-r--r--   1 root root   661 Jun  5  2015 php5
 -rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
 
 /etc/cron.daily:
 total 100
-drwxr-xr-x   2 root root  4096 Nov  8 18:54 .
-drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
+drwxr-xr-x   2 root root  4096 Dec  4 18:31 .
+drwxr-xr-x 179 root root 12288 Feb  3 17:08 ..
 -rwxr-xr-x   1 root root   311 Dec 28  2014 0anacron
--rwxr-xr-x   1 root root   625 Aug  1 23:54 apache2
--rwxr-xr-x   1 root root 15000 Jul 23 20:16 apt
+-rwxr-xr-x   1 root root   625 Aug  1  2015 apache2
+-rwxr-xr-x   1 root root 15000 Jul 23  2015 apt
 -rwxr-xr-x   1 root root   314 Nov  8  2014 aptitude
 -rwxr-xr-x   1 root root   355 Oct 17  2014 bsdmainutils
 -rwxr-xr-x   1 root root  2032 Mar 23  2015 chkrootkit
@@ -1987,14 +1918,14 @@ drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
 
 /etc/cron.hourly:
 total 20
-drwxr-xr-x   2 root root  4096 Aug 22 16:56 .
-drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
+drwxr-xr-x   2 root root  4096 Dec  4 18:31 .
+drwxr-xr-x 179 root root 12288 Feb  3 17:08 ..
 -rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
 
 /etc/cron.monthly:
 total 32
-drwxr-xr-x   2 root root  4096 Aug 22 16:56 .
-drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
+drwxr-xr-x   2 root root  4096 Dec  4 18:31 .
+drwxr-xr-x 179 root root 12288 Feb  3 17:08 ..
 -rwxr-xr-x   1 root root   313 Dec 28  2014 0anacron
 -rwxr-xr-x   1 root root   102 Oct 19  2014 ieee-data
 -rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
@@ -2002,8 +1933,8 @@ drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
 
 /etc/cron.weekly:
 total 28
-drwxr-xr-x   2 root root  4096 Aug 22 16:56 .
-drwxr-xr-x 182 root root 12288 Nov 22 22:23 ..
+drwxr-xr-x   2 root root  4096 Dec  4 18:31 .
+drwxr-xr-x 179 root root 12288 Feb  3 17:08 ..
 -rwxr-xr-x   1 root root   312 Dec 28  2014 0anacron
 -rwxr-xr-x   1 root root   771 Dec 31  2014 man-db
 -rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
@@ -2044,32 +1975,30 @@ List all network interfaces
 </td>
 <td style="width:60% text-align:right"><pre>
 
-eth0      Link encap:Ethernet  HWaddr f0:de:f1:04:89:3d  
+eth0      Link encap:Ethernet  HWaddr 78:84:3c:37:62:25  
           UP BROADCAST MULTICAST  MTU:1500  Metric:1
           RX packets:0 errors:0 dropped:0 overruns:0 frame:0
           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
-          Interrupt:20 Memory:f2500000-f2520000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:65536  Metric:1
-          RX packets:50 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:50 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:35 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:35 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:19062 (18.6 KiB)  TX bytes:19062 (18.6 KiB)
+          RX bytes:2848 (2.7 KiB)  TX bytes:2848 (2.7 KiB)
 
-wlan0     Link encap:Ethernet  HWaddr 00:27:10:21:be:60  
-          inet addr:192.168.1.64  Bcast:192.168.1.255  Mask:255.255.255.0
-          inet6 addr: 2a02:2149:813e:8200:227:10ff:fe21:be60/64 Scope:Global
-          inet6 addr: fe80::227:10ff:fe21:be60/64 Scope:Link
+wlan0     Link encap:Ethernet  HWaddr 00:18:4d:c8:cc:bf  
+          inet addr:192.168.1.205  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::218:4dff:fec8:ccbf/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:353199 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:168128 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:56461 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:29384 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:518421903 (494.4 MiB)  TX bytes:16392330 (15.6 MiB)
+          RX bytes:68243861 (65.0 MiB)  TX bytes:3057339 (2.9 MiB)
 
 </pre></td>
 </tr>
@@ -2093,9 +2022,6 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 
-#iface eth0 inet dhcp
-#auto eth0
-
 </pre></td>
 </tr>
 <tr bgcolor="#f8fff8">
@@ -2109,7 +2035,8 @@ Display ARP communications
 </td>
 <td style="width:60% text-align:right"><pre>
 
-myrouter.forthnet.lan (192.168.1.1) at e0:88:5d:ad:cc:c9 [ether] on wlan0
+? (192.168.1.114) at 00:27:10:21:be:60 [ether] on wlan0
+? (192.168.1.1) at 84:1b:5e:d9:b3:58 [ether] on wlan0
 
 </pre></td>
 </tr>
@@ -2126,7 +2053,7 @@ Display route information
 
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
-default         myrouter.forthn 0.0.0.0         UG    1024   0        0 wlan0
+default         192.168.1.1     0.0.0.0         UG    1024   0        0 wlan0
 192.168.1.0     *               255.255.255.0   U     0      0        0 wlan0
 
 </pre></td>
@@ -2143,10 +2070,7 @@ Show configured DNS sever addresses
 <td style="width:60% text-align:right"><pre>
 
 # Generated by NetworkManager
-search forthnet.lan
 nameserver 192.168.1.1
-nameserver 2a02:2148:82:8053::53
-nameserver 2a02:2148:81:8053::8053
 
 </pre></td>
 </tr>
@@ -2163,35 +2087,7 @@ List all TCP sockets and related PIDs (-p Privileged command)
 
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-tcp        0      0 127.0.0.1:843           0.0.0.0:*               LISTEN      1163/dropbox    
-tcp        0      0 127.0.0.1:9390          0.0.0.0:*               LISTEN      690/openvasmd   
-tcp        0      0 127.0.0.1:9391          0.0.0.0:*               LISTEN      725/openvassd: Wait
-tcp        0      0 127.0.0.1:9392          0.0.0.0:*               LISTEN      648/gsad        
-tcp        0      0 0.0.0.0:17500           0.0.0.0:*               LISTEN      1163/dropbox    
-tcp        0      0 127.0.0.1:17600         0.0.0.0:*               LISTEN      1163/dropbox    
-tcp        1      0 192.168.1.64:45957      52.22.146.179:443       CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:47897      108.160.172.193:443     CLOSE_WAIT  1163/dropbox    
-tcp        1      0 192.168.1.64:37811      54.172.19.134:443       CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:45633      45.58.70.33:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:36803      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:52151      108.160.172.225:443     CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:37554      108.160.172.236:443     CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:36934      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp        0      0 192.168.1.64:48269      108.160.170.33:443      ESTABLISHED 1163/dropbox    
-tcp        1      0 192.168.1.64:49133      54.88.36.200:443        CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:45632      45.58.70.33:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:36802      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:51928      108.160.172.225:443     CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:45630      45.58.70.33:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:37126      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp        0      0 192.168.1.64:56828      198.252.206.25:443      ESTABLISHED 1379/iceweasel  
-tcp        1      0 192.168.1.64:37508      54.164.237.144:443      CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:37065      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:37072      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:45634      45.58.70.33:443         CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:52065      108.160.172.225:443     CLOSE_WAIT  1163/dropbox    
-tcp       38      0 192.168.1.64:36801      54.192.26.8:443         CLOSE_WAIT  1163/dropbox    
-tcp        1      0 192.168.1.64:53932      107.23.52.105:443       CLOSE_WAIT  1163/dropbox    
+tcp       23      0 192.168.1.205:43141     192.168.1.114:4444      ESTABLISHED 2056/bash       
 
 </pre></td>
 </tr>
@@ -2208,15 +2104,14 @@ List all UDP sockets and related PIDs (-p Privileged command)
 
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           1288/dhclient   
-udp        0      0 0.0.0.0:69              0.0.0.0:*                           647/inetd       
-udp        0      0 0.0.0.0:6363            0.0.0.0:*                           1288/dhclient   
-udp        0      0 0.0.0.0:39758           0.0.0.0:*                           836/avahi-daemon: r
-udp     2560      0 0.0.0.0:17500           0.0.0.0:*                           1163/dropbox    
-udp        0      0 0.0.0.0:5353            0.0.0.0:*                           836/avahi-daemon: r
-udp6       0      0 :::53148                :::*                                836/avahi-daemon: r
-udp6       0      0 :::19234                :::*                                1288/dhclient   
-udp6       0      0 :::5353                 :::*                                836/avahi-daemon: r
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           1401/dhclient   
+udp        0      0 0.0.0.0:69              0.0.0.0:*                           731/inetd       
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           937/avahi-daemon: r
+udp        0      0 0.0.0.0:51124           0.0.0.0:*                           937/avahi-daemon: r
+udp        0      0 0.0.0.0:55334           0.0.0.0:*                           1401/dhclient   
+udp6       0      0 :::5353                 :::*                                937/avahi-daemon: r
+udp6       0      0 :::39133                :::*                                937/avahi-daemon: r
+udp6       0      0 :::40226                :::*                                1401/dhclient   
 
 </pre></td>
 </tr>
@@ -2865,6 +2760,391 @@ tfido		60177/tcp			# fidonet EMSI over telnet
 fido		60179/tcp			# fidonet EMSI over TCP
 
 # Local services
+
+</pre></td>
+</tr>
+</table>
+<a name="Programs%20Installed"></a><h4>Programs Installed</h4>
+<table border="1" style="width:100%">
+<tr bgcolor="#FF3333">
+<th>Command</th>
+<th>Description</th>
+<th> Result </th>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+sudo -V
+
+</td>
+<td style="width:15% text-align:right">
+Sudo version - does an exploit exist?
+</td>
+<td style="width:60% text-align:right"><pre>
+
+Sudo version 1.8.10p3
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --disable-root-mailer --with-sendmail=/usr/sbin/sendmail --with-rundir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux --with-linux-audit
+Sudoers policy plugin version 1.8.10p3
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if user authentication fails
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Require users to authenticate by default
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to lecture status dir: /var/lib/sudo/lectured
+Path to authentication timestamp dir: /var/lib/sudo/ts
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors &gt;= 3 will be closed before executing a command
+Reset the environment to a default set of variables
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Attempt to establish PAM credentials for the target user
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+Enable sudoers netgroup support
+
+Local IP address and netmask pairs:
+	192.168.1.205/255.255.255.0
+	fe80::218:4dff:fec8:ccbf/ffff:ffff:ffff:ffff::
+
+Sudoers I/O plugin version 1.8.10p3
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+httpd -v
+
+</td>
+<td style="width:15% text-align:right">
+Apache version
+</td>
+<td style="width:60% text-align:right"><pre>
+
+
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+apache2 -v
+
+</td>
+<td style="width:15% text-align:right">
+As above
+</td>
+<td style="width:60% text-align:right"><pre>
+
+Server version: Apache/2.4.10 (Debian)
+Server built:   Aug  1 2015 20:53:57
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+apache2ctl -M
+
+</td>
+<td style="width:15% text-align:right">
+List loaded Apache modules
+</td>
+<td style="width:60% text-align:right"><pre>
+
+Loaded Modules:
+ core_module (static)
+ so_module (static)
+ watchdog_module (static)
+ http_module (static)
+ log_config_module (static)
+ logio_module (static)
+ version_module (static)
+ unixd_module (static)
+ access_compat_module (shared)
+ alias_module (shared)
+ auth_basic_module (shared)
+ authn_core_module (shared)
+ authn_file_module (shared)
+ authz_core_module (shared)
+ authz_host_module (shared)
+ authz_user_module (shared)
+ autoindex_module (shared)
+ deflate_module (shared)
+ dir_module (shared)
+ dnssd_module (shared)
+ env_module (shared)
+ filter_module (shared)
+ mime_module (shared)
+ mpm_prefork_module (shared)
+ negotiation_module (shared)
+ php5_module (shared)
+ setenvif_module (shared)
+ status_module (shared)
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+mysql --version
+
+</td>
+<td style="width:15% text-align:right">
+Installed MYSQL version details
+</td>
+<td style="width:60% text-align:right"><pre>
+
+mysql  Ver 14.14 Distrib 5.5.44, for debian-linux-gnu (x86_64) using readline 6.3
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+psql -V
+
+</td>
+<td style="width:15% text-align:right">
+Installed Postgres version details
+</td>
+<td style="width:60% text-align:right"><pre>
+
+psql (PostgreSQL) 9.4.3
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+perl -v | head -2
+
+</td>
+<td style="width:15% text-align:right">
+Installed Perl version details
+</td>
+<td style="width:60% text-align:right"><pre>
+
+
+This is perl 5, version 20, subversion 2 (v5.20.2) built for x86_64-linux-gnu-thread-multi
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+java -version 2&gt;&amp;1
+
+</td>
+<td style="width:15% text-align:right">
+Installed Java version details
+</td>
+<td style="width:60% text-align:right"><pre>
+
+java version "1.7.0_79"
+OpenJDK Runtime Environment (IcedTea 2.5.6) (7u79-2.5.6-1~deb8u1)
+OpenJDK 64-Bit Server VM (build 24.79-b02, mixed mode)
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+python --version 2&gt;&amp;1
+
+</td>
+<td style="width:15% text-align:right">
+Installed Python version details
+</td>
+<td style="width:60% text-align:right"><pre>
+
+Python 2.7.9
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+ruby -v
+
+</td>
+<td style="width:15% text-align:right">
+Installed Ruby version details
+</td>
+<td style="width:60% text-align:right"><pre>
+
+ruby 2.1.5p273 (2014-11-13) [x86_64-linux-gnu]
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+for pr in 'nmap' 'wget' 'ufw'; do which $pr; done
+
+</td>
+<td style="width:15% text-align:right">
+Locate 'useful' programs (netcat, wget etc)
+</td>
+<td style="width:60% text-align:right"><pre>
+
+/usr/bin/nmap
+/usr/bin/wget
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+dpkg --list 2&gt;/dev/null| grep compiler |grep -v decompiler 2&gt;/dev/null &amp;&amp; yum list installed 'gcc*' 2&gt;/dev/null| grep gcc 2&gt;/dev/null
+
+</td>
+<td style="width:15% text-align:right">
+List available compilers
+</td>
+<td style="width:60% text-align:right"><pre>
+
+ii  clang                                  1:3.5-25                             amd64        C, C++ and Objective-C compiler (LLVM based)
+ii  clang-3.5                              1:3.5-10                             amd64        C, C++ and Objective-C compiler (LLVM based)
+ii  g++                                    4:4.9.2-2                            amd64        GNU C++ compiler
+ii  g++-4.9                                4.9.2-10                             amd64        GNU C++ compiler
+ii  gcc                                    4:4.9.2-2                            amd64        GNU C compiler
+ii  gcc-4.9                                4.9.2-10                             amd64        GNU C compiler
+ii  gcc-avr                                1:4.8.1+Atmel3.4.4-2                 amd64        GNU C compiler (cross compiler for avr)
+ii  libllvm3.5:amd64                       1:3.5-10                             amd64        Modular compiler and toolchain technologies, runtime library
+ii  libluajit-5.1-2:amd64                  2.0.3+dfsg-3                         amd64        Just in time compiler for Lua - library version
+ii  libluajit-5.1-common                   2.0.3+dfsg-3                         all          Just in time compiler for Lua - common files
+ii  libxkbcommon0:amd64                    0.4.3-2                              amd64        library interface to the XKB compiler - shared library
+ii  llvm-3.5                               1:3.5-10                             amd64        Modular compiler and toolchain technologies
+ii  llvm-3.5-dev                           1:3.5-10                             amd64        Modular compiler and toolchain technologies, libraries and headers
+ii  llvm-3.5-runtime                       1:3.5-10                             amd64        Modular compiler and toolchain technologies, IR interpreter
+
+</pre></td>
+</tr>
+</table>
+<a name="Buffer%20Overflow"></a><h4>Buffer Overflow</h4>
+<table border="1" style="width:100%">
+<tr bgcolor="#FF3333">
+<th>Command</th>
+<th>Description</th>
+<th> Result </th>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+cat /proc/sys/kernel/randomize_va_space
+
+</td>
+<td style="width:15% text-align:right">
+ASLR (0/1/2) 0 - All static 1 - Medium 2 - FULL
+</td>
+<td style="width:60% text-align:right"><pre>
+
+2
+
+</pre></td>
+</tr>
+<tr bgcolor="#f8fff8">
+<td style="width:25% text-align:left">
+
+cat /proc/cpuinfo | grep nx
+
+</td>
+<td style="width:15% text-align:right">
+If found the cpu won't execute instructions from stack or heap
+</td>
+<td style="width:60% text-align:right"><pre>
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt
 
 </pre></td>
 </tr>
