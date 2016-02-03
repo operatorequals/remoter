@@ -1,0 +1,3025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<scan date="Wed Feb 3 18:56:00 EET 2016" user="n0p_sl3d" system="Linux kali-laptop 4.3.0-kali1-amd64 #1 SMP Debian 4.3.3-7kali2 (2016-01-27) x86_64 GNU/Linux">
+<group title="Kernel, Operating System and Device Information">
+
+<data>
+<info>
+<![CDATA[
+4.3.0-kali1-amd64
+]]>
+</info>
+<description>
+Kernel release
+</description>
+<command>
+<![CDATA[
+uname -r
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+kali-laptop
+]]>
+</info>
+<description>
+System hostname
+</description>
+<command>
+<![CDATA[
+uname -n
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+x86_64
+]]>
+</info>
+<description>
+Linux Kernel architecture (32 or 64 bit)
+</description>
+<command>
+<![CDATA[
+uname -m
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Linux version 4.3.0-kali1-amd64 (debian-kernel@lists.debian.org) (gcc version 5.3.1 20160121 (Debian 5.3.1-7) ) #1 SMP Debian 4.3.3-7kali2 (2016-01-27)
+]]>
+</info>
+<description>
+Kernel Information
+</description>
+<command>
+<![CDATA[
+cat /proc/version
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+DISTRIB_ID=Kali
+DISTRIB_RELEASE=kali-rolling
+DISTRIB_CODENAME=kali-rolling
+DISTRIB_DESCRIPTION="Kali GNU/Linux Rolling"
+PRETTY_NAME="Kali GNU/Linux Rolling"
+NAME="Kali GNU/Linux"
+ID=kali
+VERSION="2016.1"
+VERSION_ID="2016.1"
+ID_LIKE=debian
+ANSI_COLOR="1;31"
+HOME_URL="http://www.kali.org/"
+SUPPORT_URL="http://forums.kali.org/"
+BUG_REPORT_URL="http://bugs.kali.org/"
+]]>
+</info>
+<description>
+Distribution Information
+</description>
+<command>
+<![CDATA[
+cat /etc/lsb-release /etc/os-release
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+CPU Information
+</description>
+<command>
+<![CDATA[
+cat /proc/info
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Filesystem     1K-blocks     Used Available Use% Mounted on
+sysfs                  0        0         0    - /sys
+proc                   0        0         0    - /proc
+udev               10240        0     10240   0% /dev
+devpts                 0        0         0    - /dev/pts
+tmpfs            1181316    16160   1165156   2% /run
+/dev/sda1       71960912 31913420  36369028  47% /
+securityfs             0        0         0    - /sys/kernel/security
+tmpfs            2953284      528   2952756   1% /dev/shm
+tmpfs               5120        0      5120   0% /run/lock
+tmpfs            2953284        0   2953284   0% /sys/fs/cgroup
+cgroup                 0        0         0    - /sys/fs/cgroup/systemd
+pstore                 0        0         0    - /sys/fs/pstore
+cgroup                 0        0         0    - /sys/fs/cgroup/net_cls,net_prio
+cgroup                 0        0         0    - /sys/fs/cgroup/devices
+cgroup                 0        0         0    - /sys/fs/cgroup/freezer
+cgroup                 0        0         0    - /sys/fs/cgroup/cpuset
+cgroup                 0        0         0    - /sys/fs/cgroup/perf_event
+cgroup                 0        0         0    - /sys/fs/cgroup/cpu,cpuacct
+cgroup                 0        0         0    - /sys/fs/cgroup/blkio
+systemd-1              -        -         -    - /proc/sys/fs/binfmt_misc
+debugfs                0        0         0    - /sys/kernel/debug
+hugetlbfs              0        0         0    - /dev/hugepages
+mqueue                 0        0         0    - /dev/mqueue
+binfmt_misc            0        0         0    - /proc/sys/fs/binfmt_misc
+tmpfs             590660        8    590652   1% /run/user/132
+tmpfs             590660       36    590624   1% /run/user/1001
+gvfsd-fuse             0        0         0    - /run/user/1001/gvfs
+fusectl                0        0         0    - /sys/fs/fuse/connections
+tracefs                -        -         -    - /sys/kernel/debug/tracing
+]]>
+</info>
+<description>
+File system Information
+</description>
+<command>
+<![CDATA[
+df -a
+]]>
+</command>
+</data>
+</group>
+
+<group title="Users and Groups">
+
+<data>
+<info>
+<![CDATA[
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:103:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:104:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:105:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:106:systemd Bus Proxy,,,:/run/systemd:/bin/false
+mysql:x:104:109:MySQL Server,,,:/nonexistent:/bin/false
+messagebus:x:105:110::/var/run/dbus:/bin/false
+avahi:x:106:112:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+miredo:x:107:65534::/var/run/miredo:/bin/false
+ntp:x:108:114::/home/ntp:/bin/false
+stunnel4:x:109:116::/var/run/stunnel4:/bin/false
+uuidd:x:110:117::/run/uuidd:/bin/false
+Debian-exim:x:111:118::/var/spool/exim4:/bin/false
+statd:x:112:65534::/var/lib/nfs:/bin/false
+arpwatch:x:113:121:ARP Watcher,,,:/var/lib/arpwatch:/bin/sh
+colord:x:114:123:colord colour management daemon,,,:/var/lib/colord:/bin/false
+dnsmasq:x:115:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+dradis:x:116:125::/var/lib/dradis:/bin/false
+geoclue:x:117:126::/var/lib/geoclue:/bin/false
+pulse:x:118:127:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+speech-dispatcher:x:119:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/sh
+sshd:x:120:65534::/var/run/sshd:/usr/sbin/nologin
+snmp:x:121:129::/var/lib/snmp:/usr/sbin/nologin
+postgres:x:122:132:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+iodine:x:123:65534::/var/run/iodine:/bin/false
+redis:x:124:135::/var/lib/redis:/bin/false
+redsocks:x:125:136::/var/run/redsocks:/bin/false
+rwhod:x:126:65534::/var/spool/rwho:/bin/false
+sslh:x:127:137::/nonexistent:/bin/false
+rtkit:x:128:138:RealtimeKit,,,:/proc:/bin/false
+saned:x:129:139::/var/lib/saned:/bin/false
+usbmux:x:130:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+beef-xss:x:131:140::/var/lib/beef-xss:/bin/false
+Debian-gdm:x:132:142:Gnome Display Manager:/var/lib/gdm3:/bin/false
+n0p_sl3d:x:1001:1002::/home/n0p_sl3d:/bin/bash
+_apt:x:133:65534::/nonexistent:/bin/false
+]]>
+</info>
+<description>
+List all users on the system
+</description>
+<command>
+<![CDATA[
+cat /etc/passwd
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:pulse
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+input:x:101:
+systemd-journal:x:102:
+systemd-timesync:x:103:
+systemd-network:x:104:
+systemd-resolve:x:105:
+systemd-bus-proxy:x:106:
+crontab:x:107:
+netdev:x:108:
+mysql:x:109:
+messagebus:x:110:
+iocard:x:111:
+avahi:x:112:
+scanner:x:113:saned
+ntp:x:114:
+sambashare:x:115:
+stunnel4:x:116:
+uuidd:x:117:
+Debian-exim:x:118:
+mlocate:x:119:
+ssh:x:120:
+arpwatch:x:121:arpwatch
+bluetooth:x:122:
+colord:x:123:
+utempter:x:124:
+dradis:x:125:
+geoclue:x:126:
+pulse:x:127:
+pulse-access:x:128:
+snmp:x:129:
+usrp:x:130:
+ssl-cert:x:131:postgres
+postgres:x:132:
+kismet:x:133:
+i2c:x:134:
+inetsim:x:1000:
+redis:x:135:
+redsocks:x:136:
+sslh:x:137:
+rtkit:x:138:
+saned:x:139:
+beef-xss:x:140:
+lpadmin:x:141:
+Debian-gdm:x:142:
+n0p_sl3d:x:1002:
+wireshark:x:143:n0p_sl3d
+vboxusers:x:144:
+]]>
+</info>
+<description>
+List all groups on the system
+</description>
+<command>
+<![CDATA[
+cat /etc/group
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+uid=0(root) gid=0(root) groups=0(root)
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+uid=2(bin) gid=2(bin) groups=2(bin)
+uid=3(sys) gid=3(sys) groups=3(sys)
+uid=4(sync) gid=65534(nogroup) groups=65534(nogroup)
+uid=5(games) gid=60(games) groups=60(games)
+uid=6(man) gid=12(man) groups=12(man)
+uid=7(lp) gid=7(lp) groups=7(lp)
+uid=8(mail) gid=8(mail) groups=8(mail)
+uid=9(news) gid=9(news) groups=9(news)
+uid=10(uucp) gid=10(uucp) groups=10(uucp)
+uid=13(proxy) gid=13(proxy) groups=13(proxy)
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+uid=34(backup) gid=34(backup) groups=34(backup)
+uid=38(list) gid=38(list) groups=38(list)
+uid=39(irc) gid=39(irc) groups=39(irc)
+uid=41(gnats) gid=41(gnats) groups=41(gnats)
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+uid=100(systemd-timesync) gid=103(systemd-timesync) groups=103(systemd-timesync)
+uid=101(systemd-network) gid=104(systemd-network) groups=104(systemd-network)
+uid=102(systemd-resolve) gid=105(systemd-resolve) groups=105(systemd-resolve)
+uid=103(systemd-bus-proxy) gid=106(systemd-bus-proxy) groups=106(systemd-bus-proxy)
+uid=104(mysql) gid=109(mysql) groups=109(mysql)
+uid=105(messagebus) gid=110(messagebus) groups=110(messagebus)
+uid=106(avahi) gid=112(avahi) groups=112(avahi)
+uid=107(miredo) gid=65534(nogroup) groups=65534(nogroup)
+uid=108(ntp) gid=114(ntp) groups=114(ntp)
+uid=109(stunnel4) gid=116(stunnel4) groups=116(stunnel4)
+uid=110(uuidd) gid=117(uuidd) groups=117(uuidd)
+uid=111(Debian-exim) gid=118(Debian-exim) groups=118(Debian-exim)
+uid=112(statd) gid=65534(nogroup) groups=65534(nogroup)
+uid=113(arpwatch) gid=121(arpwatch) groups=121(arpwatch)
+uid=114(colord) gid=123(colord) groups=123(colord)
+uid=115(dnsmasq) gid=65534(nogroup) groups=65534(nogroup)
+uid=116(dradis) gid=125(dradis) groups=125(dradis)
+uid=117(geoclue) gid=126(geoclue) groups=126(geoclue)
+uid=118(pulse) gid=127(pulse) groups=127(pulse),29(audio)
+uid=119(speech-dispatcher) gid=29(audio) groups=29(audio)
+uid=120(sshd) gid=65534(nogroup) groups=65534(nogroup)
+uid=121(snmp) gid=129(snmp) groups=129(snmp)
+uid=122(postgres) gid=132(postgres) groups=132(postgres),131(ssl-cert)
+uid=123(iodine) gid=65534(nogroup) groups=65534(nogroup)
+uid=124(redis) gid=135(redis) groups=135(redis)
+uid=125(redsocks) gid=136(redsocks) groups=136(redsocks)
+uid=126(rwhod) gid=65534(nogroup) groups=65534(nogroup)
+uid=127(sslh) gid=137(sslh) groups=137(sslh)
+uid=128(rtkit) gid=138(rtkit) groups=138(rtkit)
+uid=129(saned) gid=139(saned) groups=139(saned),113(scanner)
+uid=130(usbmux) gid=46(plugdev) groups=46(plugdev)
+uid=131(beef-xss) gid=140(beef-xss) groups=140(beef-xss)
+uid=132(Debian-gdm) gid=142(Debian-gdm) groups=142(Debian-gdm)
+uid=1001(n0p_sl3d) gid=1002(n0p_sl3d) groups=1002(n0p_sl3d),143(wireshark)
+uid=133(_apt) gid=65534(nogroup) groups=65534(nogroup)
+]]>
+</info>
+<description>
+List all uid's and respective group memberships
+</description>
+<command>
+<![CDATA[
+for i in root daemon bin sys sync games man lp mail news uucp proxy www-data backup list irc gnats nobody systemd-timesync systemd-network systemd-resolve systemd-bus-proxy mysql messagebus avahi miredo ntp stunnel4 uuidd Debian-exim statd arpwatch colord dnsmasq dradis geoclue pulse speech-dispatcher sshd snmp postgres iodine redis redsocks rwhod sslh rtkit saned usbmux beef-xss Debian-gdm n0p_sl3d _apt;do id $i; done 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Show user hashes - Privileged command
+</description>
+<command>
+<![CDATA[
+cat /etc/shadow
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+root
+]]>
+</info>
+<description>
+List all super user accounts
+</description>
+<command>
+<![CDATA[
+grep -v -E '^#' /etc/passwd | awk -F: '$3 == 0 { print $1}'
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+           system boot  2016-02-03 14:56
+           run-level 5  2016-02-03 14:56
+LOGIN      tty1         2016-02-03 14:56               720 id=tty1
+n0p_sl3d + tty2         2016-02-03 14:56  old         1328 (:0)
+n0p_sl3d + pts/0        2016-02-03 14:56 00:57        1549 (kali-laptop)
+n0p_sl3d + pts/3        2016-02-03 15:23 00:01        1549 (kali-laptop)
+n0p_sl3d + pts/4        2016-02-03 15:36 00:17        1549 (kali-laptop)
+n0p_sl3d + pts/5        2016-02-03 16:08 01:03        1549 (kali-laptop)
+n0p_sl3d + pts/6        2016-02-03 15:56   .          1549 (kali-laptop)
+n0p_sl3d + pts/7        2016-02-03 17:58   .          1549 (kali-laptop)
+]]>
+</info>
+<description>
+Users currently logged in
+</description>
+<command>
+<![CDATA[
+who -a
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+ 18:56:00 up  3:59,  7 users,  load average: 0.20, 0.18, 0.30
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+n0p_sl3d tty2     :0               14:56    3:59m  1:11m 38.67s java -jar /usr/bin/burpsuite
+n0p_sl3d pts/0    kali-laptop      14:56   57:33   0.12s  0.12s /bin/bash
+n0p_sl3d pts/3    kali-laptop      15:23    1:12   1.04s  0.81s bash --rcfile /usr/bin/git-sh
+n0p_sl3d pts/4    kali-laptop      15:36   17:54   0.15s  0.15s /bin/bash
+n0p_sl3d pts/5    kali-laptop      16:08    1:03m  0.14s  0.14s /bin/bash
+n0p_sl3d pts/6    kali-laptop      15:56   23.00s  0.31s  0.00s sleep 1
+n0p_sl3d pts/7    kali-laptop      17:58    0.00s  0.06s  0.00s bash
+]]>
+</info>
+<description>
+Who is currently logged in and what they are doing
+</description>
+<command>
+<![CDATA[
+w
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Username         Port     From             Latest
+root                                       **Never logged in**
+daemon                                     **Never logged in**
+bin                                        **Never logged in**
+sys                                        **Never logged in**
+sync                                       **Never logged in**
+games                                      **Never logged in**
+man                                        **Never logged in**
+lp                                         **Never logged in**
+mail                                       **Never logged in**
+news                                       **Never logged in**
+uucp                                       **Never logged in**
+proxy                                      **Never logged in**
+www-data                                   **Never logged in**
+backup                                     **Never logged in**
+list                                       **Never logged in**
+irc                                        **Never logged in**
+gnats                                      **Never logged in**
+nobody                                     **Never logged in**
+systemd-timesync                           **Never logged in**
+systemd-network                            **Never logged in**
+systemd-resolve                            **Never logged in**
+systemd-bus-proxy                           **Never logged in**
+mysql                                      **Never logged in**
+messagebus                                 **Never logged in**
+avahi                                      **Never logged in**
+miredo                                     **Never logged in**
+ntp                                        **Never logged in**
+stunnel4                                   **Never logged in**
+uuidd                                      **Never logged in**
+Debian-exim                                **Never logged in**
+statd                                      **Never logged in**
+arpwatch                                   **Never logged in**
+colord                                     **Never logged in**
+dnsmasq                                    **Never logged in**
+dradis                                     **Never logged in**
+geoclue                                    **Never logged in**
+pulse                                      **Never logged in**
+speech-dispatcher                           **Never logged in**
+sshd                                       **Never logged in**
+snmp                                       **Never logged in**
+postgres                                   **Never logged in**
+iodine                                     **Never logged in**
+redis                                      **Never logged in**
+redsocks                                   **Never logged in**
+rwhod                                      **Never logged in**
+sslh                                       **Never logged in**
+rtkit                                      **Never logged in**
+saned                                      **Never logged in**
+usbmux                                     **Never logged in**
+beef-xss                                   **Never logged in**
+Debian-gdm                                 **Never logged in**
+n0p_sl3d         tty1                      Wed Feb  3 00:26:18 +0200 2016
+_apt                                       **Never logged in**
+]]>
+</info>
+<description>
+Information on when all users last logged in
+</description>
+<command>
+<![CDATA[
+lastlog
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Username         Port     From             Latest
+n0p_sl3d         tty1                      Wed Feb  3 00:26:18 +0200 2016
+]]>
+</info>
+<description>
+Information on when the specified user last logged in
+</description>
+<command>
+<![CDATA[
+lastlog -u n0p_sl3d
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Username         Port     From             Latest
+n0p_sl3d         tty1                      Wed Feb  3 00:26:18 +0200 2016
+]]>
+</info>
+<description>
+Entire list of previously logged on users
+</description>
+<command>
+<![CDATA[
+lastlog | grep -v "Never"
+]]>
+</command>
+</data>
+</group>
+
+<group title="User and Privilege Information">
+
+<data>
+<info>
+<![CDATA[
+uid=1001(n0p_sl3d) gid=1002(n0p_sl3d) groups=1002(n0p_sl3d),143(wireshark)
+]]>
+</info>
+<description>
+Current user information
+</description>
+<command>
+<![CDATA[
+id
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Who's allowed to do what as root - Privileged command
+</description>
+<command>
+<![CDATA[
+cat /etc/sudoers
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Matching Defaults entries for n0p_sl3d on kali-laptop:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User n0p_sl3d may run the following commands on kali-laptop:
+    (root) NOPASSWD: /usr/bin/nmap, /usr/sbin/airmon-ng, /usr/sbin/airbase-ng, /usr/sbin/aireplay-ng, /usr/sbin/airdump-ng, /usr/sbin/airtun-ng, /usr/sbin/airserv-ng, /sbin/route, /sbin/ip, /sbin/ifconfig, /usr/sbin/tcpdump, /sbin/dhclient, /sbin/ifup, /sbin/ifdown, /usr/share/custom/portknock, /usr/share/custom/smap, /usr/sbin/execstack
+]]>
+</info>
+<description>
+Can the current user perform anything as root
+</description>
+<command>
+<![CDATA[
+sudo -l
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rwxr-xr-x 1 root root 180800 Dec  3 14:30 /usr/sbin/execstack
+]]>
+</info>
+<description>
+Can the current user run any 'interesting' binaries as root and if so also display the binary permissions etc.
+</description>
+<command>
+<![CDATA[
+sudo -l 2>/dev/null | grep -w 'nmap\|perl\|'awk'\|'find'\|'bash'\|'sh'\|'man'\|'more'\|'less'\|'vi'\|'vim'\|'nc'\|'netcat'\|python\|ruby\|lua\|irb' | xargs -r ls -la 2>/dev/null
+]]>
+</command>
+</data>
+</group>
+
+<group title="Environmental Information">
+
+<data>
+<info>
+<![CDATA[
+XDG_VTNR=2
+XDG_SESSION_ID=1
+SSH_AGENT_PID=1399
+GIO_LAUNCHED_DESKTOP_FILE_PID=1549
+XDG_MENU_PREFIX=gnome-
+SHELL=/bin/bash
+TERM=xterm
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+GTK_MODULES=gail:atk-bridge
+USER=n0p_sl3d
+DESKTOP_AUTOSTART_ID=10e59292709678ffbc145450421753503500000013350002
+QT_ACCESSIBILITY=1
+SSH_AUTH_SOCK=/run/user/1001/keyring/ssh
+USERNAME=n0p_sl3d
+SESSION_MANAGER=local/kali-laptop:@/tmp/.ICE-unix/1335,unix/kali-laptop:/tmp/.ICE-unix/1335
+GIO_LAUNCHED_DESKTOP_FILE=/home/n0p_sl3d/.config/autostart/guake.desktop
+DESKTOP_SESSION=default
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/custom/
+PWD=/home/n0p_sl3d/remoter
+XDG_SESSION_TYPE=x11
+LANG=en_US.UTF-8
+GDM_LANG=en_US.UTF-8
+GDMSESSION=default
+HOME=/home/n0p_sl3d
+XDG_SEAT=seat0
+SHLVL=2
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LOGNAME=n0p_sl3d
+XDG_SESSION_DESKTOP=default
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/
+WINDOWPATH=2
+DISPLAY=:0
+XDG_RUNTIME_DIR=/run/user/1001
+XDG_CURRENT_DESKTOP=GNOME
+XAUTHORITY=/run/user/1001/gdm/Xauthority
+_=/usr/bin/env
+]]>
+</info>
+<description>
+Display environmental variables
+</description>
+<command>
+<![CDATA[
+env | grep -v 'LS_COLORS'
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/custom/
+]]>
+</info>
+<description>
+Path information
+</description>
+<command>
+<![CDATA[
+echo $PATH
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/home/n0p_sl3d/remoter
+]]>
+</info>
+<description>
+Print working directory, i.e. 'where am I'
+</description>
+<command>
+<![CDATA[
+pwd
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "`id -u`" -eq 0 ]; then
+  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+else
+  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+fi
+export PATH
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+# The default umask is now handled by pam_umask.
+# See pam_umask(8) and /etc/login.defs.
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+]]>
+</info>
+<description>
+Display default system variables
+</description>
+<command>
+<![CDATA[
+cat /etc/profile
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+# /etc/shells: valid login shells
+/bin/sh
+/bin/dash
+/bin/bash
+/bin/rbash
+/usr/bin/screen
+/usr/bin/tmux
+/bin/zsh
+/usr/bin/zsh
+]]>
+</info>
+<description>
+Display available shells
+</description>
+<command>
+<![CDATA[
+cat /etc/shells
+]]>
+</command>
+</data>
+</group>
+
+<group title="Interesting Files">
+
+<data>
+<info>
+<![CDATA[
+/bin/umount
+/bin/mount
+/bin/su
+/bin/ntfs-3g
+/bin/fusermount
+/sbin/mount.nfs
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/virtualbox/VirtualBox
+/usr/lib/virtualbox/VBoxNetAdpCtl
+/usr/lib/virtualbox/VBoxHeadless
+/usr/lib/virtualbox/VBoxSDL
+/usr/lib/virtualbox/VBoxNetDHCP
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/bin/at
+/usr/bin/pkexec
+/usr/bin/gpasswd
+/usr/bin/chsh
+/usr/bin/procmail
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/passwd
+/usr/bin/kismet_capture
+/usr/bin/sudo
+/usr/sbin/pppd
+/usr/sbin/exim4
+/run/systemd/journal/flushed
+]]>
+</info>
+<description>
+Find SUID files
+</description>
+<command>
+<![CDATA[
+find / -perm -4000 -type f 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/bin/umount
+/bin/mount
+/bin/su
+/bin/ntfs-3g
+/bin/fusermount
+/sbin/mount.nfs
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/virtualbox/VirtualBox
+/usr/lib/virtualbox/VBoxNetAdpCtl
+/usr/lib/virtualbox/VBoxHeadless
+/usr/lib/virtualbox/VBoxSDL
+/usr/lib/virtualbox/VBoxNetDHCP
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/bin/pkexec
+/usr/bin/gpasswd
+/usr/bin/chsh
+/usr/bin/procmail
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/passwd
+/usr/bin/kismet_capture
+/usr/bin/sudo
+/usr/sbin/pppd
+/usr/sbin/exim4
+/run/systemd/journal/flushed
+]]>
+</info>
+<description>
+Find SUID files owned by root
+</description>
+<command>
+<![CDATA[
+find / -uid 0 -perm -4000 -type f 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/sbin/unix_chkpwd
+/usr/lib/evolution/camel-lock-helper-1.2
+/usr/lib/virtualbox/VirtualBox
+/usr/lib/virtualbox/VBoxNetAdpCtl
+/usr/lib/virtualbox/VBoxHeadless
+/usr/lib/virtualbox/VBoxSDL
+/usr/lib/virtualbox/VBoxNetDHCP
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/utempter/utempter
+/usr/lib/libvte9/gnome-pty-helper
+/usr/lib/mc/cons.saver
+/usr/bin/at
+/usr/bin/mlocate
+/usr/bin/crontab
+/usr/bin/wall
+/usr/bin/dotlockfile
+/usr/bin/bsd-write
+/usr/bin/procmail
+/usr/bin/chage
+/usr/bin/ssh-agent
+/usr/bin/screen
+/usr/bin/mutt_dotlock
+/usr/bin/lockfile
+/usr/bin/expiry
+/run/systemd/journal/flushed
+]]>
+</info>
+<description>
+Find GUID files
+</description>
+<command>
+<![CDATA[
+find / -perm -2000 -type f 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/home/n0p_sl3d/Pictures/Wallpapers/punch_and_judy_dolls.PNG
+/home/n0p_sl3d/win10x64-GEN.ova
+]]>
+</info>
+<description>
+Find world-writeable files excluding those in /proc
+</description>
+<command>
+<![CDATA[
+find / ! -path "*/proc/*" -perm -2 -type f -print 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/var/lib/php5/sessions
+/var/spool/samba
+/var/tmp
+/tmp
+/tmp/.font-unix
+/tmp/.Test-unix
+/tmp/.XIM-unix
+/tmp/.ICE-unix
+/tmp/.X11-unix
+/dev/mqueue
+/dev/shm
+/run/lock
+]]>
+</info>
+<description>
+Find word-writeable directories
+</description>
+<command>
+<![CDATA[
+find / -perm -2 -type d 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Find rhost config files
+</description>
+<command>
+<![CDATA[
+find /home -name *.rhosts -print 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Find *.plan files, list permissions and cat the file contents
+</description>
+<command>
+<![CDATA[
+find /home -iname *.plan -exec ls -la {} \; -exec cat {} 2>/dev/null \;
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Find hosts.equiv, list permissions and cat the file contents
+</description>
+<command>
+<![CDATA[
+find /etc -iname hosts.equiv -exec ls -la {} 2>/dev/null \; -exec cat {} 2>/dev/null \;
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rw------- 1 n0p_sl3d n0p_sl3d 16764 Feb  3 18:22 /home/n0p_sl3d/.bash_history
+]]>
+</info>
+<description>
+Show the current users' various history files
+</description>
+<command>
+<![CDATA[
+ls -la ~/.*_history
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rw------- 1 root root 8905 Feb  3 16:14 /root/.bash_history
+]]>
+</info>
+<description>
+Can we read root's history files
+</description>
+<command>
+<![CDATA[
+ls -la /root/.bash_history
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+total 20
+drwx------  2 n0p_sl3d n0p_sl3d 4096 Jan 30 18:35 .
+drwxr-x--- 26 n0p_sl3d n0p_sl3d 4096 Feb  3 18:51 ..
+-rw-------  1 n0p_sl3d n0p_sl3d 1675 Jan 30 18:35 id_rsa
+-rw-r--r--  1 n0p_sl3d n0p_sl3d  402 Jan 30 18:35 id_rsa.pub
+-rw-r--r--  1 n0p_sl3d n0p_sl3d 1878 Feb  3 15:05 known_hosts
+]]>
+</info>
+<description>
+Check for interesting ssh files in the current users’ directory
+</description>
+<command>
+<![CDATA[
+ls -la ~/.ssh/
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rw------- 1 n0p_sl3d n0p_sl3d 1675 Jan 30 18:35 /home/n0p_sl3d/.ssh/id_rsa
+-rw-r--r-- 1 n0p_sl3d n0p_sl3d  402 Jan 30 18:35 /home/n0p_sl3d/.ssh/id_rsa.pub
+-rw-r--r-- 1 n0p_sl3d n0p_sl3d 1878 Feb  3 15:05 /home/n0p_sl3d/.ssh/known_hosts
+]]>
+</info>
+<description>
+Find SSH keys/host information
+</description>
+<command>
+<![CDATA[
+find / -name "id_dsa*" -o -name "id_rsa*" -o -name "known_hosts" -o -name "authorized_hosts" -o -name "authorized_keys" 2>/dev/null |xargs -r ls -la
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+lrwxrwxrwx 1 root root 6 Jul 23  2015 /usr/sbin/in.tftpd -> atftpd
+]]>
+</info>
+<description>
+Check Configuration of inetd services
+</description>
+<command>
+<![CDATA[
+ls -la /usr/sbin/in.tftpd
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Check log files for keywords (‘pass’ in this example) and show positive matches
+</description>
+<command>
+<![CDATA[
+grep -l -i pass /var/log/alternatives.log /var/log/auth.log /var/log/bootstrap.log /var/log/daemon.log /var/log/dpkg.log /var/log/fontconfig.log /var/log/kern.log /var/log/macchanger.log /var/log/mysql.log /var/log/user.log /var/log/wvdialconf.log /var/log/Xorg.0.log /var/log/Xorg.1.log /var/log/Xorg.2.log 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rw-r--r-- 1 root root 20569 Jan 30 17:02 /var/log/Xorg.1.log
+-rw-r--r-- 1 root root 0 Aug 11 10:52 /var/log/bootstrap.log
+-rw-r--r-- 1 root root 21046 Jan 30 14:13 /var/log/Xorg.2.log
+-rw-r--r-- 1 root root 0 Aug 11 10:52 /var/log/wvdialconf.log
+-rw-r----- 1 root adm 119046 Feb  3 18:56 /var/log/auth.log
+-rw-r----- 1 root adm 28593 Feb  3 17:49 /var/log/apt/term.log
+-rw-r--r-- 1 root root 4390 Feb  3 17:49 /var/log/apt/history.log
+-rw-r--r-- 1 stunnel4 stunnel4 0 Aug 11 10:52 /var/log/stunnel4/stunnel.log
+-rw-r----- 1 root adm 2591268 Feb  3 18:56 /var/log/kern.log
+-rw-r----- 1 root adm 817286 Feb  3 18:40 /var/log/user.log
+-rw-r--r-- 1 root root 1917 Feb  2 12:55 /var/log/alternatives.log
+-rw-r----- 1 postgres adm 0 Aug 11 10:52 /var/log/postgresql/postgresql-9.4-main.log
+-rw-r----- 1 postgres adm 0 Jan 30 19:20 /var/log/postgresql/postgresql-9.5-main.log
+-rw-r--r-- 1 root root 3494 Jan 30 20:02 /var/log/fontconfig.log
+-rw-r--r-- 1 root root 21314 Feb  3 14:56 /var/log/Xorg.0.log
+-rw------- 1 root root 24202 Jan 30 14:05 /var/log/installer/Xorg.0.log
+-rw-r----- 1 root adm 0 Feb  3 15:01 /var/log/openvas/openvasmd.log
+-rw-r----- 1 root adm 0 Feb  3 15:01 /var/log/openvas/gsad.log
+-rw-r--r-- 1 dradis dradis 9689 Jan 30 19:19 /var/log/dradis/development.log
+-rw-r--r-- 1 root root 70639 Feb  3 17:54 /var/log/dpkg.log
+-rw-r--r-- 1 root root 1404 Feb  3 14:56 /var/log/macchanger.log
+-rw-r----- 1 mysql adm 0 Feb  3 15:01 /var/log/mysql.log
+-rw-r----- 1 root adm 896623 Feb  3 18:43 /var/log/daemon.log
+-rw-r--r-- 1 redis redis 28016 Feb  3 14:56 /var/log/redis/redis-server.log
+]]>
+</info>
+<description>
+List .log files in specified directory (/var/log)
+</description>
+<command>
+<![CDATA[
+find /var/log -name *.log -type f -exec ls -la {} \; 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/usr/lib/tmpfiles.d/systemd.conf:13:d /run/systemd/ask-password 0755 root root -
+/usr/lib/realmd/realmd-defaults.conf:43:example-password = bureaucracy
+/usr/share/john/dynamic_flat_sse_formats.conf:1:# NOTE, same format as dynamic_0  It is slower (50% slower, or more).  But it is not limited to 55 byte passwords.
+/usr/share/john/dynamic_flat_sse_formats.conf:2:# this should work for passwords up to 110 bytes long (max length dynamic will currently allow). It should not be
+/usr/share/john/dynamic_flat_sse_formats.conf:3:# used for shorter passwords (under 55 bytes).  Use dyna_0 for those.
+/usr/share/john/john.conf:2:# This file is part of John the Ripper password cracker,
+/usr/share/john/john.conf:27:Wordlist = $JOHN/password.lst
+/usr/share/john/john.conf:32:# Beep when a password is found (who needs this anyway?)
+/usr/share/john/john.conf:87:# Emit a status line whenever a password is cracked (this is the same as
+/usr/share/john/john.conf:97:# Write cracked passwords to the log file (default is just the user name)
+/usr/share/john/john.conf:119:# "Latin-1" language passwords you can use ISO-8859-1, CP850 or CP1252 and it
+/usr/share/john/john.conf:126:# Always report (to screen and log) cracked passwords as UTF-8, regardless of
+/usr/share/john/john.conf:130:# Always store Unicode (UTF-16) passwords as UTF-8 in john.pot, regardless
+/usr/share/john/john.conf:146:# 1 even mutes printing (to screen) of cracked passwords
+/usr/share/john/john.conf:149:# If set to Y, do not output, log  or store cracked passwords verbatim.
+/usr/share/john/john.conf:178:# With:     password123      (Administrator:500)
+/usr/share/john/john.conf:179:# Without   password123      (Administrator)
+/usr/share/john/john.conf:342:#Wordlist = $JOHN/password.lst
+/usr/share/john/john.conf:452:# About 50% of single-mode-crackable passwords get cracked by now...
+/usr/share/john/john.conf:662:# Try the second half of split passwords
+/usr/share/john/john.conf:692:# Some Office <=2003 files have passwords truncated at 15
+/usr/share/john/john.conf:1329:# crack passwords you may have generated with Strip; other uses of Strip
+/usr/share/john/john.conf:1340:/* Password lengths to try; Strip can generate passwords of 4 to 16
+/usr/share/john/john.conf:1410:# auto-generated passwords of DokuWiki versions up to at least 2013-05-10.
+/usr/share/john/john.conf:1512: * uses to generate passwords.
+/usr/share/john/john.conf:1521:int charset_length, password_length, endTime, startTime, msec;
+/usr/share/john/john.conf:1525:	password_length = 8;	/* Change this to match config */
+/usr/share/john/john.conf:1574:	while (i < password_length) {
+/usr/share/john/john.conf:1604:	while (i != password_length) {
+/usr/share/john/john.conf:1616:		while (i < password_length) {
+/usr/share/john/john.conf:1650: * lowers, uppers and symbols being ticked, in random password mode.
+/usr/share/john/john.conf:1651: * Changing the password length is easy, anything else is left as an
+/usr/share/john/john.conf:1662: * upgrade immediately and change your passwords.
+/usr/share/john/john.conf:1685:int password_length;
+/usr/share/john/john.conf:1689:	password_length = 16; /* Change this to match config */
+/usr/share/john/john.conf:1797:		while(i < password_length) {
+/usr/share/john/john.conf:1817:	while(i < password_length) {
+/usr/share/john/john.conf:1850:	int candidate[32]; /* This needs to be at-least as big as password-length */
+/usr/share/john/john.conf:1886:			while(i < password_length) {
+/usr/share/john/john.conf:1906:		while(i < password_length) {
+/usr/share/john/john.conf:1931:		if(i == password_length) return;
+/usr/share/john/john.conf:1935:# Try sequences of adjacent keys on a keyboard as candidate passwords
+/usr/share/john/john.conf:1937:int maxlength, length;	// Maximum password length to try, current length
+/usr/share/john/john.conf:1950:	// Initial password length to try
+/usr/share/john/john.conf:2063:int maxlength;		// Maximum password length to try
+/usr/share/john/john.conf:2119:# against LM hashes, which is only reasonable to do for very short password
+/usr/share/john/john.conf:2122:int maxlength;		// Maximum password length to try
+/usr/share/john/john.conf:2133:	// Initial password length to try, must be at least 1
+/usr/share/john/john.conf:2229:# Generic implementation of exhaustive search for a partially-known password.
+/usr/share/john/john.conf:2417:# candidates to either the format's limit (maximum password length)
+/usr/share/john/john.conf:2527:# candidates to either the format's limit (maximum password length)
+/usr/share/john/john.conf:2816:# Generate candidate passwords from many small subsets of characters from a
+/usr/share/john/john.conf:2817:# much larger full character set.  This will test for passwords containing too
+/usr/share/john/john.conf:2822:# to pass the resulting candidate passwords through "unique" if you intend to
+/usr/share/john/john.conf:2825:int minlength;		// Minimum password length to try
+/usr/share/john/john.conf:2826:int maxlength;		// Maximum password length to try
+/usr/share/john/john.conf:2842:	// Minimum password length to try, must be at least 1
+/usr/share/john/john.conf:2848:	// Maximum password length to try, must be at least same as minlength
+/usr/share/john/john.conf:2857:	// maximum password length
+/usr/share/john/john.conf:2955:# Simple password policy matching: require at least one digit.
+/usr/share/john/john.conf:2969:# The same password policy implemented in a more efficient and more generic
+/usr/share/john/john.conf:3001:# An efficient and fairly generic password policy matcher.  The policy to match
+/usr/share/john/dumb16.conf:18:int maxlength;            // Maximum password length to try
+/usr/share/john/dumb32.conf:23:int maxlength;            // Maximum password length to try
+/usr/share/john/dynamic.conf:108:# SSE (or MMX) is limtited to 54 byte max password, due to 'enhancements'
+/usr/share/john/dynamic.conf:113:# here is the optimized 'script' to perform hash 'like' IPB but salt replaced with password.
+/usr/share/john/dynamic.conf:297:# select id, name, emailid, password from administrator;
+/usr/share/john/dynamic.conf:447:Test=$dynamic_1015$1c4e11fb51835c3bbe9851ec91ec1375$HEX$c31803a2:password:postgres
+/usr/share/john/dynamic.conf:596:Test=$dynamic_1023$5baa61e4c9b93f3f0682250b6cf8331b:password
+/usr/share/john/dynamic.conf:724:Test=$dynamic_1032$6Pl/upEE0epQR5SObftn+s2fW3M=:password
+/usr/share/john/dynamic.conf:744:Test=$dynamic_1033$D7C1gHanUq1xE96HpEQitzAhNB8$FyKXs6zU:password
+/usr/share/john/dynamic.conf:745:Test=$dynamic_1033$sh+Q50Cp4vERzDkJcaaKIv8zubM=$M1RxMCTZ:password2
+/usr/share/john/dynamic.conf:806:#Test=$dynamic_1500$e8f97fba9104d1ea5047948e6dfb67fa:password
+/usr/share/john/dynamic.conf:807:Test=$dynamic_1400$e8f97fba9104d1ea5047948e6dfb67facd9f5b73:password
+/usr/share/john/dynamic.conf:829:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000:password:username
+/usr/share/john/dynamic.conf:830:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000$$Uusername:password
+/usr/share/john/dynamic.conf:832:Test=$dynamic_1401$27f6a9d892475e6ce0391de8d2d893f700000000$HEX$2455757365726e616d65:password
+/usr/share/john/dynamic.conf:834:# In Redmine, the hashed password is stored in the following form,
+/usr/share/john/dynamic.conf:835:# SHA1(salt + SHA1(password))
+/usr/share/john/dynamic.conf:858:# In XenForo, the hashed password is stored in the following form(s),
+/usr/share/john/dynamic.conf:859:# sha1(sha1(password).salt)
+/usr/share/john/dynamic.conf:863:# sha256(sha256(password).salt)
+/usr/share/john/dynamic.conf:878:Test=$dynamic_1502$fd74fa6521e515921ad843a8465e34b703960db1$dummysalt:password
+/usr/share/john/dynamic.conf:893:Test=$dynamic_1503$453f2e21fa6c150670d3ecf0e4a0ff3bab8b1903c2e96ad655d960b95f104248$697de9eda4a02563a7ec66d42d4a96995cb2948e29ab76fbcc89e8db71dd10f1:password
+/usr/share/john/dynamic.conf:894:Test=$dynamic_1503$a8a0e9545c1475e8546f8546d87fe2516cf525c12ad79a6a7a8fee2fb0d8afd3$697de9eda4a02563a7ec66d42d4a96995cb2948e29ab76fbcc89e8db71dd10f1:verlongcrappypassword01234567890
+/usr/share/john/dynamic.conf:916:# to make flat (allows much longer passwords and salts)
+/usr/share/john/dynamic.conf:933:# https://www.trustwave.com/Resources/SpiderLabs-Blog/Changes-in-Oracle-Database-12c-password-hashes/
+/usr/share/john/dynamic.conf:948:# Hash is password variable from ./lib/password.properties
+/usr/share/john/dynamic.conf:966:# 'intermixed' SSE for speed, BUT which can not process longer passwords, due to being
+/usr/share/john/dynamic.conf:970:# take full length passwords (110 bytes).
+/usr/share/oscanner/default.conf:5:   <string>commonpasswordfile</string> 
+/usr/share/golismero/golismero.conf:98:# password = my s3cr3t p4ssw0rd
+/usr/share/uniscan/uniscan.conf:48:# password to basic auth
+/usr/share/samba/smb.conf:93:# If you are using encrypted passwords, Samba will need to know what
+/usr/share/samba/smb.conf:94:# password database type you are using.  
+/usr/share/samba/smb.conf:100:# password with the SMB password when the encrypted SMB password in the
+/usr/share/samba/smb.conf:102:   unix password sync = yes
+/usr/share/samba/smb.conf:104:# For Unix password sync to work on a Debian GNU/Linux system, the following
+/usr/share/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+/usr/share/samba/smb.conf:110:# This boolean controls whether PAM will be used for password changes
+/usr/share/samba/smb.conf:113:   pam password change = yes
+/usr/share/samba/smb.conf:150:# password; please adapt to your needs
+/usr/share/samba/smb.conf:151:; add user script = /usr/sbin/adduser --quiet --disabled-password --gecos "" %u
+/usr/share/debconf/debconf.conf:8:Reject-Type: password
+/usr/share/debconf/debconf.conf:11:Name: passwords
+/usr/share/debconf/debconf.conf:16:Accept-Type: password
+/usr/share/debconf/debconf.conf:17:Filename: /var/cache/debconf/passwords.dat
+/usr/share/debconf/debconf.conf:21:Stack: config, passwords
+/etc/john/john.conf:2:# This file is part of John the Ripper password cracker,
+/etc/john/john.conf:27:Wordlist = $JOHN/password.lst
+/etc/john/john.conf:32:# Beep when a password is found (who needs this anyway?)
+/etc/john/john.conf:87:# Emit a status line whenever a password is cracked (this is the same as
+/etc/john/john.conf:97:# Write cracked passwords to the log file (default is just the user name)
+/etc/john/john.conf:119:# "Latin-1" language passwords you can use ISO-8859-1, CP850 or CP1252 and it
+/etc/john/john.conf:126:# Always report (to screen and log) cracked passwords as UTF-8, regardless of
+/etc/john/john.conf:130:# Always store Unicode (UTF-16) passwords as UTF-8 in john.pot, regardless
+/etc/john/john.conf:146:# 1 even mutes printing (to screen) of cracked passwords
+/etc/john/john.conf:149:# If set to Y, do not output, log  or store cracked passwords verbatim.
+/etc/john/john.conf:178:# With:     password123      (Administrator:500)
+/etc/john/john.conf:179:# Without   password123      (Administrator)
+/etc/john/john.conf:342:#Wordlist = $JOHN/password.lst
+/etc/john/john.conf:452:# About 50% of single-mode-crackable passwords get cracked by now...
+/etc/john/john.conf:662:# Try the second half of split passwords
+/etc/john/john.conf:692:# Some Office <=2003 files have passwords truncated at 15
+/etc/john/john.conf:1329:# crack passwords you may have generated with Strip; other uses of Strip
+/etc/john/john.conf:1340:/* Password lengths to try; Strip can generate passwords of 4 to 16
+/etc/john/john.conf:1410:# auto-generated passwords of DokuWiki versions up to at least 2013-05-10.
+/etc/john/john.conf:1512: * uses to generate passwords.
+/etc/john/john.conf:1521:int charset_length, password_length, endTime, startTime, msec;
+/etc/john/john.conf:1525:	password_length = 8;	/* Change this to match config */
+/etc/john/john.conf:1574:	while (i < password_length) {
+/etc/john/john.conf:1604:	while (i != password_length) {
+/etc/john/john.conf:1616:		while (i < password_length) {
+/etc/john/john.conf:1650: * lowers, uppers and symbols being ticked, in random password mode.
+/etc/john/john.conf:1651: * Changing the password length is easy, anything else is left as an
+/etc/john/john.conf:1662: * upgrade immediately and change your passwords.
+/etc/john/john.conf:1685:int password_length;
+/etc/john/john.conf:1689:	password_length = 16; /* Change this to match config */
+/etc/john/john.conf:1797:		while(i < password_length) {
+/etc/john/john.conf:1817:	while(i < password_length) {
+/etc/john/john.conf:1850:	int candidate[32]; /* This needs to be at-least as big as password-length */
+/etc/john/john.conf:1886:			while(i < password_length) {
+/etc/john/john.conf:1906:		while(i < password_length) {
+/etc/john/john.conf:1931:		if(i == password_length) return;
+/etc/john/john.conf:1935:# Try sequences of adjacent keys on a keyboard as candidate passwords
+/etc/john/john.conf:1937:int maxlength, length;	// Maximum password length to try, current length
+/etc/john/john.conf:1950:	// Initial password length to try
+/etc/john/john.conf:2063:int maxlength;		// Maximum password length to try
+/etc/john/john.conf:2119:# against LM hashes, which is only reasonable to do for very short password
+/etc/john/john.conf:2122:int maxlength;		// Maximum password length to try
+/etc/john/john.conf:2133:	// Initial password length to try, must be at least 1
+/etc/john/john.conf:2229:# Generic implementation of exhaustive search for a partially-known password.
+/etc/john/john.conf:2417:# candidates to either the format's limit (maximum password length)
+/etc/john/john.conf:2527:# candidates to either the format's limit (maximum password length)
+/etc/john/john.conf:2816:# Generate candidate passwords from many small subsets of characters from a
+/etc/john/john.conf:2817:# much larger full character set.  This will test for passwords containing too
+/etc/john/john.conf:2822:# to pass the resulting candidate passwords through "unique" if you intend to
+/etc/john/john.conf:2825:int minlength;		// Minimum password length to try
+/etc/john/john.conf:2826:int maxlength;		// Maximum password length to try
+/etc/john/john.conf:2842:	// Minimum password length to try, must be at least 1
+/etc/john/john.conf:2848:	// Maximum password length to try, must be at least same as minlength
+/etc/john/john.conf:2857:	// maximum password length
+/etc/john/john.conf:2955:# Simple password policy matching: require at least one digit.
+/etc/john/john.conf:2969:# The same password policy implemented in a more efficient and more generic
+/etc/john/john.conf:3001:# An efficient and fairly generic password policy matcher.  The policy to match
+/etc/john/john-mail.conf:13:# weak passwords (but that means sensitive information would be
+/etc/john/john-mail.conf:21:# ***WARNING***: this will be a copy of your password file, that will
+/etc/john/john-mail.conf:24:# that is considered safe for john to put a copy of the password file.
+/etc/john/john-mail.conf:27:# The group directive specifies the group whose members' passwords will 
+/etc/unicornscan/modules.conf:3:	dbconf:		"user=scan password=scanit! host=localhost dbname=scan";
+/etc/unicornscan/modules.conf:9:	password:	"scanit!";
+/etc/cracklib/cracklib.conf:17:#   passwords should not match.  The files may optionally be compressed
+/etc/redsocks.conf:55:	// password = "baz";
+/etc/redsocks.conf:69:	password = pazzw0rd;
+/etc/inetsim/inetsim.conf:612:# to clear text username/password.
+/etc/inetsim/inetsim.conf:810:# to clear text username/password.
+/etc/inetsim/inetsim.conf:974:# to clear text username/password
+/etc/inetsim/inetsim.conf:1176:# to clear text username/password
+/etc/sqlmap/sqlmap.conf:25:# Example (file content): POST /login.jsp HTTP/1.1\nHost: example.com\nUser-Agent: Mozilla/4.0\n\nuserid=joe&password=guessme
+/etc/sqlmap/sqlmap.conf:93:# Syntax: username:password
+/etc/sqlmap/sqlmap.conf:107:# Syntax: username:password
+/etc/sqlmap/sqlmap.conf:156:# Example: username=admin&password=passw0rd!
+/etc/sqlmap/sqlmap.conf:236:# DBMS authentication credentials (user:password). Useful if you want to
+/etc/sqlmap/sqlmap.conf:241:# Syntax: username:password
+/etc/sqlmap/sqlmap.conf:420:# Enumerate back-end database management system users password hashes.
+/etc/reportbug.conf:71:# Username and password for SMTP
+/etc/sparta.conf:12:store-cleartext-passwords-on-exit=True
+/etc/sparta.conf:14:password-wordlist-path=/usr/share/wordlists/
+/etc/sparta.conf:16:default-password=password
+/etc/sparta.conf:19:no-password-services="oracle-sid,rsh,smtp-enum"
+/etc/sparta.conf:53:polenum=Extract password policy (polenum), polenum [IP], "netbios-ssn,microsoft-ds"
+/etc/sparta.conf:60:smb-enum-policies=Extract password policy (nmap), "nmap -p[PORT] --script=smb-enum-domains [IP] -vvvvv", "netbios-ssn,microsoft-ds"
+/etc/firebird/2.5/firebird.conf:168:# If you want to disable logons with old passwords
+/etc/firebird/2.5/firebird.conf:790:# this connection one even need not know login/password on external server.
+/etc/samba/smb.conf:93:# If you are using encrypted passwords, Samba will need to know what
+/etc/samba/smb.conf:94:# password database type you are using.  
+/etc/samba/smb.conf:100:# password with the SMB password when the encrypted SMB password in the
+/etc/samba/smb.conf:102:   unix password sync = yes
+/etc/samba/smb.conf:104:# For Unix password sync to work on a Debian GNU/Linux system, the following
+/etc/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+/etc/samba/smb.conf:110:# This boolean controls whether PAM will be used for password changes
+/etc/samba/smb.conf:113:   pam password change = yes
+/etc/samba/smb.conf:150:# password; please adapt to your needs
+/etc/samba/smb.conf:151:; add user script = /usr/sbin/adduser --quiet --disabled-password --gecos "" %u
+/etc/cisco-torch/torch.conf:3:$passfile= "password.txt"; #Password word database
+/etc/nikto.conf:52:#PROXYPASS=proxypassword
+/etc/openvas/gsad_log.conf:4:#          group to include debug may reveal passwords in the logs.
+/etc/openvas/openvasmd_log.conf:4:#          may reveal passwords in the logs.
+/etc/openvas/pwpolicy.conf:3:# This is an example for a pattern file used to validate passwords.
+/etc/openvas/pwpolicy.conf:38:# To perform checks on the username/password combination, you should
+/etc/openvas/pwpolicy.conf:43:# Currently this checks whether the password matches or is included in
+/etc/openvas/pwpolicy.conf:44:# the password. It may eventually be extended to further tests.
+/etc/openvas/pwpolicy.conf:50:# Be aware: By default any password is allowed.
+/etc/openvas/pwpolicy.conf:58:## Check that the user name does not match the password.
+/etc/openvas/pwpolicy.conf:83:##+desc: Common test password
+/etc/openvas/pwpolicy.conf:84:#password
+/etc/openvas/pwpolicy.conf:102:#no-password
+/etc/openvas/pwpolicy.conf:103:#no password
+/etc/openvas/pwpolicy.conf:114:## be better to use an offline password auditing tool instead.
+/etc/nipper.conf:116:# Dictionary to use with password strength testing. If no
+/etc/nipper.conf:119:# one password per line.
+/etc/hdparm.conf:86:# --security-set-pass Set security password
+/etc/hdparm.conf:87:# security_pass = password
+/etc/hdparm.conf:90:# --user-master Select password to use
+/etc/debconf.conf:14:# World-readable, and accepts everything but passwords.
+/etc/debconf.conf:18:Reject-Type: password
+/etc/debconf.conf:21:# Not world readable (the default), and accepts only passwords.
+/etc/debconf.conf:22:Name: passwords
+/etc/debconf.conf:27:Accept-Type: password
+/etc/debconf.conf:28:Filename: /var/cache/debconf/passwords.dat
+/etc/debconf.conf:31:# databases, one to hold passwords and one for everything else.
+/etc/debconf.conf:34:Stack: config, passwords
+/etc/debconf.conf:58:# A remote LDAP database. It is also read-only. The password is really
+/etc/apache2/sites-available/default-ssl.conf:78:		#	 Note that no password is obtained from the user. Every entry in the user
+/etc/apache2/sites-available/default-ssl.conf:79:		#	 file needs this password: `xxj31ZMTZzkVA'.
+/etc/security/pwquality.conf:1:# Configuration for systemwide password quality limits
+/etc/security/pwquality.conf:4:# Number of characters in the new password that must not be present in the
+/etc/security/pwquality.conf:5:# old password.
+/etc/security/pwquality.conf:8:# Minimum acceptable size for the new password (plus one if
+/etc/security/pwquality.conf:13:# The maximum credit for having digits in the new password. If less than 0
+/etc/security/pwquality.conf:14:# it is the minimum number of digits in the new password.
+/etc/security/pwquality.conf:17:# The maximum credit for having uppercase characters in the new password.
+/etc/security/pwquality.conf:19:# password.
+/etc/security/pwquality.conf:22:# The maximum credit for having lowercase characters in the new password.
+/etc/security/pwquality.conf:24:# password.
+/etc/security/pwquality.conf:27:# The maximum credit for having other characters in the new password.
+/etc/security/pwquality.conf:29:# password.
+/etc/security/pwquality.conf:33:# password (digits, uppercase, lowercase, others).
+/etc/security/pwquality.conf:36:# The maximum number of allowed consecutive same characters in the new password.
+/etc/security/pwquality.conf:41:# new password.
+/etc/netsniff-ng/udp.conf:477:586, password-chg
+/etc/redis/sentinel.conf:55:# sentinel auth-pass <master-name> <password>
+/etc/redis/sentinel.conf:57:# Set the password to use to authenticate with the master and slaves.
+/etc/redis/sentinel.conf:58:# Useful if there is a password set in the Redis instances to monitor.
+/etc/redis/sentinel.conf:60:# Note that the master password is also used for slaves, so it is not
+/etc/redis/sentinel.conf:61:# possible to set a different password in masters and slaves instances
+/etc/redis/sentinel.conf:66:# password set is the same for all the instances requiring the password) as
+]]>
+</info>
+<description>
+Find .conf files (recursive 4 levels) and output line number where the word 'password' is located
+</description>
+<command>
+<![CDATA[
+find / -maxdepth 4 -name *.conf -type f -exec grep -Hn password {} \; 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+COMMAND     PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+iceweasel  1912 n0p_sl3d   56u  IPv4 273465      0t0  TCP 127.0.0.1:38460->127.0.1.1:8834 (ESTABLISHED)
+iceweasel  1912 n0p_sl3d   62u  IPv4 200839      0t0  TCP 192.168.1.114:47436->64.233.166.189:https (ESTABLISHED)
+iceweasel  1912 n0p_sl3d   63u  IPv4 208779      0t0  TCP 192.168.1.114:51036->192.30.252.86:https (ESTABLISHED)
+iceweasel  1912 n0p_sl3d   64u  IPv4 214563      0t0  TCP 192.168.1.114:33952->83.212.7.82:https (ESTABLISHED)
+iceweasel  1912 n0p_sl3d   69u  IPv4 196508      0t0  TCP 192.168.1.114:33768->66.220.146.5:https (ESTABLISHED)
+iceweasel  1912 n0p_sl3d   87u  IPv4 197645      0t0  TCP 192.168.1.114:47552->192.30.252.86:https (ESTABLISHED)
+java      19721 n0p_sl3d   42u  IPv6 204639      0t0  TCP 127.0.0.1:http-alt (LISTEN)
+nc        21144 n0p_sl3d    4u  IPv4 208813      0t0  TCP 192.168.1.114:4444->192.168.1.114:47286 (ESTABLISHED)
+bash      21240 n0p_sl3d    0u  IPv4 212022      0t0  TCP 192.168.1.114:47286->192.168.1.114:4444 (ESTABLISHED)
+bash      21240 n0p_sl3d    1u  IPv4 212022      0t0  TCP 192.168.1.114:47286->192.168.1.114:4444 (ESTABLISHED)
+bash      22008 n0p_sl3d    0u  IPv4 212022      0t0  TCP 192.168.1.114:47286->192.168.1.114:4444 (ESTABLISHED)
+lsof      22009 n0p_sl3d    0u  IPv4 212022      0t0  TCP 192.168.1.114:47286->192.168.1.114:4444 (ESTABLISHED)
+]]>
+</info>
+<description>
+List open files (output will depend on account privileges)
+</description>
+<command>
+<![CDATA[
+lsof -i -n
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Can we read roots mail
+</description>
+<command>
+<![CDATA[
+head /var/mail/root
+]]>
+</command>
+</data>
+</group>
+
+<group title="Service Information">
+
+<data>
+<info>
+<![CDATA[
+root         1  0.0  0.0 186920  5556 ?        Ss   14:56   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    14:56   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        R    14:56   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/0:0H]
+root         7  0.1  0.0      0     0 ?        S    14:56   0:17 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    14:56   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    14:56   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    14:56   0:00 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S    14:56   0:00 [watchdog/1]
+root        12  0.0  0.0      0     0 ?        S    14:56   0:00 [migration/1]
+root        13  0.0  0.0      0     0 ?        S    14:56   0:00 [ksoftirqd/1]
+root        15  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/1:0H]
+root        16  0.0  0.0      0     0 ?        S    14:56   0:00 [watchdog/2]
+root        17  0.0  0.0      0     0 ?        S    14:56   0:00 [migration/2]
+root        18  0.0  0.0      0     0 ?        S    14:56   0:00 [ksoftirqd/2]
+root        20  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/2:0H]
+root        21  0.0  0.0      0     0 ?        S    14:56   0:00 [watchdog/3]
+root        22  0.0  0.0      0     0 ?        S    14:56   0:00 [migration/3]
+root        23  0.0  0.0      0     0 ?        S    14:56   0:00 [ksoftirqd/3]
+root        25  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/3:0H]
+root        26  0.0  0.0      0     0 ?        S    14:56   0:00 [kdevtmpfs]
+root        27  0.0  0.0      0     0 ?        S<   14:56   0:00 [netns]
+root        28  0.0  0.0      0     0 ?        S<   14:56   0:00 [perf]
+root        29  0.0  0.0      0     0 ?        S    14:56   0:00 [khungtaskd]
+root        30  0.0  0.0      0     0 ?        S<   14:56   0:00 [writeback]
+root        32  0.0  0.0      0     0 ?        SN   14:56   0:00 [ksmd]
+root        33  0.0  0.0      0     0 ?        SN   14:56   0:00 [khugepaged]
+root        34  0.0  0.0      0     0 ?        S<   14:56   0:00 [crypto]
+root        35  0.0  0.0      0     0 ?        S<   14:56   0:00 [kintegrityd]
+root        36  0.0  0.0      0     0 ?        S<   14:56   0:00 [bioset]
+root        37  0.0  0.0      0     0 ?        S<   14:56   0:00 [kblockd]
+root        38  0.0  0.0      0     0 ?        S<   14:56   0:00 [devfreq_wq]
+root        40  0.0  0.0      0     0 ?        S    14:56   0:01 [kswapd0]
+root        41  0.0  0.0      0     0 ?        S    14:56   0:00 [fsnotify_mark]
+root        51  0.0  0.0      0     0 ?        S<   14:56   0:00 [kthrotld]
+root        52  0.0  0.0      0     0 ?        S<   14:56   0:00 [ipv6_addrconf]
+root        53  0.0  0.0      0     0 ?        S    14:56   0:05 [kworker/2:2]
+root        54  0.0  0.0      0     0 ?        S<   14:56   0:00 [deferwq]
+root        90  0.0  0.0      0     0 ?        S<   14:56   0:00 [acpi_thermal_pm]
+root        99  0.0  0.0      0     0 ?        S<   14:56   0:00 [ata_sff]
+root       162  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_0]
+root       163  0.0  0.0      0     0 ?        S<   14:56   0:00 [scsi_tmf_0]
+root       164  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_1]
+root       165  0.0  0.0      0     0 ?        S<   14:56   0:00 [scsi_tmf_1]
+root       166  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_2]
+root       167  0.0  0.0      0     0 ?        S<   14:56   0:00 [scsi_tmf_2]
+root       168  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_3]
+root       169  0.0  0.0      0     0 ?        S<   14:56   0:00 [scsi_tmf_3]
+root       170  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_4]
+root       171  0.0  0.0      0     0 ?        S<   14:56   0:00 [scsi_tmf_4]
+root       172  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_5]
+root       173  0.0  0.0      0     0 ?        S<   14:56   0:00 [scsi_tmf_5]
+root       179  0.0  0.0      0     0 ?        S<   14:56   0:00 [bioset]
+root       183  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/2:1H]
+root       184  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/3:1H]
+root       185  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/0:1H]
+root       186  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/1:1H]
+root       218  0.0  0.0      0     0 ?        S    14:56   0:00 [jbd2/sda1-8]
+root       219  0.0  0.0      0     0 ?        S<   14:56   0:00 [ext4-rsv-conver]
+root       266  0.0  0.2  43536 12400 ?        Ss   14:56   0:02 /lib/systemd/systemd-journald
+root       267  0.0  0.0      0     0 ?        S    14:56   0:00 [kauditd]
+root       278  0.0  0.0  94616  2068 ?        Ss   14:56   0:00 /sbin/lvmetad -f
+root       279  0.0  0.0  44420  3828 ?        Ss   14:56   0:00 /lib/systemd/systemd-udevd
+root       424  0.0  0.0      0     0 ?        S    14:56   0:00 [irq/26-mei_me]
+root       452  0.0  0.0      0     0 ?        S<   14:56   0:00 [ktpacpid]
+root       459  0.0  0.0      0     0 ?        S    14:56   0:00 [ips-adjust]
+root       461  0.0  0.0      0     0 ?        S    14:56   0:02 [ips-monitor]
+root       471  0.0  0.0      0     0 ?        S<   14:56   0:00 [cfg80211]
+root       487  0.0  0.0      0     0 ?        S<   14:56   0:00 [kpsmoused]
+root       488  0.2  0.0      0     0 ?        S    14:56   0:32 [irq/28-iwlwifi]
+root       553  0.0  0.0      0     0 ?        S<   14:56   0:00 [kvm-irqfd-clean]
+root       555  0.0  0.0      0     0 ?        S<   14:56   0:01 [kworker/u9:1]
+root       557  0.0  0.0      0     0 ?        S<   14:56   0:00 [kworker/u9:2]
+root       560  0.0  0.0      0     0 ?        S<   14:56   0:00 [iwlwifi]
+root       573  0.0  0.0 258268  3300 ?        Ssl  14:56   0:02 /usr/sbin/rsyslogd -n
+root       575  0.0  0.0  12700  1860 ?        Ss   14:56   0:00 /usr/sbin/inetd -i
+root       584  0.0  0.4 870600 27064 ?        Ssl  14:56   0:08 /usr/sbin/NetworkManager --no-daemon
+root       588  0.0  0.0  28440  3024 ?        Ss   14:56   0:00 /lib/systemd/systemd-logind
+root       606  0.0  0.0  24972  4064 ?        Ss   14:56   0:00 /usr/sbin/smartd -n
+root       652  0.0  0.0  27416  2728 ?        Ss   14:56   0:00 /usr/sbin/cron -f
+root       656  0.0  0.1 274268  6248 ?        Ssl  14:56   0:01 /usr/lib/accountsservice/accounts-daemon
+root       659  0.0  0.1 332888  8368 ?        Ssl  14:56   0:00 /usr/sbin/ModemManager
+root       688  0.0  0.1 280372  8548 ?        Ssl  14:56   0:01 /usr/lib/policykit-1/polkitd --no-debug
+root       703  0.0  0.0  19292  2048 ?        Ss   14:56   0:00 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+root       720  0.0  0.0  12828  1936 tty1     Ss+  14:56   0:00 /sbin/agetty --noclear tty1 linux
+root       729  0.0  0.0      0     0 ?        S<   14:56   0:00 [iprt-VBoxWQueue]
+root       730  0.0  0.0      0     0 ?        S    14:56   0:00 [iprt-VBoxTscThr]
+root       751  0.0  0.0      0     0 ?        S    14:56   0:04 [kworker/1:3]
+root       769  0.0  0.1 357932  7424 ?        Ssl  14:56   0:00 /usr/sbin/gdm3
+root       798  0.0  0.1 228356  7380 ?        Sl   14:56   0:00 gdm-session-worker [pam/gdm-launch-environment]
+root      1158  0.0  0.1  44080  7368 ?        Ss   14:56   0:01 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      1186  0.0  0.1 346980 11240 ?        Ssl  14:56   0:00 /usr/lib/upower/upowerd
+Debian-+  1224  0.0  0.7 266648 42960 tty7     Sl+  14:56   0:00 /usr/bin/Xwayland :1024 -rootless -noreset -listen 4 -listen 5 -displayfd 6
+root      1251  0.0  0.0  33936  4560 ?        Ss   14:56   0:00 /usr/lib/bluetooth/bluetoothd
+root      1259  0.0  0.0      0     0 ?        S<   14:56   0:00 [krfcommd]
+avahi     1270  0.0  0.0  46680   348 ?        S    14:56   0:00 avahi-daemon: chroot helper
+root      1271  0.0  0.4 382976 24136 ?        Ssl  14:56   0:02 /usr/lib/packagekit/packagekitd
+root      1314  0.0  0.1 232480  7288 ?        Sl   14:56   0:00 gdm-session-worker [pam/gdm-password]
+root      1330  2.6  1.1 393944 66444 tty2     Sl+  14:56   6:24 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1001/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -verbose 3
+root      1522  0.0  0.1 365940  7180 ?        Ssl  14:56   0:01 /usr/lib/udisks2/udisksd --no-debug
+root      2004  0.0  0.0      0     0 ?        S<   14:59   0:00 [hci0]
+root      2005  0.0  0.0      0     0 ?        S<   14:59   0:00 [hci0]
+root      2548  0.0  0.0  15032  3476 ?        S    15:02   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wlan0.pid -lf /var/lib/NetworkManager/dhclient-e51dae7d-b031-4730-aaf2-faf376586727-wlan0.lease -cf /var/lib/NetworkManager/dhclient-wlan0.conf wlan0
+root      8454  0.0  0.0      0     0 ?        S    16:13   0:03 [kworker/3:4]
+root     15979  0.0  0.0      0     0 ?        S    17:06   0:00 [kworker/3:0]
+root     16738  0.0  0.0      0     0 ?        S    17:48   0:00 [kworker/1:0]
+root     16760  0.0  0.0  50708  3336 pts/1    S    17:48   0:00 su
+root     16761  0.0  0.0  23528  5488 pts/1    S+   17:48   0:00 bash
+root     18236  0.0  0.0      0     0 ?        S    17:54   0:01 [kworker/2:0]
+root     18273  0.0  0.0   6372  1040 ?        S    17:55   0:00 /opt/nessus/sbin/nessus-service -D -q
+root     18499 40.8  2.2 473028 130500 ?       Sl   18:01  22:19 nessusd -q
+root     19637  0.0  0.0      0     0 ?        S    18:33   0:00 [kworker/0:1]
+root     19638  0.0  0.0      0     0 ?        S    18:34   0:00 [kworker/u8:0]
+root     19768  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/u8:2]
+root     19769  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/0:0]
+root     19948  0.0  0.0      0     0 ?        S    18:47   0:00 [kworker/u8:1]
+root     20705  0.0  0.0      0     0 ?        S    18:52   0:00 [kworker/0:2]
+n0p_sl3d 22021  0.0  0.0  12664  1664 pts/7    S+   18:56   0:00 grep root
+]]>
+</info>
+<description>
+View services running as root
+</description>
+<command>
+<![CDATA[
+ps -aux | grep root
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rwxr-xr-x 1 root root  1037440 Dec  2 11:34 /bin/bash
+lrwxrwxrwx 1 root root        4 Jan 26 18:26 /bin/sh -> dash
+-rwxr-xr-x 1 root root  1536160 Jan 11 08:27 /lib/systemd/systemd
+-rwxr-xr-x 1 root root   318040 Jan 11 08:27 /lib/systemd/systemd-journald
+-rwxr-xr-x 1 root root   614296 Jan 11 08:27 /lib/systemd/systemd-logind
+-rwxr-xr-x 1 root root   449168 Jan 11 08:27 /lib/systemd/systemd-udevd
+-rwxr-xr-x 1 root root    23760 Dec 14 16:22 /opt/nessus/sbin/nessus-service
+-rwxr-xr-x 1 root root    44104 Jan 26 16:50 /sbin/agetty
+-rwxr-xr-x 1 root root   483032 Oct  4 01:36 /sbin/dhclient
+lrwxrwxrwx 1 root root       20 Jan 11 08:27 /sbin/init -> /lib/systemd/systemd
+-rwxr-xr-x 1 root root    63624 Dec 22 21:03 /sbin/lvmetad
+-rwxr-xr-x 1 root root  2028256 Nov 14 23:52 /sbin/wpa_supplicant
+-rwxr-xr-x 1 root root   224208 Dec  2 00:31 /usr/bin/dbus-daemon
+-rwxr-xr-x 1 root root  1014224 Jan  3 00:29 /usr/bin/gnome-keyring-daemon
+-rwxr-xr-x 1 root root    19336 Oct 21 20:40 /usr/bin/gnome-shell
+-rwxr-xr-x 1 root root   602696 Jan 15 16:21 /usr/bin/gnome-software
+-rwxr-xr-x 1 root root    88160 Nov  7 02:34 /usr/bin/pulseaudio
+lrwxrwxrwx 1 root root        9 Dec  9 14:23 /usr/bin/python -> python2.7
+lrwxrwxrwx 1 root root        9 Jan 11 21:05 /usr/bin/python3 -> python3.5
+-rwxr-xr-x 1 root root   820496 Dec 19 13:28 /usr/bin/redis-server
+-rwxr-sr-x 1 root ssh    354528 Jan 17 18:47 /usr/bin/ssh-agent
+-rwxr-xr-x 1 root root  2238944 Oct 28 01:43 /usr/bin/Xwayland
+-rwxr-xr-x 1 root root   205960 Oct 16 14:30 /usr/bin/zeitgeist-daemon
+-rwxr-xr-x 1 root root   144128 Aug 27 03:47 /usr/lib/accountsservice/accounts-daemon
+-rwxr-xr-x 1 root root   104128 Dec 26 18:38 /usr/lib/at-spi2-core/at-spi2-registryd
+-rwxr-xr-x 1 root root    18424 Dec 26 18:38 /usr/lib/at-spi2-core/at-spi-bus-launcher
+-rwxr-xr-x 1 root root  1124336 Nov  7 06:28 /usr/lib/bluetooth/bluetoothd
+-rwxr-xr-x 1 root root   292944 Nov  6 19:01 /usr/lib/colord/colord
+-rwxr-xr-x 1 root root    77760 May 27  2015 /usr/lib/dconf/dconf-service
+-rwxr-xr-x 1 root root    43080 Nov 12 19:19 /usr/lib/evince/evinced
+-rwxr-xr-x 1 root root    10392 Dec 16 16:12 /usr/lib/evolution/evolution-addressbook-factory
+-rwxr-xr-x 1 root root    14536 Dec 16 16:12 /usr/lib/evolution/evolution-addressbook-factory-subprocess
+-rwxr-xr-x 1 root root    10392 Dec 16 16:12 /usr/lib/evolution/evolution-calendar-factory
+-rwxr-xr-x 1 root root    14536 Dec 16 16:12 /usr/lib/evolution/evolution-calendar-factory-subprocess
+-rwxr-xr-x 1 root root   101000 Dec 16 16:12 /usr/lib/evolution/evolution-source-registry
+-rwxr-xr-x 1 root root    57048 Oct 12 10:51 /usr/lib/gdm3/gdm-wayland-session
+-rwxr-xr-x 1 root root    73912 Oct 12 10:51 /usr/lib/gdm3/gdm-x-session
+-rwxr-xr-x 1 root root    49096 Dec 20 18:53 /usr/lib/gnome-online-accounts/goa-daemon
+-rwxr-xr-x 1 root root   214088 Dec 20 18:53 /usr/lib/gnome-online-accounts/goa-identity-service
+-rwxr-xr-x 1 root root   276344 Oct 21 19:52 /usr/lib/gnome-session/gnome-session-binary
+-rwxr-xr-x 1 root root    35952 Nov 11 03:49 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+-rwxr-xr-x 1 root root    27272 Nov 11 03:49 /usr/lib/gnome-settings-daemon/gsd-printer
+-rwxr-xr-x 1 root root    36248 Oct 21 20:40 /usr/lib/gnome-shell/gnome-shell-calendar-server
+-rwxr-xr-x 1 root root   303280 Dec  8 15:49 /usr/lib/gnome-terminal/gnome-terminal-server
+-rwxr-xr-x 1 root root    86024 Jan 19 01:38 /usr/lib/gvfs/gvfs-afc-volume-monitor
+-rwxr-xr-x 1 root root    31888 Jan 19 01:38 /usr/lib/gvfs/gvfsd
+-rwxr-xr-x 1 root root    31920 Jan 19 01:38 /usr/lib/gvfs/gvfsd-dnssd
+-rwxr-xr-x 1 root root    36288 Jan 19 01:38 /usr/lib/gvfs/gvfsd-fuse
+-rwxr-xr-x 1 root root    77680 Jan 19 01:38 /usr/lib/gvfs/gvfsd-metadata
+-rwxr-xr-x 1 root root    31976 Jan 19 01:38 /usr/lib/gvfs/gvfsd-network
+-rwxr-xr-x 1 root root    48720 Jan 19 01:38 /usr/lib/gvfs/gvfsd-trash
+-rwxr-xr-x 1 root root    94472 Jan 19 01:38 /usr/lib/gvfs/gvfs-goa-volume-monitor
+-rwxr-xr-x 1 root root    90208 Jan 19 01:38 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+-rwxr-xr-x 1 root root    90088 Jan 19 01:38 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+-rwxr-xr-x 1 root root   166264 Jan 19 01:38 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+-rwxr-xr-x 1 root root   280784 Nov 27 17:28 /usr/lib/packagekit/packagekitd
+-rwxr-xr-x 1 root root    15048 Jan 17 20:34 /usr/lib/policykit-1/polkitd
+-rwxr-xr-x 1 root root    64640 Oct 25 01:29 /usr/lib/rtkit/rtkit-daemon
+-rwxr-xr-x 1 root root   377096 Dec 27 13:12 /usr/lib/telepathy/mission-control-5
+-rwxr-xr-x 1 root root    95712 Jan 21 17:12 /usr/lib/tracker/tracker-extract
+-rwxr-xr-x 1 root root    27936 Jan 21 17:12 /usr/lib/tracker/tracker-miner-apps
+-rwxr-xr-x 1 root root   124032 Jan 21 17:12 /usr/lib/tracker/tracker-miner-fs
+-rwxr-xr-x 1 root root    27936 Jan 21 17:12 /usr/lib/tracker/tracker-miner-user-guides
+-rwxr-xr-x 1 root root   135560 Jan 21 17:12 /usr/lib/tracker/tracker-store
+-rwxr-xr-x 1 root root   352664 Jul 28  2015 /usr/lib/udisks2/udisksd
+-rwxr-xr-x 1 root root   145480 Jan 19 02:38 /usr/lib/upower/upowerd
+-rwxr-xr-x 1 root root    48352 Aug 26  2014 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+-rwxr-xr-x 1 root root  2396416 Oct 28 01:43 /usr/lib/xorg/Xorg
+-rwxr-xr-x 1 root root   131536 Oct 16 14:30 /usr/lib/zeitgeist/zeitgeist-fts
+-rwxr-xr-x 1 root root    22536 Dec 25 11:56 /usr/sbin/atd
+-rwxr-xr-x 1 root root    44400 May 14  2015 /usr/sbin/cron
+-rwxr-xr-x 1 root root   375064 Oct 12 10:51 /usr/sbin/gdm3
+-rwxr-xr-x 1 root root    43328 Oct 21  2014 /usr/sbin/inetd
+-rwxr-xr-x 1 root root    48440 Jan 12 01:17 /usr/sbin/irqbalance
+-rwxr-xr-x 1 root root  1079656 Oct  8 14:22 /usr/sbin/ModemManager
+-rwxr-xr-x 1 root root 13924960 Jan 15 16:16 /usr/sbin/mysqld
+-rwxr-xr-x 1 root root  1902552 Jan 22 23:26 /usr/sbin/NetworkManager
+-rwxr-xr-x 1 root root   599400 Jan 22 23:39 /usr/sbin/rsyslogd
+-rwxr-xr-x 1 root root   588776 Nov 19 18:07 /usr/sbin/smartd
+]]>
+</info>
+<description>
+Lookup process binary path and permissions
+</description>
+<command>
+<![CDATA[
+ps -aux | awk '{print $11}'|xargs -r ls -la 2>/dev/null |awk '!x[$0]++'
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+# /etc/inetd.conf:  see inetd(8) for further informations.
+#
+# Internet superserver configuration database
+#
+#
+# Lines starting with "#:LABEL:" or "#<off>#" should not
+# be changed unless you know what you are doing!
+#
+# If you want to disable an entry so it isn't touched during
+# package updates just comment it out with a single '#' character.
+#
+# Packages should modify this file by using update-inetd(8)
+#
+# <service_name> <sock_type> <proto> <flags> <user> <server_path> <args>
+#
+#:INTERNAL: Internal services
+#discard		stream	tcp	nowait	root	internal
+#discard		dgram	udp	wait	root	internal
+#daytime		stream	tcp	nowait	root	internal
+#time		stream	tcp	nowait	root	internal
+
+#:STANDARD: These are standard services.
+#<off># https	stream	tcp	nowait	root	/usr/sbin/tcpd /usr/sbin/sslh -i -u sslh -s localhost:22 -l localhost:444
+
+#:BSD: Shell, login, exec and talk are BSD protocols.
+
+#:MAIL: Mail, news and uucp services.
+
+#:INFO: Info services
+
+#:BOOT: TFTP service is provided primarily for booting.  Most sites
+#       run this only on machines acting as "boot servers."
+tftp		dgram	udp4	wait	nobody /usr/sbin/tcpd /usr/sbin/in.tftpd --tftpd-timeout 300 --retry-timeout 5 --mcast-port 1758 --mcast-addr 239.239.239.0-255 --mcast-ttl 1 --maxthread 100 --verbose=5 /srv/tftp
+
+#:RPC: RPC based services
+
+#:HAM-RADIO: amateur-radio services
+
+#:OTHER: Other services
+#<off># sane-port	stream	tcp	nowait	saned:saned	/usr/sbin/saned saned
+]]>
+</info>
+<description>
+List services managed by inetd
+</description>
+<command>
+<![CDATA[
+cat /etc/inetd.conf
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+As above for xinetd
+</description>
+<command>
+<![CDATA[
+cat /etc/xinetd.conf
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+A very 'rough' command to extract associated binaries from xinetd.conf and show permissions of each
+</description>
+<command>
+<![CDATA[
+cat /etc/xinetd.conf 2>/dev/null | awk '{print $7}' |xargs -r ls -la 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Permissions and contents of /etc/exports (NFS)
+</description>
+<command>
+<![CDATA[
+ls -la /etc/exports 2>/dev/null; cat /etc/exports 2>/dev/null
+]]>
+</command>
+</data>
+</group>
+
+<group title="Jobs/Tasks">
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Display scheduled jobs for the specified user - Privileged command
+</description>
+<command>
+<![CDATA[
+crontab -l
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+-rw-r--r-- 1 root root  722 Oct 26  2014 /etc/crontab
+
+/etc/cron.d:
+total 32
+drwxr-xr-x   2 root root  4096 Jan 30 19:19 .
+drwxr-xr-x 185 root root 12288 Feb  3 15:02 ..
+-rw-r--r--   1 root root   244 Dec 28  2014 anacron
+-rw-r--r--   1 root root   607 Jul  3  2015 john
+-rw-r--r--   1 root root   661 Jun  5  2015 php5
+-rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
+
+/etc/cron.daily:
+total 100
+drwxr-xr-x   2 root root  4096 Jan 30 19:19 .
+drwxr-xr-x 185 root root 12288 Feb  3 15:02 ..
+-rwxr-xr-x   1 root root   311 Dec 28  2014 0anacron
+-rwxr-xr-x   1 root root   625 Aug  1  2015 apache2
+-rwxr-xr-x   1 root root 16095 Jan 25 19:07 apt
+-rwxr-xr-x   1 root root   314 Nov  8  2014 aptitude
+-rwxr-xr-x   1 root root   355 Oct 17  2014 bsdmainutils
+-rwxr-xr-x   1 root root  2032 Mar 23  2015 chkrootkit
+-rwxr-xr-x   1 root root   384 Oct  6  2014 cracklib-runtime
+-rwxr-xr-x   1 root root   157 Oct 26  2014 debtags
+-rwxr-xr-x   1 root root  1597 Apr 10  2015 dpkg
+-rwxr-xr-x   1 root root  4125 Feb 17  2015 exim4-base
+-rwxr-xr-x   1 root root    89 Nov  8  2014 logrotate
+-rwxr-xr-x   1 root root  1293 Dec 31  2014 man-db
+-rwxr-xr-x   1 root root   435 Jun 13  2013 mlocate
+-rwxr-xr-x   1 root root  1128 Jul 25  2015 ntp
+-rwxr-xr-x   1 root root   249 Nov 21  2014 passwd
+-rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
+-rwxr-xr-x   1 root root   383 Mar  7  2015 samba
+
+/etc/cron.hourly:
+total 20
+drwxr-xr-x   2 root root  4096 Jan 30 15:03 .
+drwxr-xr-x 185 root root 12288 Feb  3 15:02 ..
+-rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
+
+/etc/cron.monthly:
+total 32
+drwxr-xr-x   2 root root  4096 Jan 30 15:03 .
+drwxr-xr-x 185 root root 12288 Feb  3 15:02 ..
+-rwxr-xr-x   1 root root   313 Dec 28  2014 0anacron
+-rwxr-xr-x   1 root root   102 Oct 19  2014 ieee-data
+-rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
+-rwxr-xr-x   1 root root   144 Jun  5  2013 rwhod
+
+/etc/cron.weekly:
+total 28
+drwxr-xr-x   2 root root  4096 Jan 30 15:03 .
+drwxr-xr-x 185 root root 12288 Feb  3 15:02 ..
+-rwxr-xr-x   1 root root   312 Dec 28  2014 0anacron
+-rwxr-xr-x   1 root root   771 Dec 31  2014 man-db
+-rw-r--r--   1 root root   102 Oct 26  2014 .placeholder
+]]>
+</info>
+<description>
+Scheduled jobs overview (hourly, daily, monthly etc)
+</description>
+<command>
+<![CDATA[
+ls -la /etc/cron.d /etc/cron.daily /etc/cron.hourly /etc/cron.monthly /etc/crontab /etc/cron.weekly
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+What can 'others' write in /etc/cron.d /etc/cron.daily /etc/cron.hourly /etc/cron.monthly /etc/crontab /etc/cron.weekly directories
+</description>
+<command>
+<![CDATA[
+ls -aRl /etc/cron.d /etc/cron.daily /etc/cron.hourly /etc/cron.monthly /etc/crontab /etc/cron.weekly | awk '$1 ~ /w.$/' 2>/dev/null
+]]>
+</command>
+</data>
+</group>
+
+<group title="Networking, Routing and Communications">
+
+<data>
+<info>
+<![CDATA[
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether f0:de:f1:04:89:3d  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 20  memory 0xf2500000-f2520000  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 0  (Local Loopback)
+        RX packets 63511  bytes 16870397 (16.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 63511  bytes 16870397 (16.0 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vboxnet0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 0a:00:27:00:00:00  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.114  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::227:10ff:fe21:be60  prefixlen 64  scopeid 0x20<link>
+        ether 00:27:10:21:be:60  txqueuelen 1000  (Ethernet)
+        RX packets 283767  bytes 305115361 (290.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 172129  bytes 23523345 (22.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+]]>
+</info>
+<description>
+List all network interfaces
+</description>
+<command>
+<![CDATA[
+/sbin/ifconfig -a
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+]]>
+</info>
+<description>
+As above
+</description>
+<command>
+<![CDATA[
+cat /etc/network/interfaces
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Display ARP communications
+</description>
+<command>
+<![CDATA[
+arp -a
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Display route information
+</description>
+<command>
+<![CDATA[
+route
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+# Generated by NetworkManager
+nameserver 192.168.1.1
+]]>
+</info>
+<description>
+Show configured DNS sever addresses
+</description>
+<command>
+<![CDATA[
+cat /etc/resolv.conf
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8834            0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:38460         127.0.1.1:8834          ESTABLISHED 1912/iceweasel      
+tcp        0      0 127.0.0.1:38450         127.0.1.1:8834          TIME_WAIT   -                   
+tcp        0      0 192.168.1.114:48490     107.23.78.89:443        TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38442         127.0.1.1:8834          TIME_WAIT   -                   
+tcp        0      0 192.168.1.114:4444      192.168.1.114:47286     ESTABLISHED 21144/nc            
+tcp        0      0 192.168.1.114:51036     192.30.252.86:443       ESTABLISHED 1912/iceweasel      
+tcp       23      0 192.168.1.114:47286     192.168.1.114:4444      ESTABLISHED 21240/bash          
+tcp        0      0 192.168.1.114:47552     192.30.252.86:443       ESTABLISHED 1912/iceweasel      
+tcp        0      0 192.168.1.114:46852     185.31.17.133:443       TIME_WAIT   -                   
+tcp        0      0 192.168.1.114:46848     185.31.17.133:443       TIME_WAIT   -                   
+tcp        0      0 192.168.1.114:33952     83.212.7.82:443         ESTABLISHED 1912/iceweasel      
+tcp        0      0 127.0.1.1:8834          127.0.0.1:38460         ESTABLISHED -                   
+tcp        0      0 192.168.1.114:46856     185.31.17.133:443       TIME_WAIT   -                   
+tcp        0      0 192.168.1.114:46850     185.31.17.133:443       TIME_WAIT   -                   
+tcp        0      0 192.168.1.114:33768     66.220.146.5:443        ESTABLISHED 1912/iceweasel      
+tcp        0      0 192.168.1.114:47436     64.233.166.189:443      ESTABLISHED 1912/iceweasel      
+tcp        0      0 127.0.0.1:38446         127.0.1.1:8834          TIME_WAIT   -                   
+tcp6       0      0 :::8834                 :::*                    LISTEN      -                   
+tcp6       0      0 127.0.0.1:8080          :::*                    LISTEN      19721/java          
+]]>
+</info>
+<description>
+List all TCP sockets and related PIDs (-p Privileged command)
+</description>
+<command>
+<![CDATA[
+netstat -antp
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:69              0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:39274           0.0.0.0:*                           -                   
+udp6       0      0 :::5353                 :::*                                -                   
+udp6       0      0 :::58609                :::*                                -                   
+]]>
+</info>
+<description>
+List all UDP sockets and related PIDs (-p Privileged command)
+</description>
+<command>
+<![CDATA[
+netstat -anup
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+List rules - Privileged command
+</description>
+<command>
+<![CDATA[
+iptables -L
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+# Network services, Internet style
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, officially ports have two entries
+# even if the protocol doesn't support UDP operations.
+#
+# Updated from http://www.iana.org/assignments/port-numbers and other
+# sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
+# New ports will be added on request if they have been officially assigned
+# by IANA and used in the real-world or are needed by a debian package.
+# If you need a huge list of used numbers please install the nmap package.
+
+tcpmux		1/tcp				# TCP port service multiplexer
+echo		7/tcp
+echo		7/udp
+discard		9/tcp		sink null
+discard		9/udp		sink null
+systat		11/tcp		users
+daytime		13/tcp
+daytime		13/udp
+netstat		15/tcp
+qotd		17/tcp		quote
+msp		18/tcp				# message send protocol
+msp		18/udp
+chargen		19/tcp		ttytst source
+chargen		19/udp		ttytst source
+ftp-data	20/tcp
+ftp		21/tcp
+fsp		21/udp		fspd
+ssh		22/tcp				# SSH Remote Login Protocol
+ssh		22/udp
+telnet		23/tcp
+smtp		25/tcp		mail
+time		37/tcp		timserver
+time		37/udp		timserver
+rlp		39/udp		resource	# resource location
+nameserver	42/tcp		name		# IEN 116
+whois		43/tcp		nicname
+tacacs		49/tcp				# Login Host Protocol (TACACS)
+tacacs		49/udp
+re-mail-ck	50/tcp				# Remote Mail Checking Protocol
+re-mail-ck	50/udp
+domain		53/tcp				# Domain Name Server
+domain		53/udp
+mtp		57/tcp				# deprecated
+tacacs-ds	65/tcp				# TACACS-Database Service
+tacacs-ds	65/udp
+bootps		67/tcp				# BOOTP server
+bootps		67/udp
+bootpc		68/tcp				# BOOTP client
+bootpc		68/udp
+tftp		69/udp
+gopher		70/tcp				# Internet Gopher
+gopher		70/udp
+rje		77/tcp		netrjs
+finger		79/tcp
+http		80/tcp		www		# WorldWideWeb HTTP
+http		80/udp				# HyperText Transfer Protocol
+link		87/tcp		ttylink
+kerberos	88/tcp		kerberos5 krb5 kerberos-sec	# Kerberos v5
+kerberos	88/udp		kerberos5 krb5 kerberos-sec	# Kerberos v5
+supdup		95/tcp
+hostnames	101/tcp		hostname	# usually from sri-nic
+iso-tsap	102/tcp		tsap		# part of ISODE
+acr-nema	104/tcp		dicom		# Digital Imag. & Comm. 300
+acr-nema	104/udp		dicom
+csnet-ns	105/tcp		cso-ns		# also used by CSO name server
+csnet-ns	105/udp		cso-ns
+rtelnet		107/tcp				# Remote Telnet
+rtelnet		107/udp
+pop2		109/tcp		postoffice pop-2 # POP version 2
+pop2		109/udp		pop-2
+pop3		110/tcp		pop-3		# POP version 3
+pop3		110/udp		pop-3
+sunrpc		111/tcp		portmapper	# RPC 4.0 portmapper
+sunrpc		111/udp		portmapper
+auth		113/tcp		authentication tap ident
+sftp		115/tcp
+uucp-path	117/tcp
+nntp		119/tcp		readnews untp	# USENET News Transfer Protocol
+ntp		123/tcp
+ntp		123/udp				# Network Time Protocol
+pwdgen		129/tcp				# PWDGEN service
+pwdgen		129/udp
+loc-srv		135/tcp		epmap		# Location Service
+loc-srv		135/udp		epmap
+netbios-ns	137/tcp				# NETBIOS Name Service
+netbios-ns	137/udp
+netbios-dgm	138/tcp				# NETBIOS Datagram Service
+netbios-dgm	138/udp
+netbios-ssn	139/tcp				# NETBIOS session service
+netbios-ssn	139/udp
+imap2		143/tcp		imap		# Interim Mail Access P 2 and 4
+imap2		143/udp		imap
+snmp		161/tcp				# Simple Net Mgmt Protocol
+snmp		161/udp
+snmp-trap	162/tcp		snmptrap	# Traps for SNMP
+snmp-trap	162/udp		snmptrap
+cmip-man	163/tcp				# ISO mgmt over IP (CMOT)
+cmip-man	163/udp
+cmip-agent	164/tcp
+cmip-agent	164/udp
+mailq		174/tcp			# Mailer transport queue for Zmailer
+mailq		174/udp
+xdmcp		177/tcp				# X Display Mgr. Control Proto
+xdmcp		177/udp
+nextstep	178/tcp		NeXTStep NextStep	# NeXTStep window
+nextstep	178/udp		NeXTStep NextStep	#  server
+bgp		179/tcp				# Border Gateway Protocol
+bgp		179/udp
+prospero	191/tcp				# Cliff Neuman's Prospero
+prospero	191/udp
+irc		194/tcp				# Internet Relay Chat
+irc		194/udp
+smux		199/tcp				# SNMP Unix Multiplexer
+smux		199/udp
+at-rtmp		201/tcp				# AppleTalk routing
+at-rtmp		201/udp
+at-nbp		202/tcp				# AppleTalk name binding
+at-nbp		202/udp
+at-echo		204/tcp				# AppleTalk echo
+at-echo		204/udp
+at-zis		206/tcp				# AppleTalk zone information
+at-zis		206/udp
+qmtp		209/tcp				# Quick Mail Transfer Protocol
+qmtp		209/udp
+z3950		210/tcp		wais		# NISO Z39.50 database
+z3950		210/udp		wais
+ipx		213/tcp				# IPX
+ipx		213/udp
+imap3		220/tcp				# Interactive Mail Access
+imap3		220/udp				# Protocol v3
+pawserv		345/tcp				# Perf Analysis Workbench
+pawserv		345/udp
+zserv		346/tcp				# Zebra server
+zserv		346/udp
+fatserv		347/tcp				# Fatmen Server
+fatserv		347/udp
+rpc2portmap	369/tcp
+rpc2portmap	369/udp				# Coda portmapper
+codaauth2	370/tcp
+codaauth2	370/udp				# Coda authentication server
+clearcase	371/tcp		Clearcase
+clearcase	371/udp		Clearcase
+ulistserv	372/tcp				# UNIX Listserv
+ulistserv	372/udp
+ldap		389/tcp			# Lightweight Directory Access Protocol
+ldap		389/udp
+imsp		406/tcp			# Interactive Mail Support Protocol
+imsp		406/udp
+svrloc		427/tcp				# Server Location
+svrloc		427/udp
+https		443/tcp				# http protocol over TLS/SSL
+https		443/udp
+snpp		444/tcp				# Simple Network Paging Protocol
+snpp		444/udp
+microsoft-ds	445/tcp				# Microsoft Naked CIFS
+microsoft-ds	445/udp
+kpasswd		464/tcp
+kpasswd		464/udp
+urd		465/tcp		ssmtp smtps  # URL Rendesvous Directory for SSM
+saft		487/tcp			# Simple Asynchronous File Transfer
+saft		487/udp
+isakmp		500/tcp			# IPsec - Internet Security Association
+isakmp		500/udp			#  and Key Management Protocol
+rtsp		554/tcp			# Real Time Stream Control Protocol
+rtsp		554/udp
+nqs		607/tcp				# Network Queuing system
+nqs		607/udp
+npmp-local	610/tcp		dqs313_qmaster		# npmp-local / DQS
+npmp-local	610/udp		dqs313_qmaster
+npmp-gui	611/tcp		dqs313_execd		# npmp-gui / DQS
+npmp-gui	611/udp		dqs313_execd
+hmmp-ind	612/tcp		dqs313_intercell	# HMMP Indication / DQS
+hmmp-ind	612/udp		dqs313_intercell
+asf-rmcp	623/udp		# ASF Remote Management and Control Protocol
+qmqp		628/tcp
+qmqp		628/udp
+ipp		631/tcp				# Internet Printing Protocol
+ipp		631/udp
+#
+# UNIX specific services
+#
+exec		512/tcp
+biff		512/udp		comsat
+login		513/tcp
+who		513/udp		whod
+shell		514/tcp		cmd		# no passwords used
+syslog		514/udp
+printer		515/tcp		spooler		# line printer spooler
+talk		517/udp
+ntalk		518/udp
+route		520/udp		router routed	# RIP
+timed		525/udp		timeserver
+tempo		526/tcp		newdate
+courier		530/tcp		rpc
+conference	531/tcp		chat
+netnews		532/tcp		readnews
+netwall		533/udp				# for emergency broadcasts
+gdomap		538/tcp				# GNUstep distributed objects
+gdomap		538/udp
+uucp		540/tcp		uucpd		# uucp daemon
+klogin		543/tcp				# Kerberized `rlogin' (v5)
+kshell		544/tcp		krcmd		# Kerberized `rsh' (v5)
+dhcpv6-client	546/tcp
+dhcpv6-client	546/udp
+dhcpv6-server	547/tcp
+dhcpv6-server	547/udp
+afpovertcp	548/tcp				# AFP over TCP
+afpovertcp	548/udp
+idfp		549/tcp
+idfp		549/udp
+remotefs	556/tcp		rfs_server rfs	# Brunhoff remote filesystem
+nntps		563/tcp		snntp		# NNTP over SSL
+nntps		563/udp		snntp
+submission	587/tcp				# Submission [RFC4409]
+submission	587/udp
+ldaps		636/tcp				# LDAP over SSL
+ldaps		636/udp
+tinc		655/tcp				# tinc control port
+tinc		655/udp
+silc		706/tcp
+silc		706/udp
+kerberos-adm	749/tcp				# Kerberos `kadmin' (v5)
+#
+webster		765/tcp				# Network dictionary
+webster		765/udp
+rsync		873/tcp
+rsync		873/udp
+ftps-data	989/tcp				# FTP over SSL (data)
+ftps		990/tcp
+telnets		992/tcp				# Telnet over SSL
+telnets		992/udp
+imaps		993/tcp				# IMAP over SSL
+imaps		993/udp
+ircs		994/tcp				# IRC over SSL
+ircs		994/udp
+pop3s		995/tcp				# POP-3 over SSL
+pop3s		995/udp
+#
+# From ``Assigned Numbers'':
+#
+#> The Registered Ports are not controlled by the IANA and on most systems
+#> can be used by ordinary user processes or programs executed by ordinary
+#> users.
+#
+#> Ports are used in the TCP [45,106] to name the ends of logical
+#> connections which carry long term conversations.  For the purpose of
+#> providing services to unknown callers, a service contact port is
+#> defined.  This list specifies the port used by the server process as its
+#> contact port.  While the IANA can not control uses of these ports it
+#> does register or list uses of these ports as a convienence to the
+#> community.
+#
+socks		1080/tcp			# socks proxy server
+socks		1080/udp
+proofd		1093/tcp
+proofd		1093/udp
+rootd		1094/tcp
+rootd		1094/udp
+openvpn		1194/tcp
+openvpn		1194/udp
+rmiregistry	1099/tcp			# Java RMI Registry
+rmiregistry	1099/udp
+kazaa		1214/tcp
+kazaa		1214/udp
+nessus		1241/tcp			# Nessus vulnerability
+nessus		1241/udp			#  assessment scanner
+lotusnote	1352/tcp	lotusnotes	# Lotus Note
+lotusnote	1352/udp	lotusnotes
+ms-sql-s	1433/tcp			# Microsoft SQL Server
+ms-sql-s	1433/udp
+ms-sql-m	1434/tcp			# Microsoft SQL Monitor
+ms-sql-m	1434/udp
+ingreslock	1524/tcp
+ingreslock	1524/udp
+prospero-np	1525/tcp			# Prospero non-privileged
+prospero-np	1525/udp
+datametrics	1645/tcp	old-radius
+datametrics	1645/udp	old-radius
+sa-msg-port	1646/tcp	old-radacct
+sa-msg-port	1646/udp	old-radacct
+kermit		1649/tcp
+kermit		1649/udp
+groupwise	1677/tcp
+groupwise	1677/udp
+l2f		1701/tcp	l2tp
+l2f		1701/udp	l2tp
+radius		1812/tcp
+radius		1812/udp
+radius-acct	1813/tcp	radacct		# Radius Accounting
+radius-acct	1813/udp	radacct
+msnp		1863/tcp			# MSN Messenger
+msnp		1863/udp
+unix-status	1957/tcp			# remstats unix-status server
+log-server	1958/tcp			# remstats log server
+remoteping	1959/tcp			# remstats remoteping server
+cisco-sccp	2000/tcp			# Cisco SCCP
+cisco-sccp	2000/udp
+search		2010/tcp	ndtp
+pipe-server	2010/tcp	pipe_server
+nfs		2049/tcp			# Network File System
+nfs		2049/udp			# Network File System
+gnunet		2086/tcp
+gnunet		2086/udp
+rtcm-sc104	2101/tcp			# RTCM SC-104 IANA 1/29/99
+rtcm-sc104	2101/udp
+gsigatekeeper	2119/tcp
+gsigatekeeper	2119/udp
+gris		2135/tcp		# Grid Resource Information Server
+gris		2135/udp
+cvspserver	2401/tcp			# CVS client/server operations
+cvspserver	2401/udp
+venus		2430/tcp			# codacon port
+venus		2430/udp			# Venus callback/wbc interface
+venus-se	2431/tcp			# tcp side effects
+venus-se	2431/udp			# udp sftp side effect
+codasrv		2432/tcp			# not used
+codasrv		2432/udp			# server port
+codasrv-se	2433/tcp			# tcp side effects
+codasrv-se	2433/udp			# udp sftp side effect
+mon		2583/tcp			# MON traps
+mon		2583/udp
+dict		2628/tcp			# Dictionary server
+dict		2628/udp
+f5-globalsite	2792/tcp
+f5-globalsite	2792/udp
+gsiftp		2811/tcp
+gsiftp		2811/udp
+gpsd		2947/tcp
+gpsd		2947/udp
+gds-db		3050/tcp	gds_db		# InterBase server
+gds-db		3050/udp	gds_db
+icpv2		3130/tcp	icp		# Internet Cache Protocol
+icpv2		3130/udp	icp
+iscsi-target	3260/tcp
+mysql		3306/tcp
+mysql		3306/udp
+nut		3493/tcp			# Network UPS Tools
+nut		3493/udp
+distcc		3632/tcp			# distributed compiler
+distcc		3632/udp
+daap		3689/tcp			# Digital Audio Access Protocol
+daap		3689/udp
+svn		3690/tcp	subversion	# Subversion protocol
+svn		3690/udp	subversion
+suucp		4031/tcp			# UUCP over SSL
+suucp		4031/udp
+sysrqd		4094/tcp			# sysrq daemon
+sysrqd		4094/udp
+sieve		4190/tcp			# ManageSieve Protocol
+epmd		4369/tcp			# Erlang Port Mapper Daemon
+epmd		4369/udp
+remctl		4373/tcp		# Remote Authenticated Command Service
+remctl		4373/udp
+f5-iquery	4353/tcp			# F5 iQuery
+f5-iquery	4353/udp
+ipsec-nat-t	4500/udp			# IPsec NAT-Traversal [RFC3947]
+iax		4569/tcp			# Inter-Asterisk eXchange
+iax		4569/udp
+mtn		4691/tcp			# monotone Netsync Protocol
+mtn		4691/udp
+radmin-port	4899/tcp			# RAdmin Port
+radmin-port	4899/udp
+rfe		5002/udp			# Radio Free Ethernet
+rfe		5002/tcp
+mmcc		5050/tcp	# multimedia conference control tool (Yahoo IM)
+mmcc		5050/udp
+sip		5060/tcp			# Session Initiation Protocol
+sip		5060/udp
+sip-tls		5061/tcp
+sip-tls		5061/udp
+aol		5190/tcp			# AIM
+aol		5190/udp
+xmpp-client	5222/tcp	jabber-client	# Jabber Client Connection
+xmpp-client	5222/udp	jabber-client
+xmpp-server	5269/tcp	jabber-server	# Jabber Server Connection
+xmpp-server	5269/udp	jabber-server
+cfengine	5308/tcp
+cfengine	5308/udp
+mdns		5353/tcp			# Multicast DNS
+mdns		5353/udp
+postgresql	5432/tcp	postgres	# PostgreSQL Database
+postgresql	5432/udp	postgres
+freeciv		5556/tcp	rptp		# Freeciv gameplay
+freeciv		5556/udp
+amqps		5671/tcp			# AMQP protocol over TLS/SSL
+amqp		5672/tcp
+amqp		5672/udp
+amqp		5672/sctp
+ggz		5688/tcp			# GGZ Gaming Zone
+ggz		5688/udp
+x11		6000/tcp	x11-0		# X Window System
+x11		6000/udp	x11-0
+x11-1		6001/tcp
+x11-1		6001/udp
+x11-2		6002/tcp
+x11-2		6002/udp
+x11-3		6003/tcp
+x11-3		6003/udp
+x11-4		6004/tcp
+x11-4		6004/udp
+x11-5		6005/tcp
+x11-5		6005/udp
+x11-6		6006/tcp
+x11-6		6006/udp
+x11-7		6007/tcp
+x11-7		6007/udp
+gnutella-svc	6346/tcp			# gnutella
+gnutella-svc	6346/udp
+gnutella-rtr	6347/tcp			# gnutella
+gnutella-rtr	6347/udp
+sge-qmaster	6444/tcp	sge_qmaster	# Grid Engine Qmaster Service
+sge-qmaster	6444/udp	sge_qmaster
+sge-execd	6445/tcp	sge_execd	# Grid Engine Execution Service
+sge-execd	6445/udp	sge_execd
+mysql-proxy	6446/tcp			# MySQL Proxy
+mysql-proxy	6446/udp
+afs3-fileserver 7000/tcp	bbs		# file server itself
+afs3-fileserver 7000/udp	bbs
+afs3-callback	7001/tcp			# callbacks to cache managers
+afs3-callback	7001/udp
+afs3-prserver	7002/tcp			# users & groups database
+afs3-prserver	7002/udp
+afs3-vlserver	7003/tcp			# volume location database
+afs3-vlserver	7003/udp
+afs3-kaserver	7004/tcp			# AFS/Kerberos authentication
+afs3-kaserver	7004/udp
+afs3-volser	7005/tcp			# volume managment server
+afs3-volser	7005/udp
+afs3-errors	7006/tcp			# error interpretation service
+afs3-errors	7006/udp
+afs3-bos	7007/tcp			# basic overseer process
+afs3-bos	7007/udp
+afs3-update	7008/tcp			# server-to-server updater
+afs3-update	7008/udp
+afs3-rmtsys	7009/tcp			# remote cache manager service
+afs3-rmtsys	7009/udp
+font-service	7100/tcp	xfs		# X Font Service
+font-service	7100/udp	xfs
+http-alt	8080/tcp	webcache	# WWW caching service
+http-alt	8080/udp
+bacula-dir	9101/tcp			# Bacula Director
+bacula-dir	9101/udp
+bacula-fd	9102/tcp			# Bacula File Daemon
+bacula-fd	9102/udp
+bacula-sd	9103/tcp			# Bacula Storage Daemon
+bacula-sd	9103/udp
+xmms2		9667/tcp	# Cross-platform Music Multiplexing System
+xmms2		9667/udp
+nbd		10809/tcp			# Linux Network Block Device
+zabbix-agent	10050/tcp			# Zabbix Agent
+zabbix-agent	10050/udp
+zabbix-trapper	10051/tcp			# Zabbix Trapper
+zabbix-trapper	10051/udp
+amanda		10080/tcp			# amanda backup services
+amanda		10080/udp
+dicom		11112/tcp
+hkp		11371/tcp			# OpenPGP HTTP Keyserver
+hkp		11371/udp
+bprd		13720/tcp			# VERITAS NetBackup
+bprd		13720/udp
+bpdbm		13721/tcp			# VERITAS NetBackup
+bpdbm		13721/udp
+bpjava-msvc	13722/tcp			# BP Java MSVC Protocol
+bpjava-msvc	13722/udp
+vnetd		13724/tcp			# Veritas Network Utility
+vnetd		13724/udp
+bpcd		13782/tcp			# VERITAS NetBackup
+bpcd		13782/udp
+vopied		13783/tcp			# VERITAS NetBackup
+vopied		13783/udp
+db-lsp		17500/tcp			# Dropbox LanSync Protocol
+dcap		22125/tcp			# dCache Access Protocol
+gsidcap		22128/tcp			# GSI dCache Access Protocol
+wnn6		22273/tcp			# wnn6
+wnn6		22273/udp
+
+#
+# Datagram Delivery Protocol services
+#
+rtmp		1/ddp			# Routing Table Maintenance Protocol
+nbp		2/ddp			# Name Binding Protocol
+echo		4/ddp			# AppleTalk Echo Protocol
+zip		6/ddp			# Zone Information Protocol
+
+#=========================================================================
+# The remaining port numbers are not as allocated by IANA.
+#=========================================================================
+
+# Kerberos (Project Athena/MIT) services
+# Note that these are for Kerberos v4, and are unofficial.  Sites running
+# v4 should uncomment these and comment out the v5 entries above.
+#
+kerberos4	750/udp		kerberos-iv kdc	# Kerberos (server)
+kerberos4	750/tcp		kerberos-iv kdc
+kerberos-master	751/udp		kerberos_master	# Kerberos authentication
+kerberos-master	751/tcp
+passwd-server	752/udp		passwd_server	# Kerberos passwd server
+krb-prop	754/tcp		krb_prop krb5_prop hprop # Kerberos slave propagation
+krbupdate	760/tcp		kreg		# Kerberos registration
+swat		901/tcp				# swat
+kpop		1109/tcp			# Pop with Kerberos
+knetd		2053/tcp			# Kerberos de-multiplexor
+zephyr-srv	2102/udp			# Zephyr server
+zephyr-clt	2103/udp			# Zephyr serv-hm connection
+zephyr-hm	2104/udp			# Zephyr hostmanager
+eklogin		2105/tcp			# Kerberos encrypted rlogin
+# Hmmm. Are we using Kv4 or Kv5 now? Worrying.
+# The following is probably Kerberos v5  --- ajt@debian.org (11/02/2000)
+kx		2111/tcp			# X over Kerberos
+iprop		2121/tcp			# incremental propagation
+#
+# Unofficial but necessary (for NetBSD) services
+#
+supfilesrv	871/tcp				# SUP server
+supfiledbg	1127/tcp			# SUP debugging
+
+#
+# Services added for the Debian GNU/Linux distribution
+#
+linuxconf	98/tcp				# LinuxConf
+poppassd	106/tcp				# Eudora
+poppassd	106/udp
+moira-db	775/tcp		moira_db	# Moira database
+moira-update	777/tcp		moira_update	# Moira update protocol
+moira-ureg	779/udp		moira_ureg	# Moira user registration
+spamd		783/tcp				# spamassassin daemon
+omirr		808/tcp		omirrd		# online mirror
+omirr		808/udp		omirrd
+customs		1001/tcp			# pmake customs server
+customs		1001/udp
+skkserv		1178/tcp			# skk jisho server port
+predict		1210/udp			# predict -- satellite tracking
+rmtcfg		1236/tcp			# Gracilis Packeten remote config server
+wipld		1300/tcp			# Wipl network monitor
+xtel		1313/tcp			# french minitel
+xtelw		1314/tcp			# french minitel
+support		1529/tcp			# GNATS
+cfinger		2003/tcp			# GNU Finger
+frox		2121/tcp			# frox: caching ftp proxy
+ninstall	2150/tcp			# ninstall service
+ninstall	2150/udp
+zebrasrv	2600/tcp			# zebra service
+zebra		2601/tcp			# zebra vty
+ripd		2602/tcp			# ripd vty (zebra)
+ripngd		2603/tcp			# ripngd vty (zebra)
+ospfd		2604/tcp			# ospfd vty (zebra)
+bgpd		2605/tcp			# bgpd vty (zebra)
+ospf6d		2606/tcp			# ospf6d vty (zebra)
+ospfapi		2607/tcp			# OSPF-API
+isisd		2608/tcp			# ISISd vty (zebra)
+afbackup	2988/tcp			# Afbackup system
+afbackup	2988/udp
+afmbackup	2989/tcp			# Afmbackup system
+afmbackup	2989/udp
+xtell		4224/tcp			# xtell server
+fax		4557/tcp			# FAX transmission service (old)
+hylafax		4559/tcp			# HylaFAX client-server protocol (new)
+distmp3		4600/tcp			# distmp3host daemon
+munin		4949/tcp	lrrd		# Munin
+enbd-cstatd	5051/tcp			# ENBD client statd
+enbd-sstatd	5052/tcp			# ENBD server statd
+pcrd		5151/tcp			# PCR-1000 Daemon
+noclog		5354/tcp			# noclogd with TCP (nocol)
+noclog		5354/udp			# noclogd with UDP (nocol)
+hostmon		5355/tcp			# hostmon uses TCP (nocol)
+hostmon		5355/udp			# hostmon uses UDP (nocol)
+rplay		5555/udp			# RPlay audio service
+nrpe		5666/tcp			# Nagios Remote Plugin Executor
+nsca		5667/tcp			# Nagios Agent - NSCA
+mrtd		5674/tcp			# MRT Routing Daemon
+bgpsim		5675/tcp			# MRT Routing Simulator
+canna		5680/tcp			# cannaserver
+syslog-tls	6514/tcp			# Syslog over TLS [RFC5425]
+sane-port	6566/tcp	sane saned	# SANE network scanner daemon
+ircd		6667/tcp			# Internet Relay Chat
+zope-ftp	8021/tcp			# zope management by ftp
+tproxy		8081/tcp			# Transparent Proxy
+omniorb		8088/tcp			# OmniORB
+omniorb		8088/udp
+clc-build-daemon 8990/tcp			# Common lisp build daemon
+xinetd		9098/tcp
+mandelspawn	9359/udp	mandelbrot	# network mandelbrot
+git		9418/tcp			# Git Version Control System
+zope		9673/tcp			# zope server
+webmin		10000/tcp
+kamanda		10081/tcp			# amanda backup services (Kerberos)
+kamanda		10081/udp
+amandaidx	10082/tcp			# amanda backup services
+amidxtape	10083/tcp			# amanda backup services
+smsqp		11201/tcp			# Alamin SMS gateway
+smsqp		11201/udp
+xpilot		15345/tcp			# XPilot Contact Port
+xpilot		15345/udp
+sgi-cmsd	17001/udp		# Cluster membership services daemon
+sgi-crsd	17002/udp
+sgi-gcd		17003/udp			# SGI Group membership daemon
+sgi-cad		17004/tcp			# Cluster Admin daemon
+isdnlog		20011/tcp			# isdn logging system
+isdnlog		20011/udp
+vboxd		20012/tcp			# voice box system
+vboxd		20012/udp
+binkp		24554/tcp			# binkp fidonet protocol
+asp		27374/tcp			# Address Search Protocol
+asp		27374/udp
+csync2		30865/tcp			# cluster synchronization tool
+dircproxy	57000/tcp			# Detachable IRC Proxy
+tfido		60177/tcp			# fidonet EMSI over telnet
+fido		60179/tcp			# fidonet EMSI over TCP
+
+# Local services
+]]>
+</info>
+<description>
+View port numbers/services mappings
+</description>
+<command>
+<![CDATA[
+cat /etc/services
+]]>
+</command>
+</data>
+</group>
+
+<group title="Programs Installed">
+
+<data>
+<info>
+<![CDATA[
+Sudo version 1.8.15
+Sudoers policy plugin version 1.8.15
+Sudoers file grammar version 45
+Sudoers I/O plugin version 1.8.15
+]]>
+</info>
+<description>
+Sudo version - does an exploit exist?
+</description>
+<command>
+<![CDATA[
+sudo -V
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+Apache version
+</description>
+<command>
+<![CDATA[
+httpd -v
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+As above
+</description>
+<command>
+<![CDATA[
+apache2 -v
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+]]>
+</info>
+<description>
+List loaded Apache modules
+</description>
+<command>
+<![CDATA[
+apache2ctl -M
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+mysql  Ver 14.14 Distrib 5.6.28, for debian-linux-gnu (x86_64) using  EditLine wrapper
+]]>
+</info>
+<description>
+Installed MYSQL version details
+</description>
+<command>
+<![CDATA[
+mysql --version
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+psql (PostgreSQL) 9.5.0
+]]>
+</info>
+<description>
+Installed Postgres version details
+</description>
+<command>
+<![CDATA[
+psql -V
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+
+This is perl 5, version 22, subversion 1 (v5.22.1) built for x86_64-linux-gnu-thread-multi
+]]>
+</info>
+<description>
+Installed Perl version details
+</description>
+<command>
+<![CDATA[
+perl -v | head -2
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+java version "1.7.0_95"
+OpenJDK Runtime Environment (IcedTea 2.6.4) (7u95-2.6.4-1~deb8u1)
+OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)
+]]>
+</info>
+<description>
+Installed Java version details
+</description>
+<command>
+<![CDATA[
+java -version 2>&1
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+Python 2.7.11
+]]>
+</info>
+<description>
+Installed Python version details
+</description>
+<command>
+<![CDATA[
+python --version 2>&1
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+ruby 2.2.4p230 (2015-12-16) [x86_64-linux-gnu]
+]]>
+</info>
+<description>
+Installed Ruby version details
+</description>
+<command>
+<![CDATA[
+ruby -v
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+/usr/bin/nmap
+/usr/bin/wget
+]]>
+</info>
+<description>
+Locate 'useful' programs (netcat, wget etc)
+</description>
+<command>
+<![CDATA[
+for pr in 'nmap' 'wget' 'ufw'; do which $pr; done
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+ii  clang                                  1:3.6-33                               amd64        C, C++ and Objective-C compiler (LLVM based)
+ii  clang-3.5                              1:3.5.2-3                              amd64        C, C++ and Objective-C compiler (LLVM based)
+ii  clang-3.6                              1:3.6.2-3                              amd64        C, C++ and Objective-C compiler (LLVM based)
+ii  g++                                    4:5.3.1-1                              amd64        GNU C++ compiler
+ii  g++-4.9                                4.9.3-10                               amd64        GNU C++ compiler
+ii  g++-5                                  5.3.1-7                                amd64        GNU C++ compiler
+ii  gcc                                    4:5.3.1-1                              amd64        GNU C compiler
+ii  gcc-4.9                                4.9.3-10                               amd64        GNU C compiler
+ii  gcc-5                                  5.3.1-7                                amd64        GNU C compiler
+ii  gcc-avr                                1:4.9.2+Atmel3.5.0-1                   amd64        GNU C compiler (cross compiler for avr)
+rc  libllvm3.5:amd64                       1:3.5-10                               amd64        Modular compiler and toolchain technologies, runtime library
+ii  libllvm3.5v5:amd64                     1:3.5.2-3                              amd64        Modular compiler and toolchain technologies, runtime library
+ii  libllvm3.6v5:amd64                     1:3.6.2-3                              amd64        Modular compiler and toolchain technologies, runtime library
+ii  libllvm3.7:amd64                       1:3.7.1-1                              amd64        Modular compiler and toolchain technologies, runtime library
+ii  libluajit-5.1-2:amd64                  2.0.4+dfsg-1                           amd64        Just in time compiler for Lua - library version
+ii  libluajit-5.1-common                   2.0.4+dfsg-1                           all          Just in time compiler for Lua - common files
+ii  libxkbcommon0:amd64                    0.5.0-1                                amd64        library interface to the XKB compiler - shared library
+ii  linux-compiler-gcc-5-x86               4.3.3-7kali2                           amd64        Compiler for Linux on x86 (meta-package)
+ii  llvm-3.5                               1:3.5.2-3                              amd64        Modular compiler and toolchain technologies
+ii  llvm-3.5-dev                           1:3.5.2-3                              amd64        Modular compiler and toolchain technologies, libraries and headers
+ii  llvm-3.5-runtime                       1:3.5.2-3                              amd64        Modular compiler and toolchain technologies, IR interpreter
+ii  llvm-3.6                               1:3.6.2-3                              amd64        Modular compiler and toolchain technologies
+ii  llvm-3.6-dev                           1:3.6.2-3                              amd64        Modular compiler and toolchain technologies, libraries and headers
+ii  llvm-3.6-runtime                       1:3.6.2-3                              amd64        Modular compiler and toolchain technologies, IR interpreter
+]]>
+</info>
+<description>
+List available compilers
+</description>
+<command>
+<![CDATA[
+dpkg --list 2>/dev/null| grep compiler |grep -v decompiler 2>/dev/null && yum list installed 'gcc*' 2>/dev/null| grep gcc 2>/dev/null
+]]>
+</command>
+</data>
+</group>
+
+<group title="Buffer Overflow">
+
+<data>
+<info>
+<![CDATA[
+2
+]]>
+</info>
+<description>
+ASLR (0/1/2) 0 - All static 1 - Medium 2 - FULL
+</description>
+<command>
+<![CDATA[
+cat /proc/sys/kernel/randomize_va_space
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<![CDATA[
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+]]>
+</info>
+<description>
+If found the cpu won't execute instructions from stack or heap
+</description>
+<command>
+<![CDATA[
+cat /proc/cpuinfo | grep nx
+]]>
+</command>
+</data>
+</group>
+
+</scan>
