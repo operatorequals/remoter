@@ -1,0 +1,17 @@
+environment_info="Environmental Information";
+environment=(
+"env | grep -v 'LS_COLORS'"
+"echo \$PATH"
+#"history"
+"pwd"
+"cat /etc/profile"
+"cat /etc/shells"
+);
+environment_desc=(
+"Display environmental variables"
+"Path information"
+#"Displays command history of current user"
+"Print working directory, i.e. 'where am I'"
+"Display default system variables"
+"Display available shells"
+);

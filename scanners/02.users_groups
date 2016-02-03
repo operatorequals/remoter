@@ -1,0 +1,25 @@
+users_groups_info="Users and Groups";
+users_groups=(
+"cat /etc/passwd"
+"cat /etc/group"
+"for i in $(cat /etc/passwd 2>/dev/null | cut -d: -f1 2>/dev/null);do id \$i; done 2>/dev/null"
+"cat /etc/shadow"
+"grep -v -E '^#' /etc/passwd | awk -F: '\$3 == 0 { print \$1}' "
+"who -a"
+"w"
+"lastlog"
+"lastlog -u $(whoami)"
+"lastlog | grep -v \"Never\" "
+);
+users_groups_desc=(
+"List all users on the system"
+"List all groups on the system"
+"List all uid's and respective group memberships"
+"Show user hashes - Privileged command"
+"List all super user accounts"
+"Users currently logged in"
+"Who is currently logged in and what they are doing"
+"Information on when all users last logged in"
+"Information on when the specified user last logged in"
+"Entire list of previously logged on users"
+);

@@ -1,0 +1,12 @@
+buf_ov_info="Buffer Overflow"
+buf_ov=(
+"cat /proc/sys/kernel/randomize_va_space"
+"cat /proc/cpuinfo | grep nx "
+);
+buf_ov_desc=(
+"ASLR (0/1/2)
+0 - All static    
+1 - Medium    
+2 - FULL    "
+"If found the cpu won't execute instructions from stack or heap"
+);

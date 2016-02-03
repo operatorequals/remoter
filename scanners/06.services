@@ -1,0 +1,17 @@
+services_info="Service Information";
+services=(
+"ps -aux | grep root"
+"ps -aux | awk '{print \$11}'|xargs -r ls -la 2>/dev/null |awk '!x[\$0]++'"
+"cat /etc/inetd.conf"
+"cat /etc/xinetd.conf"
+"cat /etc/xinetd.conf 2>/dev/null | awk '{print \$7}' |xargs -r ls -la 2>/dev/null"
+"ls -la /etc/exports 2>/dev/null; cat /etc/exports 2>/dev/null"
+);
+services_desc=(
+"View services running as root"
+"Lookup process binary path and permissions"
+"List services managed by inetd"
+"As above for xinetd"
+"A very 'rough' command to extract associated binaries from xinetd.conf and show permissions of each"
+"Permissions and contents of /etc/exports (NFS)"
+);

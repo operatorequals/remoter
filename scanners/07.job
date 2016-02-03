@@ -1,0 +1,11 @@
+job_info="Jobs/Tasks";
+job=(
+"crontab -l"
+"ls -la /etc/cron*"
+"ls -aRl /etc/cron* | awk '\$1 ~ /w.\$/' 2>/dev/null"
+);
+job_desc=(
+"Display scheduled jobs for the specified user - Privileged command"
+"Scheduled jobs overview (hourly, daily, monthly etc)"
+"What can 'others' write in /etc/cron* directories"
+);

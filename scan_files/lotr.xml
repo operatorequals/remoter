@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<scan date="Sun Nov 15 06:52:50 MST 2015" user="smeagol">
+<group title="Kernel, Operating System and Device Information">
+
+<data>
+<info>
+<\![CDATA[
+3.19.0-25-generic
+]]>
+</info>
+<description>
+Kernel release
+</description>
+<command>
+<\![CDATA[
+uname -r
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+LordOfTheRoot
+]]>
+</info>
+<description>
+System hostname
+</description>
+<command>
+<\![CDATA[
+uname -n
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+i686
+]]>
+</info>
+<description>
+Linux Kernel architecture (32 or 64 bit)
+</description>
+<command>
+<\![CDATA[
+uname -m
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+Linux version 3.19.0-25-generic (buildd@lgw01-57) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #26~14.04.1-Ubuntu SMP Fri Jul 24 21:18:00 UTC 2015
+]]>
+</info>
+<description>
+Kernel Information
+</description>
+<command>
+<\![CDATA[
+cat /proc/version
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.3 LTS"
+NAME="Ubuntu"
+VERSION="14.04.3 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.3 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+]]>
+</info>
+<description>
+Distribution Information
+</description>
+<command>
+<\![CDATA[
+cat /etc/lsb-release /etc/os-release
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+ NOT AVAILABLE 
+]]>
+</info>
+<description>
+CPU Information
+</description>
+<command>
+<\![CDATA[
+cat /proc/info
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/sda1        6061632 3727348   2003328  66% /
+proc                   0       0         0    - /proc
+sysfs                  0       0         0    - /sys
+none                   4       0         4   0% /sys/fs/cgroup
+none                   0       0         0    - /sys/fs/fuse/connections
+none                   0       0         0    - /sys/kernel/debug
+none                   0       0         0    - /sys/kernel/security
+udev              502716       4    502712   1% /dev
+devpts                 0       0         0    - /dev/pts
+tmpfs             102532     908    101624   1% /run
+none                5120       0      5120   0% /run/lock
+none              512644     144    512500   1% /run/shm
+none              102400      32    102368   1% /run/user
+none                   0       0         0    - /sys/fs/pstore
+systemd                0       0         0    - /sys/fs/cgroup/systemd
+]]>
+</info>
+<description>
+File system Information
+</description>
+<command>
+<\![CDATA[
+df -a
+]]>
+</command>
+</data>
+</group>
+
+<group title="Users and Groups">
+
+<data>
+<info>
+<\![CDATA[
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+messagebus:x:102:106::/var/run/dbus:/bin/false
+usbmux:x:103:46:usbmux daemon,,,:/home/usbmux:/bin/false
+dnsmasq:x:104:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+avahi-autoipd:x:105:113:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+kernoops:x:106:65534:Kernel Oops Tracking Daemon,,,:/:/bin/false
+rtkit:x:107:114:RealtimeKit,,,:/proc:/bin/false
+saned:x:108:115::/home/saned:/bin/false
+whoopsie:x:109:116::/nonexistent:/bin/false
+speech-dispatcher:x:110:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/sh
+avahi:x:111:117:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+lightdm:x:112:118:Light Display Manager:/var/lib/lightdm:/bin/false
+colord:x:113:121:colord colour management daemon,,,:/var/lib/colord:/bin/false
+hplip:x:114:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+pulse:x:115:122:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+smeagol:x:1000:1000:smeagol,,,:/home/smeagol:/bin/bash
+mysql:x:116:125:MySQL Server,,,:/nonexistent:/bin/false
+sshd:x:117:65534::/var/run/sshd:/usr/sbin/nologin
+]]>
+</info>
+<description>
+List all users on the system
+</description>
+<command>
+<\![CDATA[
+cat /etc/passwd
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:pulse
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+libuuid:x:101:
+netdev:x:102:
+crontab:x:103:
+syslog:x:104:
+fuse:x:105:
+messagebus:x:106:
+ssl-cert:x:107:
+lpadmin:x:108:
+scanner:x:109:saned
+mlocate:x:110:
+ssh:x:111:
+utempter:x:112:
+avahi-autoipd:x:113:
+rtkit:x:114:
+saned:x:115:
+whoopsie:x:116:
+avahi:x:117:
+lightdm:x:118:
+nopasswdlogin:x:119:
+bluetooth:x:120:
+colord:x:121:
+pulse:x:122:
+pulse-access:x:123:
+smeagol:x:1000:
+sambashare:x:124:
+mysql:x:125:
+]]>
+</info>
+<description>
+List all groups on the system
+</description>
+<command>
+<\![CDATA[
+cat /etc/group
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+uid=0(root) gid=0(root) groups=0(root)
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+uid=2(bin) gid=2(bin) groups=2(bin)
+uid=3(sys) gid=3(sys) groups=3(sys)
+uid=4(sync) gid=65534(nogroup) groups=65534(nogroup)
+uid=5(games) gid=60(games) groups=60(games)
+uid=6(man) gid=12(man) groups=12(man)
+uid=7(lp) gid=7(lp) groups=7(lp)
+uid=8(mail) gid=8(mail) groups=8(mail)
+uid=9(news) gid=9(news) groups=9(news)
+uid=10(uucp) gid=10(uucp) groups=10(uucp)
+uid=13(proxy) gid=13(proxy) groups=13(proxy)
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+uid=34(backup) gid=34(backup) groups=34(backup)
+uid=38(list) gid=38(list) groups=38(list)
+uid=39(irc) gid=39(irc) groups=39(irc)
+uid=41(gnats) gid=41(gnats) groups=41(gnats)
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+uid=100(libuuid) gid=101(libuuid) groups=101(libuuid)
+uid=101(syslog) gid=104(syslog) groups=104(syslog),4(adm)
+uid=102(messagebus) gid=106(messagebus) groups=106(messagebus)
+uid=103(usbmux) gid=46(plugdev) groups=46(plugdev)
+uid=104(dnsmasq) gid=65534(nogroup) groups=65534(nogroup)
+uid=105(avahi-autoipd) gid=113(avahi-autoipd) groups=113(avahi-autoipd)
+uid=106(kernoops) gid=65534(nogroup) groups=65534(nogroup)
+uid=107(rtkit) gid=114(rtkit) groups=114(rtkit)
+uid=108(saned) gid=115(saned) groups=115(saned),109(scanner)
+uid=109(whoopsie) gid=116(whoopsie) groups=116(whoopsie)
+uid=110(speech-dispatcher) gid=29(audio) groups=29(audio)
+uid=111(avahi) gid=117(avahi) groups=117(avahi)
+uid=112(lightdm) gid=118(lightdm) groups=118(lightdm)
+uid=113(colord) gid=121(colord) groups=121(colord)
+uid=114(hplip) gid=7(lp) groups=7(lp)
+uid=115(pulse) gid=122(pulse) groups=122(pulse),29(audio)
+uid=1000(smeagol) gid=1000(smeagol) groups=1000(smeagol)
+uid=116(mysql) gid=125(mysql) groups=125(mysql)
+uid=117(sshd) gid=65534(nogroup) groups=65534(nogroup)
+]]>
+</info>
+<description>
+List all uid's and respective group memberships
+</description>
+<command>
+<\![CDATA[
+for i in root daemon bin sys sync games man lp mail news uucp proxy www-data backup list irc gnats nobody libuuid syslog messagebus usbmux dnsmasq avahi-autoipd kernoops rtkit saned whoopsie speech-dispatcher avahi lightdm colord hplip pulse smeagol mysql sshd;do id $i; done 2>/dev/null
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+ NOT AVAILABLE 
+]]>
+</info>
+<description>
+Show user hashes - Privileged command
+</description>
+<command>
+<\![CDATA[
+cat /etc/shadow
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+root
+]]>
+</info>
+<description>
+List all super user accounts
+</description>
+<command>
+<\![CDATA[
+grep -v -E '^#' /etc/passwd | awk -F: '$3 == 0 { print $1}'
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+           system boot  2015-11-15 05:55
+           run-level 2  2015-11-15 05:55
+LOGIN      tty4         2015-11-15 05:55               827 id=4
+LOGIN      tty5         2015-11-15 05:55               831 id=5
+LOGIN      tty2         2015-11-15 05:55               838 id=2
+LOGIN      tty3         2015-11-15 05:55               839 id=3
+LOGIN      tty6         2015-11-15 05:55               843 id=6
+LOGIN      tty1         2015-11-15 05:55              1433 id=1
+           pts/1        2015-11-15 06:51              3586 id=ts/1  term=0 exit=0
+smeagol  + pts/6        2015-11-15 06:39   .          3207 (192.168.1.113)
+smeagol  + pts/12       2015-11-15 06:39 00:02        3205 (192.168.1.115)
+smeagol  + pts/16       2015-11-15 06:32 00:04        2620 (192.168.1.119)
+smeagol  + pts/17       2015-11-15 06:39 00:03        3311 (192.168.1.121)
+smeagol  + pts/18       2015-11-15 06:41   .          3583 (192.168.1.112)
+smeagol  + pts/19       2015-11-15 06:44 00:07        3829 (192.168.1.114)
+]]>
+</info>
+<description>
+Users currently logged in
+</description>
+<command>
+<\![CDATA[
+who -a
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+ 06:52:50 up 57 min,  6 users,  load average: 0.36, 0.40, 0.32
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+smeagol  pts/6    192.168.1.113    06:39   10.00s  0.26s  0.26s -bash
+smeagol  pts/12   192.168.1.115    06:39    2:41   0.29s  0.29s -bash
+smeagol  pts/16   192.168.1.119    06:32    4:07   0.38s  0.11s gdb file
+smeagol  pts/17   192.168.1.121    06:39    3:14   0.27s  0.27s -bash
+smeagol  pts/18   192.168.1.112    06:41    1.00s  0.37s  0.20s -bash
+smeagol  pts/19   192.168.1.114    06:44    7:42   0.15s  0.15s -bash
+]]>
+</info>
+<description>
+Who is currently logged in and what they're doing
+</description>
+<command>
+<\![CDATA[
+w
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+Username         Port     From             Latest
+root                                       **Never logged in**
+daemon                                     **Never logged in**
+bin                                        **Never logged in**
+sys                                        **Never logged in**
+sync                                       **Never logged in**
+games                                      **Never logged in**
+man                                        **Never logged in**
+lp                                         **Never logged in**
+mail                                       **Never logged in**
+news                                       **Never logged in**
+uucp                                       **Never logged in**
+proxy                                      **Never logged in**
+www-data                                   **Never logged in**
+backup                                     **Never logged in**
+list                                       **Never logged in**
+irc                                        **Never logged in**
+gnats                                      **Never logged in**
+nobody                                     **Never logged in**
+libuuid                                    **Never logged in**
+syslog                                     **Never logged in**
+messagebus                                 **Never logged in**
+usbmux                                     **Never logged in**
+dnsmasq                                    **Never logged in**
+avahi-autoipd                              **Never logged in**
+kernoops                                   **Never logged in**
+rtkit                                      **Never logged in**
+saned                                      **Never logged in**
+whoopsie                                   **Never logged in**
+speech-dispatcher                           **Never logged in**
+avahi                                      **Never logged in**
+lightdm                                    **Never logged in**
+colord                                     **Never logged in**
+hplip                                      **Never logged in**
+pulse                                      **Never logged in**
+smeagol          pts/19   192.168.1.114    Sun Nov 15 06:44:22 -0700 2015
+mysql                                      **Never logged in**
+sshd                                       **Never logged in**
+]]>
+</info>
+<description>
+Information on when all users last logged in
+</description>
+<command>
+<\![CDATA[
+lastlog
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+Username         Port     From             Latest
+smeagol          pts/19   192.168.1.114    Sun Nov 15 06:44:22 -0700 2015
+]]>
+</info>
+<description>
+Information on when the specified user last logged in
+</description>
+<command>
+<\![CDATA[
+lastlog -u smeagol
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+Username         Port     From             Latest
+smeagol          pts/19   192.168.1.114    Sun Nov 15 06:44:22 -0700 2015
+]]>
+</info>
+<description>
+Entire list of previously logged on users
+</description>
+<command>
+<\![CDATA[
+lastlog | grep -v "Never"
+]]>
+</command>
+</data>
+</group>
+
+<group title="User and Privilege Information">
+
+<data>
+<info>
+<\![CDATA[
+uid=1000(smeagol) gid=1000(smeagol) groups=1000(smeagol)
+]]>
+</info>
+<description>
+Current user information
+</description>
+<command>
+<\![CDATA[
+id
+]]>
+</command>
+</data>
+
+<data>
+<info>
+<\![CDATA[
+ NOT AVAILABLE 
+]]>
+</info>
+<description>
+Who's allowed to do what as root - Privileged command
+</description>
+<command>
+<\![CDATA[
+cat /etc/sudoers
+]]>
+</command>
+</data>
+

@@ -1,0 +1,19 @@
+kod_info_info="Kernel, Operating System and Device Information";
+kod_info=(
+"uname -r"
+"uname -n"
+"uname -m"
+"cat /proc/version"
+"cat /etc/*-release"
+"cat /proc/info"
+"df -a"
+);
+kod_info_desc=(
+"Kernel release"
+"System hostname"
+"Linux Kernel architecture (32 or 64 bit)"
+"Kernel Information"
+"Distribution Information"
+"CPU Information"
+"File system Information"
+);

@@ -1,0 +1,15 @@
+privileges_info="User and Privilege Information";
+privileges=(
+"id"
+"cat /etc/sudoers"
+"sudo -l"
+"sudo -l 2>/dev/null | grep -w \
+'nmap\|perl\|'awk'\|'find'\|'bash'\|'sh'\|'man'\|'more'\|'less'\|'vi'\|'vim'\|'nc'\|'netcat'\|python\|ruby\|lua\|irb' \
+| xargs -r ls -la 2>/dev/null"
+);
+privileges_desc=(
+"Current user information"
+"Who's allowed to do what as root - Privileged command"
+"Can the current user perform anything as root"
+"Can the current user run any 'interesting' binaries as root and if so also display the binary permissions etc."
+);

@@ -1,0 +1,23 @@
+netting_info="Networking, Routing and Communications";
+netting=(
+"/sbin/ifconfig -a"
+"cat /etc/network/interfaces"
+"arp -a"
+"route"
+"cat /etc/resolv.conf"
+"netstat -antp"
+"netstat -anup"
+"iptables -L"
+"cat /etc/services"
+);
+netting_desc=(
+"List all network interfaces"
+"As above"
+"Display ARP communications"
+"Display route information"
+"Show configured DNS sever addresses"
+"List all TCP sockets and related PIDs (-p Privileged command)"
+"List all UDP sockets and related PIDs (-p Privileged command)"
+"List rules - Privileged command"
+"View port numbers/services mappings"
+);

@@ -1,0 +1,32 @@
+programs_info="Programs Installed";
+programs=(
+"sudo -V"
+"httpd -v"
+"apache2 -v"
+"apache2ctl -M"
+"mysql --version"
+"psql -V"
+"perl -v | head -2"
+"java -version 2>&1"
+"python --version 2>&1"
+"ruby -v"
+"for pr in \
+'nmap' 'wget' 'ufw'; \
+do which \$pr; done"
+"dpkg --list 2>/dev/null| grep compiler |grep -v decompiler 2>/dev/null \
+&& yum list installed 'gcc*' 2>/dev/null| grep gcc 2>/dev/null"
+);
+programs_desc=(
+"Sudo version - does an exploit exist?"
+"Apache version"
+"As above"
+"List loaded Apache modules"
+"Installed MYSQL version details"
+"Installed Postgres version details"
+"Installed Perl version details"
+"Installed Java version details"
+"Installed Python version details"
+"Installed Ruby version details"
+"Locate 'useful' programs (netcat, wget etc)"
+"List available compilers"
+);
